@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [XOME Suite]">
+  <listeners>
+    <listener class-name="common.TestListener"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="Subset of tests(failed)">
+    <classes>
+      <class name="webTests.FilterResultsByPriceBedBath">
+        <methods>
+          <include name="OnFailure"/>
+          <include name="filterResultsByBeds" invocation-numbers="0"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.FilterResultsByPriceBedBath -->
+    </classes>
+  </test> <!-- Subset of tests(failed) -->
+</suite> <!-- Failed suite [XOME Suite] -->
