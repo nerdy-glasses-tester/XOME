@@ -1,105 +1,107 @@
-2019-11-03 15:29:33 [main] INFO  FilterResults_Page:191 - It filtered by beds correctly.
-2019-11-03 15:39:32 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.
-2019-11-03 16:11:20 [main] INFO  Login_Page:49 - Check email field is required: true
-2019-11-03 16:20:55 [main] INFO  Search:154 - resultaddress is: 12512 Brighton Place Tustin, CA 92780
-2019-11-03 16:21:11 [main] INFO  SortResults_Page:496 - Original order is: [9 9 8 7 7 7 6 6 5 5]
-
-2019-11-03 16:21:11 [main] INFO  SortResults_Page:497 - Sorted descending order is: [9 9 8 7 7 7 6 6 5 5]
-
-2019-11-03 16:21:11 [main] INFO  SortResults_Page:501 - It has sorted in descending order.
-2019-11-03 16:21:19 [main] INFO  SortResults_Page:583 - Original order is: [1 1 2 2 2 2 2 2 2 2]
-
-2019-11-03 16:21:19 [main] INFO  SortResults_Page:584 - Sorted ascending order is: [1 1 2 2 2 2 2 2 2 2]
-
-2019-11-03 16:21:19 [main] INFO  SortResults_Page:588 - It has sorted in ascending order.
-2019-11-03 16:21:34 [main] INFO  SortResults_Page:323 - Original order is: [5 5 5 5 5 5 4 4 4 4]
-
-2019-11-03 16:21:34 [main] INFO  SortResults_Page:324 - Sorted descending order is: [5 5 5 5 5 5 4 4 4 4]
-
-2019-11-03 16:21:34 [main] INFO  SortResults_Page:328 - It has sorted in descending order.
-2019-11-03 16:21:43 [main] INFO  SortResults_Page:410 - Original order is: [1 1 1 1 2 2 2 2 2 2]
-
-2019-11-03 16:21:43 [main] INFO  SortResults_Page:411 - Sorted ascending order is: [1 1 1 1 2 2 2 2 2 2]
-
-2019-11-03 16:21:43 [main] INFO  SortResults_Page:415 - It has sorted in ascending order.
-2019-11-03 16:22:13 [main] INFO  SortResults_Page:72 - Newicon says: NEW
-
-2019-11-03 16:22:13 [main] INFO  SortResults_Page:76 - It has sorted by most recent order.
-2019-11-03 16:22:29 [main] INFO  SortResults_Page:154 - Original order is: [19800000 19000000 12888000 11995000 10750000]
-
-2019-11-03 16:22:29 [main] INFO  SortResults_Page:155 - Sorted descending order is: [19800000 19000000 12888000 11995000 10750000]
-
-2019-11-03 16:22:29 [main] INFO  SortResults_Page:159 - It has sorted in descending order.
-2019-11-03 16:22:37 [main] INFO  SortResults_Page:236 - Original order is: [1800 249900 305000 320000 325000]
-
-2019-11-03 16:22:37 [main] INFO  SortResults_Page:237 - Sorted ascending order is: [1800 249900 305000 320000 325000]
-
-2019-11-03 16:22:37 [main] INFO  SortResults_Page:241 - It has sorted in ascending order.
-2019-11-03 16:22:56 [main] INFO  FilterMoreResults_Page:877 - verify filter keyword - scroll property description text into view.
-2019-11-03 16:22:56 [main] INFO  FilterMoreResults_Page:883 - It filtered by keyword correctly
-2019-11-03 16:23:16 [main] INFO  FilterMoreResults_Page:1009 - It filtered by property type correctly
-2019-11-03 16:23:41 [main] INFO  FilterMoreResults_Page:541 - It filtered by square feet correctly
-2019-11-03 16:24:23 [main] INFO  FilterResults_Page:181 - It filtered by beds correctly.
-2019-11-03 16:24:41 [main] INFO  FilterResults_Page:90 - Filter results max price is $1299900
-
-2019-11-03 16:24:50 [main] INFO  FilterResults_Page:114 - Filter results min price is $800000
-
-2019-11-03 16:24:50 [main] INFO  FilterResults_Page:119 - Search for price between 800000 and 1300000
-
-2019-11-03 16:24:50 [main] INFO  FilterResults_Page:123 - It filtered by price correctly.
-2019-11-03 16:25:06 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.
-2019-11-03 16:36:35 [main] INFO  FilterMoreResults_Page:838 - min year: 2000
-2019-11-03 16:36:35 [main] INFO  FilterMoreResults_Page:839 - max year 2017
-2019-11-03 16:36:35 [main] INFO  FilterMoreResults_Page:840 - prop1_year is : 2015
-2019-11-03 16:36:35 [main] INFO  FilterMoreResults_Page:845 - It filtered by year correctly
-2019-11-03 16:37:40 [main] INFO  Search:154 - resultaddress is: 12512 Brighton Place Tustin, CA 92780
-2019-11-03 16:37:58 [main] INFO  SortResults_Page:496 - Original order is: [9 9 8 7 7 7 6 6 5 5]
-
-2019-11-03 16:37:58 [main] INFO  SortResults_Page:497 - Sorted descending order is: [9 9 8 7 7 7 6 6 5 5]
-
-2019-11-03 16:37:58 [main] INFO  SortResults_Page:501 - It has sorted in descending order.
-2019-11-03 16:38:07 [main] INFO  SortResults_Page:583 - Original order is: [1 1 2 2 2 2 2 2 2 2]
-
-2019-11-03 16:38:07 [main] INFO  SortResults_Page:584 - Sorted ascending order is: [1 1 2 2 2 2 2 2 2 2]
-
-2019-11-03 16:38:07 [main] INFO  SortResults_Page:588 - It has sorted in ascending order.
-2019-11-03 16:38:23 [main] INFO  SortResults_Page:323 - Original order is: [5 5 5 5 5 5 4 4 4 4]
-
-2019-11-03 16:38:23 [main] INFO  SortResults_Page:324 - Sorted descending order is: [5 5 5 5 5 5 4 4 4 4]
-
-2019-11-03 16:38:23 [main] INFO  SortResults_Page:328 - It has sorted in descending order.
-2019-11-03 16:38:31 [main] INFO  SortResults_Page:410 - Original order is: [1 1 1 1 2 2 2 2 2 2]
-
-2019-11-03 16:38:31 [main] INFO  SortResults_Page:411 - Sorted ascending order is: [1 1 1 1 2 2 2 2 2 2]
-
-2019-11-03 16:38:31 [main] INFO  SortResults_Page:415 - It has sorted in ascending order.
-2019-11-03 16:38:56 [main] INFO  SortResults_Page:72 - Newicon says: NEW
-
-2019-11-03 16:38:56 [main] INFO  SortResults_Page:76 - It has sorted by most recent order.
-2019-11-03 16:39:09 [main] INFO  SortResults_Page:154 - Original order is: [19800000 19000000 12888000 11995000 10750000]
-
-2019-11-03 16:39:09 [main] INFO  SortResults_Page:155 - Sorted descending order is: [19800000 19000000 12888000 11995000 10750000]
-
-2019-11-03 16:39:09 [main] INFO  SortResults_Page:159 - It has sorted in descending order.
-2019-11-03 16:39:18 [main] INFO  SortResults_Page:236 - Original order is: [1800 249900 305000 320000 325000]
-
-2019-11-03 16:39:18 [main] INFO  SortResults_Page:237 - Sorted ascending order is: [1800 249900 305000 320000 325000]
-
-2019-11-03 16:39:18 [main] INFO  SortResults_Page:241 - It has sorted in ascending order.
-2019-11-03 16:39:40 [main] INFO  FilterMoreResults_Page:877 - verify filter keyword - scroll property description text into view.
-2019-11-03 16:39:40 [main] INFO  FilterMoreResults_Page:883 - It filtered by keyword correctly
-2019-11-03 16:40:00 [main] INFO  FilterMoreResults_Page:1009 - It filtered by property type correctly
-2019-11-03 16:40:29 [main] INFO  FilterMoreResults_Page:541 - It filtered by square feet correctly
-2019-11-03 16:40:53 [main] INFO  FilterMoreResults_Page:838 - min year: 2000
-2019-11-03 16:40:53 [main] INFO  FilterMoreResults_Page:839 - max year 2017
-2019-11-03 16:40:53 [main] INFO  FilterMoreResults_Page:840 - prop1_year is : 2015
-2019-11-03 16:40:53 [main] INFO  FilterMoreResults_Page:845 - It filtered by year correctly
-2019-11-03 16:41:07 [main] INFO  FilterResults_Page:181 - It filtered by beds correctly.
-2019-11-03 16:41:26 [main] INFO  FilterResults_Page:90 - Filter results max price is $1299900
-
-2019-11-03 16:41:35 [main] INFO  FilterResults_Page:114 - Filter results min price is $800000
-
-2019-11-03 16:41:35 [main] INFO  FilterResults_Page:119 - Search for price between 800000 and 1300000
-
-2019-11-03 16:41:35 [main] INFO  FilterResults_Page:123 - It filtered by price correctly.
-2019-11-03 16:41:50 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.
+2019-11-21 10:51:00 [main] ERROR MFilterResults_Page:625 - It filter by keyword hardwood floor unsuccessfully.
+2019-11-21 10:51:00 [main] ERROR MFilterByKeyword:51 - Didn't filter by keyword correctly.
+2019-11-21 10:51:59 [main] ERROR MFilterResults_Page:660 - It filter by min square feet 1500 and max square feet 2000 unsuccessfully.
+2019-11-21 10:51:59 [main] ERROR MFilterBySqFt:51 - Didn't filter by square feet correctly.
+2019-11-21 11:01:46 [main] INFO  MFilterResults_Page:655 - It filter by min square feet  1500 and max square feet 2000 successfully.
+2019-11-21 12:28:59 [main] INFO  MFilterResults_Page:629 - It filter by keyword hardwood floor successfully.
+2019-11-21 12:41:54 [main] INFO  MFilterResults_Page:728 - It filtered by 3 baths successfully.
+2019-11-21 12:42:38 [main] INFO  MFilterResults_Page:696 - It filtered by 3 beds successfully.
+2019-11-21 12:47:27 [main] INFO  MFilterResults_Page:87 - Active status is unchecked.
+2019-11-21 12:47:27 [main] INFO  MFilterResults_Page:98 - Pending status is unchecked.
+2019-11-21 12:47:28 [main] INFO  MFilterResults_Page:108 - Sold status is unchecked.
+2019-11-21 12:47:32 [main] INFO  MFilterResults_Page:142 - Active status is checked.
+2019-11-21 12:47:44 [main] INFO  MFilterResults_Page:814 - It filtered by for sale active status successfully.
+2019-11-21 12:48:15 [main] INFO  MFilterResults_Page:87 - Active status is unchecked.
+2019-11-21 12:48:15 [main] INFO  MFilterResults_Page:98 - Pending status is unchecked.
+2019-11-21 12:48:16 [main] INFO  MFilterResults_Page:108 - Sold status is unchecked.
+2019-11-21 12:48:20 [main] INFO  MFilterResults_Page:123 - Pending status is checked.
+2019-11-21 12:48:32 [main] INFO  MFilterResults_Page:757 - It filtered by pending status successfully.
+2019-11-21 12:49:03 [main] INFO  MFilterResults_Page:87 - Active status is unchecked.
+2019-11-21 12:49:03 [main] INFO  MFilterResults_Page:98 - Pending status is unchecked.
+2019-11-21 12:49:04 [main] INFO  MFilterResults_Page:108 - Sold status is unchecked.
+2019-11-21 12:49:08 [main] INFO  MFilterResults_Page:132 - Sold status is checked.
+2019-11-21 12:49:20 [main] INFO  MFilterResults_Page:785 - It filtered by sold status successfully.
+2019-11-21 12:50:56 [main] INFO  MFilterResults_Page:975 - OC19269433
+2019-11-21 12:51:04 [main] INFO  MFilterResults_Page:989 - OC19264932
+2019-11-21 12:51:12 [main] INFO  MFilterResults_Page:989 - OC19269213
+2019-11-21 12:51:12 [main] ERROR MFilterResults_Page:1013 - It filter by condo unsuccessfully.
+2019-11-21 12:51:12 [main] ERROR MFilterByPropertyType:107 - Didn't filter by condo correctly.
+2019-11-21 12:52:06 [main] INFO  MFilterResults_Page:860 - OC19269363
+2019-11-21 12:52:14 [main] INFO  MFilterResults_Page:874 - OC19266854
+2019-11-21 12:52:21 [main] INFO  MFilterResults_Page:874 - CV19268775
+2019-11-21 12:52:21 [main] ERROR MFilterResults_Page:898 - It filter by Single Family unsuccessfully.
+2019-11-21 12:52:21 [main] ERROR MFilterByPropertyType:52 - Didn't filter by single family correctly.
+2019-11-21 12:53:16 [main] INFO  MFilterResults_Page:917 - OC19266474
+2019-11-21 12:53:24 [main] INFO  MFilterResults_Page:932 - OC19260048
+2019-11-21 12:53:31 [main] INFO  MFilterResults_Page:932 - 19529834
+2019-11-21 12:53:31 [main] ERROR MFilterResults_Page:956 - It filter by Townhouse unsuccessfully.
+2019-11-21 12:53:31 [main] ERROR MFilterByPropertyType:79 - Didn't filter by townhome correctly.
+2019-11-21 13:33:58 [main] INFO  MFilterResults_Page:975 - Condo, Contemporary, 1 Story
+2019-11-21 13:34:06 [main] INFO  MFilterResults_Page:989 - Condo, Traditional, 2 Story
+2019-11-21 13:34:14 [main] INFO  MFilterResults_Page:989 - Condo, 2 Story
+2019-11-21 13:34:14 [main] INFO  MFilterResults_Page:1008 - It filter by condo successfully.
+2019-11-21 13:35:04 [main] INFO  MFilterResults_Page:860 - Single Family, 2 Story
+2019-11-21 13:35:11 [main] INFO  MFilterResults_Page:874 - Single Family, Cape Cod, 1 Story
+2019-11-21 13:35:19 [main] INFO  MFilterResults_Page:874 - Single Family, 1 Story
+2019-11-21 13:35:19 [main] INFO  MFilterResults_Page:893 - It filter by Single Family successfully.
+2019-11-21 13:36:10 [main] INFO  MFilterResults_Page:917 - Townhouse, 3+ Story
+2019-11-21 13:36:18 [main] INFO  MFilterResults_Page:932 - Townhouse, 3+ Story
+2019-11-21 13:36:25 [main] INFO  MFilterResults_Page:932 - Townhouse, Other
+2019-11-21 13:36:25 [main] INFO  MFilterResults_Page:951 - It filter by Townhouse successfully.
+2019-11-21 13:39:51 [main] INFO  MFilterResults_Page:664 - It filter by min square feet  1500 and max square feet 2000 successfully.
+2019-11-21 14:03:51 [main] INFO  MFilterResults_Page:518 - yearmatch1 is true
+2019-11-21 14:04:02 [main] INFO  MFilterResults_Page:552 - yearmatch2 is true
+2019-11-21 14:04:14 [main] INFO  MFilterResults_Page:557 - yearmatch3 is true
+2019-11-21 14:04:14 [main] INFO  MFilterResults_Page:565 - It filter by min year 1995 and max year 2015 successfully.
+2019-11-21 14:18:04 [main] INFO  MFilterResults_Page:519 - yearmatch1 is true
+2019-11-21 14:18:16 [main] INFO  MFilterResults_Page:553 - yearmatch2 is true
+2019-11-21 14:18:28 [main] INFO  MFilterResults_Page:558 - yearmatch3 is true
+2019-11-21 14:18:28 [main] INFO  MFilterResults_Page:566 - It filter by min year 1995 and max year 2015 successfully.
+2019-11-21 14:24:16 [main] INFO  MLogin_Page:167 - Logged in successfully.
+2019-11-21 14:24:31 [main] INFO  MSearch:95 - It filtered out the addresses correctly.
+2019-11-21 14:26:16 [main] INFO  MLogin_Page:82 - sqatester2018+11212019142616@gmail.com
+2019-11-21 14:26:33 [main] INFO  MLogin_Page:109 - Welcome Amy
+2019-11-21 14:26:34 [main] INFO  MLogin_Page:118 - Signed up successfully.
+2019-11-21 14:29:02 [main] INFO  MSortResults_Page:361 - prop1bed: 1
+2019-11-21 14:29:02 [main] INFO  MSortResults_Page:366 - prop2bed: 1
+2019-11-21 14:29:02 [main] INFO  MSortResults_Page:371 - prop3bed: 1
+2019-11-21 14:29:02 [main] INFO  MSortResults_Page:376 - It sorted by bed successfully.
+2019-11-21 14:30:19 [main] INFO  MSortResults_Page:414 - prop1bath: 1
+2019-11-21 14:30:19 [main] INFO  MSortResults_Page:419 - prop2bath: 1
+2019-11-21 14:30:19 [main] INFO  MSortResults_Page:424 - prop3bath: 1
+2019-11-21 14:30:19 [main] INFO  MSortResults_Page:429 - It sorted by bath successfully.
+2019-11-21 14:31:24 [main] INFO  MSortResults_Page:143 - It sorted by low to high price successfully.
+2019-11-21 14:32:29 [main] INFO  MSortResults_Page:183 - It sorted by high to low price successfully.
+2019-11-21 14:33:34 [main] INFO  MSortResults_Page:217 - It sorted by square feet successfully.
+2019-11-21 14:34:57 [main] INFO  MSortResults_Page:322 - It sorted by most recent successfully.
+2019-11-21 14:38:43 [main] INFO  MFilterResults_Page:729 - It filtered by 3 baths successfully.
+2019-11-21 14:39:28 [main] INFO  MFilterResults_Page:697 - It filtered by 3 beds successfully.
+2019-11-21 14:40:33 [main] INFO  MFilterResults_Page:630 - It filter by keyword hardwood floor successfully.
+2019-11-21 14:41:03 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2019-11-21 14:41:04 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2019-11-21 14:41:04 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2019-11-21 14:41:08 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2019-11-21 14:41:20 [main] INFO  MFilterResults_Page:815 - It filtered by for sale active status successfully.
+2019-11-21 14:41:50 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2019-11-21 14:41:50 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2019-11-21 14:41:51 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2019-11-21 14:41:55 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2019-11-21 14:42:07 [main] INFO  MFilterResults_Page:758 - It filtered by pending status successfully.
+2019-11-21 14:42:39 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2019-11-21 14:42:39 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2019-11-21 14:42:40 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2019-11-21 14:42:44 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
+2019-11-21 14:42:56 [main] INFO  MFilterResults_Page:786 - It filtered by sold status successfully.
+2019-11-21 14:43:48 [main] INFO  MFilterResults_Page:976 - Condo, Contemporary, 1 Story
+2019-11-21 14:43:56 [main] INFO  MFilterResults_Page:990 - Condo, Traditional, 2 Story
+2019-11-21 14:44:03 [main] INFO  MFilterResults_Page:990 - Condo, 2 Story
+2019-11-21 14:44:03 [main] INFO  MFilterResults_Page:1009 - It filter by condo successfully.
+2019-11-21 14:44:54 [main] INFO  MFilterResults_Page:861 - Single Family, 2 Story
+2019-11-21 14:45:01 [main] INFO  MFilterResults_Page:875 - Single Family, Cape Cod, 1 Story
+2019-11-21 14:45:09 [main] INFO  MFilterResults_Page:875 - Single Family, 1 Story
+2019-11-21 14:45:09 [main] INFO  MFilterResults_Page:894 - It filter by Single Family successfully.
+2019-11-21 14:45:59 [main] INFO  MFilterResults_Page:918 - Townhouse, 3+ Story
+2019-11-21 14:46:06 [main] INFO  MFilterResults_Page:933 - Townhouse, 3+ Story
+2019-11-21 14:46:14 [main] INFO  MFilterResults_Page:933 - Townhouse, Other
+2019-11-21 14:46:14 [main] INFO  MFilterResults_Page:952 - It filter by Townhouse successfully.
+2019-11-21 14:47:07 [main] INFO  MFilterResults_Page:665 - It filter by min square feet  1500 and max square feet 2000 successfully.

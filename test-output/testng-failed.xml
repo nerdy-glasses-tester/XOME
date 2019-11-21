@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" verbose="10" name="Subset of tests(failed)">
     <classes>
-      <class name="webTests.FilterResultsByPriceBedBath">
+      <class name="mobileTests.MFilterByYear">
         <methods>
           <include name="OnFailure"/>
-          <include name="filterResultsByBeds" invocation-numbers="0"/>
+          <include name="mFilterYear" invocation-numbers="0"/>
           <include name="Setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- webTests.FilterResultsByPriceBedBath -->
+      </class> <!-- mobileTests.MFilterByYear -->
     </classes>
   </test> <!-- Subset of tests(failed) -->
 </suite> <!-- Failed suite [XOME Suite] -->

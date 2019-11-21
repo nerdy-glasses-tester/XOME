@@ -3,6 +3,7 @@ package base;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -174,10 +175,16 @@ public class TestBase {
 				            capabilities.setCapability("noReset", true);
 				        }
 						
+						//noReset if set to TRUE would reset the app data, i.e. it will clear app data.
+						//fullReset if set to TRUE uninstalls the app.
 						
-						capabilities.setCapability("newCommandTimeout", 120);    
+						capabilities.setCapability("newCommandTimeout", 120); 
+						
+			            File appDir = new File(ReadProperties.globalProp.getProperty("apkfile")); //this ipa was done with automatic signing
+			            File app = new File(appDir, "base.apk");
+						capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 						capabilities.setCapability("appPackage", "com.xome.android");
-						capabilities.setCapability("appActivity", "com.xome.android.feature.mapsearch.view.MapActivity2");
+						capabilities.setCapability("appActivity", "com.xome.android.ui.map.MapActivity2");
 						
 						runonrealdevice = "yes";
 

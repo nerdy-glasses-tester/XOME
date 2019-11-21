@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import common.MiscMethods;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -50,12 +52,13 @@ public class MFilterResults_Page {
 		static By propertysqft = By.id("com.xome.android:id/listing_summary_square_feet_textView");
 		static By propertypic = By.id("com.xome.android:id/listing_summary_imageViewPager");
 		static By propertydescription = By.id("com.xome.android:id/description");
-		static By propertydetailsmorebutton = By.id("com.xome.android:id/ldTvMoreButton");
-		static By propertyyearheader6thslot = By.xpath(".//android.widget.LinearLayout[@index='6']/android.widget.TextView[@index='0' and @text='Year Built:']");
+		//static By propertydetailsmorebutton = MobileBy.AccessibilityId("com.xome.android:id/ldTvMoreButton");
+		static By propertydetailsmorebutton = By.xpath("//android.widget.Button[@text='MORE' and @index='5']");
+		static By propertyyearheader8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='0' and @text='Year Built:']");
 		static By propertyyearheader7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='0' and @text='Year Built:']");
-		static By 	    propertyyear6thslot = By.xpath(".//android.widget.LinearLayout[@index='6']/android.widget.TextView[@index='1']");
+		static By 	    propertyyear8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='1']");
 		static By 		propertyyear7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='1']");
-		static By 			   propertytype = By.xpath(".//android.widget.LinearLayout[@index='1']/android.widget.TextView[contains(@resource-id, 'row_value') and @index='1']");
+		static By 			   propertytype = By.xpath(".//android.widget.LinearLayout[@index='2']/android.widget.TextView[contains(@resource-id, 'row_value') and @index='1']");
 		static By scrollnextproperty = By.id("com.xome.android:id/menu_filter_tv");
 		
 		static String diditfilter = "";
@@ -149,7 +152,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 			
 			int numofbeds = Integer.parseInt(beds);
-			List <WebElement> bedslist = (List<WebElement>) driver.findElements(bedselection);
+			List <MobileElement> bedslist = (List<MobileElement>) driver.findElements(bedselection);
 			WebElement numofbedsselection = bedslist.get(numofbeds);
 			numofbedsselection.click();
 			Thread.sleep(4000);
@@ -163,7 +166,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 			
 			int numofbaths = Integer.parseInt(baths);
-			List <WebElement> bathslist = (List<WebElement>) driver.findElements(bathselection);
+			List <MobileElement> bathslist = (List<MobileElement>) driver.findElements(bathselection);
 			WebElement numofbathsselection = bathslist.get(numofbaths);
 			numofbathsselection.click();
 			Thread.sleep(4000);
@@ -176,7 +179,7 @@ public class MFilterResults_Page {
 			sqftminelement.click();
 			Thread.sleep(4000);
 			
-			List <WebElement> sqftselectionlist = (List<WebElement>) driver.findElements(sqftselection);
+			List <MobileElement> sqftselectionlist = (List<MobileElement>) driver.findElements(sqftselection);
 			
 			
 			switch (minsqft)
@@ -243,7 +246,7 @@ public class MFilterResults_Page {
 			sqftmaxelement.click();
 			Thread.sleep(4000);	
 			
-			List <WebElement> sqftselectionlist = (List<WebElement>) driver.findElements(sqftselection);
+			List <MobileElement> sqftselectionlist = (List<MobileElement>) driver.findElements(sqftselection);
 			
 			
 			switch (maxsqft)
@@ -320,7 +323,7 @@ public class MFilterResults_Page {
 			yrminelement.click();
 			Thread.sleep(4000);
 			
-			List <WebElement> yrselectionlist = (List<WebElement>) driver.findElements(yrselection);
+			List <MobileElement> yrselectionlist = (List<MobileElement>) driver.findElements(yrselection);
 			
 			switch (minyear)
 			{
@@ -398,7 +401,7 @@ public class MFilterResults_Page {
 			yrmaxelement.click();
 			Thread.sleep(4000);
 			
-			List <WebElement> yrselectionlist = (List<WebElement>) driver.findElements(yrselection);
+			List <MobileElement> yrselectionlist = (List<MobileElement>) driver.findElements(yrselection);
 			
 			switch (maxyear)
 			{
@@ -472,7 +475,7 @@ public class MFilterResults_Page {
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			
-			List <WebElement> propertypiclist = (List<WebElement>) driver.findElements(propertypic);
+			List <MobileElement> propertypiclist = (List<MobileElement>) driver.findElements(propertypic);
 			WebElement property1pic = propertypiclist.get(0);
 			property1pic.click();
 			Thread.sleep(4000);
@@ -490,14 +493,14 @@ public class MFilterResults_Page {
 	        new TouchAction(driver).press(PointOption.point(startx, starty)).waitAction().moveTo(PointOption.point(startx, endy)).release().perform();
 	        Thread.sleep(4000);
 			
-			List <WebElement> property1yearheader6thslotlist = (List<WebElement>) driver.findElements(propertyyearheader6thslot);
-			int property1yearheader6thslotsize = property1yearheader6thslotlist.size();
+			List <MobileElement> property1yearheader8thslotlist = (List<MobileElement>) driver.findElements(propertyyearheader8thslot);
+			int property1yearheader8thslotsize = property1yearheader8thslotlist.size();
 			
-			if (property1yearheader6thslotsize > 0)
+			if (property1yearheader8thslotsize > 0)
 			{
-				WebElement property1year6thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear6thslot));
-				String year6text1 = property1year6thslotelement.getText();
-				year1 = Integer.parseInt(year6text1);
+				WebElement property1year8thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear8thslot));
+				String year8text1 = property1year8thslotelement.getText();
+				year1 = Integer.parseInt(year8text1);
 			}
 			else
 			{
@@ -506,7 +509,7 @@ public class MFilterResults_Page {
 				year1 = Integer.parseInt(year7text1);
 			}
 		
-			int yrsixth;
+			int yreighth;
 			int yrseventh;
 			Boolean year;
 			Boolean yearmatch1 = (year1 >=min_year) && (year1 <=max_year);
@@ -524,15 +527,15 @@ public class MFilterResults_Page {
 				new TouchAction(driver).press(PointOption.point(startx, starty)).waitAction().moveTo(PointOption.point(startx, endy)).release().perform();
 		        Thread.sleep(4000);
 		        
-				List <WebElement> propertyyearheader6thslotlist = (List<WebElement>) driver.findElements(propertyyearheader6thslot);
-				int propertyyearheader6thslotsize = propertyyearheader6thslotlist.size();
+				List <MobileElement> propertyyearheader8thslotlist = (List<MobileElement>) driver.findElements(propertyyearheader8thslot);
+				int propertyyearheader8thslotsize = propertyyearheader8thslotlist.size();
 				
-				if (propertyyearheader6thslotsize > 0)
+				if (propertyyearheader8thslotsize > 0)
 				{
-					WebElement propertyyear6thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear6thslot));
-					String year6text = propertyyear6thslotelement.getText();
-					yrsixth = Integer.parseInt(year6text);
-					year = (yrsixth >= min_year) && (yrsixth <= max_year);
+					WebElement propertyyear8thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear8thslot));
+					String year8text = propertyyear8thslotelement.getText();
+					yreighth = Integer.parseInt(year8text);
+					year = (yreighth >= min_year) && (yreighth <= max_year);
 				}
 				else
 				{
@@ -576,13 +579,17 @@ public class MFilterResults_Page {
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			
-			List <WebElement> propertypiclist = (List<WebElement>) driver.findElements(propertypic);
+			List <MobileElement> propertypiclist = (List<MobileElement>) driver.findElements(propertypic);
 			WebElement property1pic = propertypiclist.get(0);
 			property1pic.click();
 			Thread.sleep(4000);
 			
-			WebElement propertydetailsmorebuttonelement = wait.until(ExpectedConditions.elementToBeClickable(propertydetailsmorebutton));
-			propertydetailsmorebuttonelement.click();
+			List <MobileElement> propertydetailsmorebuttonlist = (List<MobileElement>) driver.findElements(propertydetailsmorebutton);
+			if(propertydetailsmorebuttonlist.size()>0)
+			{
+				propertydetailsmorebuttonlist.get(0).click();
+			}
+			
 			WebElement propdescriptionelement1 = wait.until(ExpectedConditions.elementToBeClickable(propertydescription));
 			String propdescriptiontext1 = propdescriptionelement1.getText();
 			Boolean propkeywordmatch1 = Pattern.compile(Pattern.quote(keyword), Pattern.CASE_INSENSITIVE).matcher(propdescriptiontext1).find();
@@ -595,8 +602,11 @@ public class MFilterResults_Page {
 				scrollnext.click();
 				Thread.sleep(4000);
 				
-				WebElement propertydetailsmorebutton_element = wait.until(ExpectedConditions.elementToBeClickable(propertydetailsmorebutton));
-				propertydetailsmorebutton_element.click();
+				List <MobileElement> propertydetailsmorebuttonlist2 = (List<MobileElement>) driver.findElements(propertydetailsmorebutton);
+				if(propertydetailsmorebuttonlist2.size()>0)
+				{
+					propertydetailsmorebuttonlist2.get(0).click();
+				}
 				
 				WebElement propdescriptionelement = wait.until(ExpectedConditions.elementToBeClickable(propertydescription));
 				String propdescriptiontext = propdescriptionelement.getText();
@@ -630,7 +640,7 @@ public class MFilterResults_Page {
 		
 		public static String verifyFilterBySqFt (AppiumDriver<?> driver, String minsqft, String maxsqft) throws InterruptedException
 		{
-		    List <WebElement> sqftlist = (List<WebElement>) driver.findElements(propertysqft);
+		    List <MobileElement> sqftlist = (List<MobileElement>) driver.findElements(propertysqft);
 		    WebElement prop1sqftelement = sqftlist.get(0);
 		    String prop1sqfttext = prop1sqftelement.getText();
 		    prop1sqfttext = prop1sqfttext.replaceAll(",", "");
@@ -668,7 +678,7 @@ public class MFilterResults_Page {
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			int numofbeds = Integer.parseInt(beds);
 			
-			List <WebElement> bedlist = (List<WebElement>) driver.findElements(propertybed);
+			List <MobileElement> bedlist = (List<MobileElement>) driver.findElements(propertybed);
 			WebElement prop1bedelement = bedlist.get(0);
 			String prop1bedtext = prop1bedelement.getText();
 			int prop1bed = Integer.parseInt(prop1bedtext);
@@ -700,7 +710,7 @@ public class MFilterResults_Page {
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			int numofbaths = Integer.parseInt(baths);
 			
-			List <WebElement> bathlist = (List<WebElement>) driver.findElements(propertybath);
+			List <MobileElement> bathlist = (List<MobileElement>) driver.findElements(propertybath);
 			WebElement prop1bathelement = bathlist.get(0);
 			String prop1bathtext = prop1bathelement.getText();
 			int prop1bath = Integer.parseInt(prop1bathtext);
@@ -731,7 +741,7 @@ public class MFilterResults_Page {
 		public static String verifyPendingStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			Thread.sleep(3000);
-			List<WebElement> pendinglist = (List<WebElement>) driver.findElements(pendingtag);
+			List <MobileElement> pendinglist = (List<MobileElement>) driver.findElements(pendingtag);
 			
 			WebElement prop1pendingelement = pendinglist.get(0);
 			String prop1pending = prop1pendingelement.getText();
@@ -759,7 +769,7 @@ public class MFilterResults_Page {
 		public static String verifySoldStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			Thread.sleep(3000);
-			List<WebElement> soldlist = (List<WebElement>) driver.findElements(soldtag);
+			List <MobileElement> soldlist = (List<MobileElement>) driver.findElements(soldtag);
 			
 			WebElement prop1soldelement = soldlist.get(0);
 			String prop1sold = prop1soldelement.getText();
@@ -788,7 +798,7 @@ public class MFilterResults_Page {
 		{
 			Thread.sleep(3000);
 			
-			List<WebElement> activelist = (List<WebElement>) driver.findElements(forsaletag);
+			List <MobileElement> activelist = (List<MobileElement>) driver.findElements(forsaletag);
 			
 			WebElement prop1activeelement = activelist.get(0);
 			String prop1active = prop1activeelement.getText();
@@ -841,7 +851,7 @@ public class MFilterResults_Page {
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 
-			List <WebElement> propertypiclist = (List<WebElement>) driver.findElements(propertypic);
+			List <MobileElement> propertypiclist = (List<MobileElement>) driver.findElements(propertypic);
 			WebElement property1pic = propertypiclist.get(0);
 			property1pic.click();
 			Thread.sleep(6000);
@@ -898,7 +908,7 @@ public class MFilterResults_Page {
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 
-			List <WebElement> propertypiclist = (List<WebElement>) driver.findElements(propertypic);
+			List <MobileElement> propertypiclist = (List<MobileElement>) driver.findElements(propertypic);
 			WebElement property1pic = propertypiclist.get(0);
 			property1pic.click();
 			Thread.sleep(6000);
@@ -956,7 +966,7 @@ public class MFilterResults_Page {
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 
-			List <WebElement> propertypiclist = (List<WebElement>) driver.findElements(propertypic);
+			List <MobileElement> propertypiclist = (List<MobileElement>) driver.findElements(propertypic);
 			WebElement property1pic = propertypiclist.get(0);
 			property1pic.click();
 			Thread.sleep(6000);

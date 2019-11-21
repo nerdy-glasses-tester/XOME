@@ -9,7 +9,6 @@ common/MiscMethods.class
 mobilePageObjects/MSortResults_Page.class
 webPageObjects/SortResults_Page.class
 mobilePageObjects/MSearch.class
-base/LoginTest.class
 common/ReadProperties.class
 webPageObjects/FilterMoreResults_Page.class
 common/ScreenshotURL.class
