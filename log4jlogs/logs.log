@@ -161,3 +161,7 @@
 2019-11-29 11:19:40 [main] INFO  FilterResults_Page:123 - It filtered by price correctly.
 2019-11-29 11:19:53 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.
 2019-11-29 12:39:39 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
+2019-11-29 13:22:03 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
+2019-11-29 13:23:40 [main] INFO  FilterMoreResults_Page:877 - verify filter keyword - scroll property description text into view.
+2019-11-29 13:23:40 [main] ERROR FilterMoreResults_Page:888 - It filtered by keyword incorrectly
+2019-11-29 13:23:40 [main] ERROR FilterMoreResultsByKeyword:50 - Didn't filter by keyword.

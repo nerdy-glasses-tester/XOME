@@ -280,7 +280,7 @@ public class TestBase {
     	
     	
     	@AfterMethod(alwaysRun=true) 
-    	public static void OnFailure(ITestResult testResult) throws IOException { 
+    	public void OnFailure(ITestResult testResult) throws IOException { 
     		if (testResult.getStatus() == ITestResult.FAILURE) 
     		{ 
     			System.out.println(testResult.getStatus()); 
