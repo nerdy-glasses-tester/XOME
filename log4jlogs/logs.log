@@ -160,3 +160,4 @@
 
 2019-11-29 11:19:40 [main] INFO  FilterResults_Page:123 - It filtered by price correctly.
 2019-11-29 11:19:53 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.
+2019-11-29 12:39:39 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER

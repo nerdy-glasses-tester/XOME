@@ -1,370 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="XOME Suite" duration-ms="547154" started-at="2019-11-21T22:38:01Z" finished-at="2019-11-21T22:47:08Z">
+  <suite name="WEB TESTS" duration-ms="12350" started-at="2019-11-29T20:39:31Z" finished-at="2019-11-29T20:39:44Z">
     <groups>
       <group name="regression">
-        <method signature="MFilterByBedBath.mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="mFilterBath" class="mobileTests.MFilterByBedBath"/>
-        <method signature="MFilterByBedBath.mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="mFilterBed" class="mobileTests.MFilterByBedBath"/>
-        <method signature="MFilterByKeyword.mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@2de23121]" name="mFilterKeyword" class="mobileTests.MFilterByKeyword"/>
-        <method signature="MFilterByPendingSoldForSaleStatus.mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterForSale" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
-        <method signature="MFilterByPendingSoldForSaleStatus.mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterPending" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
-        <method signature="MFilterByPendingSoldForSaleStatus.mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterSold" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
-        <method signature="MFilterByPropertyType.mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterCondo" class="mobileTests.MFilterByPropertyType"/>
-        <method signature="MFilterByPropertyType.mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterSingleFamily" class="mobileTests.MFilterByPropertyType"/>
-        <method signature="MFilterByPropertyType.mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterTownHome" class="mobileTests.MFilterByPropertyType"/>
-        <method signature="MFilterBySqFt.mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d]" name="mFilterSqFt" class="mobileTests.MFilterBySqFt"/>
+        <method signature="Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@3d34d211]" name="loginSearch" class="webTests.Login_and_Search"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="MFilterByBedBath.mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="mFilterBath" class="mobileTests.MFilterByBedBath"/>
-        <method signature="MFilterByBedBath.mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="mFilterBed" class="mobileTests.MFilterByBedBath"/>
-        <method signature="MFilterByKeyword.mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@2de23121]" name="mFilterKeyword" class="mobileTests.MFilterByKeyword"/>
-        <method signature="MFilterByPendingSoldForSaleStatus.mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterForSale" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
-        <method signature="MFilterByPendingSoldForSaleStatus.mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterPending" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
-        <method signature="MFilterByPendingSoldForSaleStatus.mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterSold" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
-        <method signature="MFilterByPropertyType.mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterCondo" class="mobileTests.MFilterByPropertyType"/>
-        <method signature="MFilterByPropertyType.mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterSingleFamily" class="mobileTests.MFilterByPropertyType"/>
-        <method signature="MFilterByPropertyType.mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterTownHome" class="mobileTests.MFilterByPropertyType"/>
-        <method signature="MFilterBySqFt.mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d]" name="mFilterSqFt" class="mobileTests.MFilterBySqFt"/>
+        <method signature="Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@3d34d211]" name="loginSearch" class="webTests.Login_and_Search"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Subset of tests" duration-ms="547154" started-at="2019-11-21T22:38:01Z" finished-at="2019-11-21T22:47:08Z">
-      <class name="mobileTests.MFilterByKeyword">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByKeyword@2de23121]" name="Setup" is-config="true" duration-ms="10815" started-at="2019-11-21T22:39:29Z" finished-at="2019-11-21T22:39:40Z">
+    <test name="WEB-LOGIN-AND-SEARCH" duration-ms="12350" started-at="2019-11-29T20:39:31Z" finished-at="2019-11-29T20:39:44Z">
+      <class name="webTests.Login_and_Search">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.Login_and_Search@3d34d211]" name="Setup" is-config="true" duration-ms="2536" started-at="2019-11-29T20:39:32Z" finished-at="2019-11-29T20:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@2de23121]" name="mFilterKeyword" duration-ms="53091" started-at="2019-11-21T22:39:40Z" data-provider="getMobileData" finished-at="2019-11-21T22:40:33Z">
+        <test-method status="PASS" signature="loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@3d34d211]" name="loginSearch" duration-ms="9108" started-at="2019-11-29T20:39:34Z" data-provider="getData" finished-at="2019-11-29T20:39:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Irvine, CA]]>
+                <![CDATA[sqatester2018@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[hardwood floor]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterKeyword -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByKeyword@2de23121]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:40:33Z" finished-at="2019-11-21T22:40:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterKeyword status=SUCCESS method=MFilterByKeyword.mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@2de23121] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByKeyword@2de23121]" name="tearDown" is-config="true" duration-ms="966" started-at="2019-11-21T22:40:33Z" finished-at="2019-11-21T22:40:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mobileTests.MFilterByKeyword -->
-      <class name="mobileTests.MFilterByBedBath">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="Setup" is-config="true" duration-ms="11221" started-at="2019-11-21T22:38:02Z" finished-at="2019-11-21T22:38:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="mFilterBath" duration-ms="30473" started-at="2019-11-21T22:38:13Z" data-provider="getMobileData" finished-at="2019-11-21T22:38:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterBath -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-11-21T22:38:43Z" finished-at="2019-11-21T22:38:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterBath status=SUCCESS method=MFilterByBedBath.mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="tearDown" is-config="true" duration-ms="894" started-at="2019-11-21T22:38:43Z" finished-at="2019-11-21T22:38:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="Setup" is-config="true" duration-ms="10943" started-at="2019-11-21T22:38:44Z" finished-at="2019-11-21T22:38:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="mFilterBed" duration-ms="33140" started-at="2019-11-21T22:38:55Z" data-provider="getMobileData" finished-at="2019-11-21T22:39:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterBed -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:39:28Z" finished-at="2019-11-21T22:39:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterBed status=SUCCESS method=MFilterByBedBath.mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByBedBath@22fcf7ab]" name="tearDown" is-config="true" duration-ms="962" started-at="2019-11-21T22:39:28Z" finished-at="2019-11-21T22:39:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mobileTests.MFilterByBedBath -->
-      <class name="mobileTests.MFilterByPropertyType">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="Setup" is-config="true" duration-ms="10715" started-at="2019-11-21T22:42:57Z" finished-at="2019-11-21T22:43:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterCondo" duration-ms="55279" started-at="2019-11-21T22:43:08Z" data-provider="getMobileData" finished-at="2019-11-21T22:44:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterCondo -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:44:03Z" finished-at="2019-11-21T22:44:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterCondo status=SUCCESS method=MFilterByPropertyType.mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="tearDown" is-config="true" duration-ms="1569" started-at="2019-11-21T22:44:03Z" finished-at="2019-11-21T22:44:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="Setup" is-config="true" duration-ms="11447" started-at="2019-11-21T22:44:05Z" finished-at="2019-11-21T22:44:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterSingleFamily" duration-ms="52735" started-at="2019-11-21T22:44:17Z" data-provider="getMobileData" finished-at="2019-11-21T22:45:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterSingleFamily -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-11-21T22:45:09Z" finished-at="2019-11-21T22:45:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterSingleFamily status=SUCCESS method=MFilterByPropertyType.mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="tearDown" is-config="true" duration-ms="1056" started-at="2019-11-21T22:45:09Z" finished-at="2019-11-21T22:45:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="Setup" is-config="true" duration-ms="10914" started-at="2019-11-21T22:45:10Z" finished-at="2019-11-21T22:45:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="mFilterTownHome" duration-ms="52366" started-at="2019-11-21T22:45:21Z" data-provider="getMobileData" finished-at="2019-11-21T22:46:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterTownHome -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="tearDown" is-config="true" duration-ms="953" started-at="2019-11-21T22:46:14Z" finished-at="2019-11-21T22:46:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:46:14Z" finished-at="2019-11-21T22:46:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterTownHome status=SUCCESS method=MFilterByPropertyType.mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@4988d8b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-      </class> <!-- mobileTests.MFilterByPropertyType -->
-      <class name="mobileTests.MFilterByPendingSoldForSaleStatus">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="Setup" is-config="true" duration-ms="10877" started-at="2019-11-21T22:40:34Z" finished-at="2019-11-21T22:40:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterForSale" duration-ms="35009" started-at="2019-11-21T22:40:45Z" data-provider="getMobileData" finished-at="2019-11-21T22:41:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterForSale -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="tearDown" is-config="true" duration-ms="1007" started-at="2019-11-21T22:41:20Z" finished-at="2019-11-21T22:41:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:41:20Z" finished-at="2019-11-21T22:41:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterForSale status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="Setup" is-config="true" duration-ms="10849" started-at="2019-11-21T22:41:21Z" finished-at="2019-11-21T22:41:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterPending" duration-ms="35126" started-at="2019-11-21T22:41:32Z" data-provider="getMobileData" finished-at="2019-11-21T22:42:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterPending -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:42:07Z" finished-at="2019-11-21T22:42:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterPending status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="tearDown" is-config="true" duration-ms="1142" started-at="2019-11-21T22:42:07Z" finished-at="2019-11-21T22:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="Setup" is-config="true" duration-ms="11306" started-at="2019-11-21T22:42:08Z" finished-at="2019-11-21T22:42:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="mFilterSold" duration-ms="36498" started-at="2019-11-21T22:42:20Z" data-provider="getMobileData" finished-at="2019-11-21T22:42:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mFilterSold -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:42:56Z" finished-at="2019-11-21T22:42:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mFilterSold status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@63475ace]" name="tearDown" is-config="true" duration-ms="1174" started-at="2019-11-21T22:42:56Z" finished-at="2019-11-21T22:42:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mobileTests.MFilterByPendingSoldForSaleStatus -->
-      <class name="mobileTests.MFilterBySqFt">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d]" name="Setup" is-config="true" duration-ms="11556" started-at="2019-11-21T22:46:15Z" finished-at="2019-11-21T22:46:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d]" name="mFilterSqFt" duration-ms="41224" started-at="2019-11-21T22:46:26Z" data-provider="getMobileData" finished-at="2019-11-21T22:47:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1500]]>
+                <![CDATA[Automation123#]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[2000]]>
+                <![CDATA[Irvine, CA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mFilterSqFt -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d]" name="tearDown" is-config="true" duration-ms="1130" started-at="2019-11-21T22:47:07Z" finished-at="2019-11-21T22:47:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-21T22:47:07Z" finished-at="2019-11-21T22:47:07Z">
+        </test-method> <!-- loginSearch -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.Login_and_Search@3d34d211]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-11-29T20:39:44Z" finished-at="2019-11-29T20:39:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=mFilterSqFt status=SUCCESS method=MFilterBySqFt.mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@c0c2f8d] output={null}]]]>
+                <![CDATA[[TestResult name=loginSearch status=SUCCESS method=Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@3d34d211] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-      </class> <!-- mobileTests.MFilterBySqFt -->
-    </test> <!-- Subset of tests -->
-  </suite> <!-- XOME Suite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.Login_and_Search@3d34d211]" name="tearDown" is-config="true" duration-ms="257" started-at="2019-11-29T20:39:44Z" finished-at="2019-11-29T20:39:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.Login_and_Search -->
+    </test> <!-- WEB-LOGIN-AND-SEARCH -->
+  </suite> <!-- WEB TESTS -->
 </testng-results>

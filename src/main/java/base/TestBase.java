@@ -4,8 +4,6 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,7 +48,7 @@ public class TestBase {
 		//For Windows -comment out if using for mac
 	    //public static String folderpath = "C:\\EclipseProjects\\XOME\\screencaptures";
 	    
-	    public static String runonrealdevice = "";
+	    public String runonrealdevice = "";
 		public String methodname = "";
 
 
