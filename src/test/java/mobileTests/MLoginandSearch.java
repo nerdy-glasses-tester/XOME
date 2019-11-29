@@ -36,11 +36,13 @@ public class MLoginandSearch extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mobileLoginAndSearch (String login, String password, String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MLogin_Page.mobileLogin(driver, login, password, searchkeyword);
-		MSearch.clickSearchtoDismissLeftMenu(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		String diditfilter = MSearch.verifySearchResults(driver, searchkeyword);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		mloginpg.mobileLogin(driver, login, password, searchkeyword);
+		MSearch msearch = new MSearch();
+		msearch.clickSearchtoDismissLeftMenu(driver);
+		msearch.searchhomes(driver, searchkeyword);
+		String diditfilter = msearch.verifySearchResults(driver, searchkeyword);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

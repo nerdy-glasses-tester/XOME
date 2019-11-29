@@ -35,12 +35,14 @@ public class FilterMoreResultsByPropertyType extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByPropertyTypeLand (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.uncheckAllPropertyType(webdriver);
-		FilterMoreResults_Page.filterByPropertyTypeLand(webdriver);
-		FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterByPropertyTypeLand(webdriver);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.uncheckAllPropertyType(webdriver);
+		filtermoreresultspg.filterByPropertyTypeLand(webdriver);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterByPropertyTypeLand(webdriver);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

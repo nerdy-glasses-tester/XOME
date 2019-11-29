@@ -35,11 +35,13 @@ public class FilterMoreResultsByYear extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByYear (String searchkeyword, String minyear, String maxyear) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.filterByYear(webdriver, minyear, maxyear);
-		FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterByYear(webdriver, minyear, maxyear);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.filterByYear(webdriver, minyear, maxyear);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterByYear(webdriver, minyear, maxyear);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

@@ -42,8 +42,8 @@ public class TestBase {
 	//If using for windows, please change paths to windows paths.
 	
         @SuppressWarnings("rawtypes")
-        public static AppiumDriver driver;
-	    public static WebDriver webdriver;
+        protected AppiumDriver driver;
+	    protected WebDriver webdriver;
 	    
 	    //For Mac -comment out if using for windows
 	    public static String folderpath = "/Users/macbookpro/eclipse-workspace/XOME/screencaptures";

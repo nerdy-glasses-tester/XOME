@@ -36,13 +36,16 @@ public class MFilterByPropertyType extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterSingleFamily (String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickSingleFamily(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickSingleFamily(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
 	    Thread.sleep(4000);
-		String diditfilter = MFilterResults_Page.verifyFilterBySingleFamily(driver);
+		String diditfilter = mfilterresultspg.verifyFilterBySingleFamily(driver);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -63,13 +66,16 @@ public class MFilterByPropertyType extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterTownHome (String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickTownHome(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickTownHome(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
 	    Thread.sleep(4000);
-		String diditfilter = MFilterResults_Page.verifyFilterByTownHome(driver);
+		String diditfilter = mfilterresultspg.verifyFilterByTownHome(driver);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -91,13 +97,16 @@ public class MFilterByPropertyType extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterCondo (String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickCondo(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickCondo(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
 	    Thread.sleep(4000);
-		String diditfilter = MFilterResults_Page.verifyFilterByCondo(driver);
+		String diditfilter = mfilterresultspg.verifyFilterByCondo(driver);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

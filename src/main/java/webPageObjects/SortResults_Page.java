@@ -23,22 +23,22 @@ public class SortResults_Page {
 			//****************************************//
 			final static Logger log = LogManager.getLogger(SortResults_Page.class);
 			
-			static By sortbyclicktoexpanddrpdown = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select>button.btn.dropdown-toggle.btn-default>span.filter-option.pull-left");
-			static By dropdownarea = By.cssSelector("div.btn-group.bootstrap-select.open>div.dropdown-menu.open");
-			static By sortbydropdownmostrecent = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='0']>a>span.text");
-			static By sortbydropdownpricedesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='1']>a>span.text");
-			static By sortbydropdownpriceasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='2']>a>span.text");
-			static By sortbydropdownbedsdesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='3']>a>span.text");
-			static By sortbydropdpwnbedsasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='4']>a>span.text");
-			static By sortbydropdownbathsdesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='5']>a>span.text");
-			static By sortbydropdownbathsasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='6']>a>span.text");
-			static By propertypriceresults = By.cssSelector("div.price>span[itemprop='price']");
-			static By searchresultslistbeds = By.xpath("//span[contains(text(), 'bd')]/preceding-sibling::span");
-			static By searchresultslistbaths = By.xpath("//span[contains(text(), 'ba')]/preceding-sibling::span");
-			static By property1newicon = By.cssSelector("span.ribbon-new.ribbon");  
-			static String diditsort ="";
+			private By sortbyclicktoexpanddrpdown = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select>button.btn.dropdown-toggle.btn-default>span.filter-option.pull-left");
+			private By dropdownarea = By.cssSelector("div.btn-group.bootstrap-select.open>div.dropdown-menu.open");
+			private By sortbydropdownmostrecent = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='0']>a>span.text");
+			private By sortbydropdownpricedesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='1']>a>span.text");
+			private By sortbydropdownpriceasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='2']>a>span.text");
+			private By sortbydropdownbedsdesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='3']>a>span.text");
+			private By sortbydropdpwnbedsasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='4']>a>span.text");
+			private By sortbydropdownbathsdesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='5']>a>span.text");
+			private By sortbydropdownbathsasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='6']>a>span.text");
+			private By propertypriceresults = By.cssSelector("div.price>span[itemprop='price']");
+			private By searchresultslistbeds = By.xpath("//span[contains(text(), 'bd')]/preceding-sibling::span");
+			private By searchresultslistbaths = By.xpath("//span[contains(text(), 'ba')]/preceding-sibling::span");
+			private By property1newicon = By.cssSelector("span.ribbon-new.ribbon");  
+			private String diditsort ="";
 			
-			 public static String sortResultsByMostRecent (WebDriver webdriver) throws InterruptedException
+			 public String sortResultsByMostRecent (WebDriver webdriver) throws InterruptedException
 			    {
 				 
 			    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -86,7 +86,7 @@ public class SortResults_Page {
 		            return diditsort;
 		    }
 			
-			 public static String sortResultsByDescPrice (WebDriver webdriver) throws InterruptedException
+			 public String sortResultsByDescPrice (WebDriver webdriver) throws InterruptedException
 			    {
 				 
 			    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -169,7 +169,7 @@ public class SortResults_Page {
 		            return diditsort;
 		    }
 			 
-			 public static String sortResultsByAscPrice (WebDriver webdriver) throws InterruptedException
+			 public String sortResultsByAscPrice (WebDriver webdriver) throws InterruptedException
 			 {
 				    WebDriverWait wait = new WebDriverWait (webdriver, 60);
 			    	WebElement clicksortby = wait.until(ExpectedConditions.elementToBeClickable(sortbyclicktoexpanddrpdown));
@@ -251,7 +251,7 @@ public class SortResults_Page {
 		    }
 			 
 			 
-			 public static String sortResultsByDescBeds (WebDriver webdriver) throws InterruptedException
+			 public String sortResultsByDescBeds (WebDriver webdriver) throws InterruptedException
 			 {
 				 
 	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -338,7 +338,7 @@ public class SortResults_Page {
 		       return diditsort;
 		    }
 			 
-			 public static String sortResultsByAscBeds (WebDriver webdriver) throws InterruptedException
+			 public String sortResultsByAscBeds (WebDriver webdriver) throws InterruptedException
 			 {
 				   WebDriverWait wait = new WebDriverWait (webdriver, 60);
 			       WebElement clicksortby = wait.until(ExpectedConditions.elementToBeClickable(sortbyclicktoexpanddrpdown));
@@ -424,7 +424,7 @@ public class SortResults_Page {
 	            return diditsort;
 		    }
 			 
-			public static String sortResultsByDescBaths (WebDriver webdriver) throws InterruptedException
+			public String sortResultsByDescBaths (WebDriver webdriver) throws InterruptedException
 			{
 				 
 			      WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -511,7 +511,7 @@ public class SortResults_Page {
 		            return diditsort;
 		    }
 			 
-			 public static String sortResultsByAscBaths (WebDriver webdriver) throws InterruptedException
+			 public String sortResultsByAscBaths (WebDriver webdriver) throws InterruptedException
 			 {
 				  WebDriverWait wait = new WebDriverWait (webdriver, 60);
 			      WebElement clicksortby = wait.until(ExpectedConditions.elementToBeClickable(sortbyclicktoexpanddrpdown));

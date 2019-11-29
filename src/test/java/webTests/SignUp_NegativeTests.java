@@ -38,8 +38,9 @@ public class SignUp_NegativeTests extends TestBase{
 	public void signUpWithBlankFields (String firstname, String lastname, String email, String password) throws IOException, InterruptedException
 	{
 		
-		SignUp_Page.clickSignUp(webdriver);
-		String firstnameisrequired = SignUp_Page.testBlankFirstName(webdriver);
+		SignUp_Page signuppg = new SignUp_Page();
+		signuppg.clickSignUp(webdriver);
+		String firstnameisrequired = signuppg.testBlankFirstName(webdriver);
 		
 		try
 		{
@@ -54,7 +55,7 @@ public class SignUp_NegativeTests extends TestBase{
 			softAssert.fail();
 		}
 		
-		String lastnameisrequired = SignUp_Page.testBlankLastName(webdriver, firstname);
+		String lastnameisrequired = signuppg.testBlankLastName(webdriver, firstname);
 		
 		try
 		{
@@ -70,7 +71,7 @@ public class SignUp_NegativeTests extends TestBase{
 		}
 		
 		
-		String emailisrequired = SignUp_Page.testBlankEmail(webdriver, firstname, lastname);
+		String emailisrequired = signuppg.testBlankEmail(webdriver, firstname, lastname);
 		
 		try
 		{
@@ -86,7 +87,7 @@ public class SignUp_NegativeTests extends TestBase{
 		}
 		
 		
-		String pwdisrequired = SignUp_Page.testBlankPassword(webdriver, firstname, lastname, email);
+		String pwdisrequired = signuppg.testBlankPassword(webdriver, firstname, lastname, email);
 		
 		try
 		{
@@ -111,8 +112,9 @@ public class SignUp_NegativeTests extends TestBase{
 	public void signUpWithInvalidEmail (String firstname, String lastname, String invalid, String duplicate, String password) throws IOException, InterruptedException
 	{
 
-		SignUp_Page.clickSignUp(webdriver);
-		String invalidmsg = SignUp_Page.testInvalidEmail(webdriver, firstname, lastname, invalid, password);
+		SignUp_Page signuppg = new SignUp_Page();
+		signuppg.clickSignUp(webdriver);
+		String invalidmsg = signuppg.testInvalidEmail(webdriver, firstname, lastname, invalid, password);
 		
 		try{
 			Assert.assertEquals(invalidmsg, "Oops, looks like the e-mail you entered is invalid.");
@@ -125,7 +127,7 @@ public class SignUp_NegativeTests extends TestBase{
 			softAssert.fail();
 		}
 			
-	   String duplicatemsg = SignUp_Page.testDuplicateEmail(webdriver, firstname, lastname, duplicate, password);
+	   String duplicatemsg = signuppg.testDuplicateEmail(webdriver, firstname, lastname, duplicate, password);
 		
 		try{
 			Assert.assertEquals(duplicatemsg, "Good news! We've already got you in our system! Please sign in using the link above.");
@@ -148,8 +150,9 @@ public class SignUp_NegativeTests extends TestBase{
 	public void signUpWithInvalidPassword (String firstname, String lastname, String email, String not8characters) throws IOException, InterruptedException
 	{
 
-		SignUp_Page.clickSignUp(webdriver);
-		String pwderrmsg = SignUp_Page.testInvalidPassword(webdriver, firstname, lastname, email, not8characters);
+		SignUp_Page signuppg = new SignUp_Page();
+		signuppg.clickSignUp(webdriver);
+		String pwderrmsg = signuppg.testInvalidPassword(webdriver, firstname, lastname, email, not8characters);
 		
 		try{
 			Assert.assertEquals(pwderrmsg, "Password Requirements - at least 8 characters");

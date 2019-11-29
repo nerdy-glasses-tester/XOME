@@ -35,13 +35,16 @@ public class MFilterByKeyword  extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterKeyword (String searchkeyword, String keyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickFilterByKeyword(driver, keyword); 
-	    MFilterResults_Page.clickApplyFilter(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickFilterByKeyword(driver, keyword); 
+	    mfilterresultspg.clickApplyFilter(driver);
 	    Thread.sleep(4000);
-		String diditfilter = MFilterResults_Page.verifyFilterByKeyword(driver, keyword);
+		String diditfilter = mfilterresultspg.verifyFilterByKeyword(driver, keyword);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

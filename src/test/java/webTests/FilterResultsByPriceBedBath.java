@@ -37,9 +37,11 @@ public class FilterResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByPrice (String searchkeyword, String price1, String price2) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterResults_Page.filterByPrice(webdriver, price1, price2);
-		String diditfilter = FilterResults_Page.verifyFilterByPrice(webdriver, price1, price2);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterResults_Page filterresultspg = new FilterResults_Page();
+		filterresultspg.filterByPrice(webdriver, price1, price2);
+		String diditfilter = filterresultspg.verifyFilterByPrice(webdriver, price1, price2);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -60,9 +62,11 @@ public class FilterResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByBeds (String searchkeyword, String bed) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterResults_Page.filterByBeds(webdriver, bed);
-		String diditfilter = FilterResults_Page.verifyFilterByBeds(webdriver, bed);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterResults_Page filterresultspg = new FilterResults_Page();
+		filterresultspg.filterByBeds(webdriver, bed);
+		String diditfilter = filterresultspg.verifyFilterByBeds(webdriver, bed);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -84,9 +88,11 @@ public class FilterResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsBybaths (String searchkeyword, String bath) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterResults_Page.filterByBaths(webdriver, bath);
-		String diditfilter = FilterResults_Page.verifyFilterByBaths(webdriver, bath);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterResults_Page filterresultspg = new FilterResults_Page();
+		filterresultspg.filterByBaths(webdriver, bath);
+		String diditfilter = filterresultspg.verifyFilterByBaths(webdriver, bath);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");

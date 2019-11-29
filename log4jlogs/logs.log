@@ -105,3 +105,58 @@
 2019-11-21 14:46:14 [main] INFO  MFilterResults_Page:933 - Townhouse, Other
 2019-11-21 14:46:14 [main] INFO  MFilterResults_Page:952 - It filter by Townhouse successfully.
 2019-11-21 14:47:07 [main] INFO  MFilterResults_Page:665 - It filter by min square feet  1500 and max square feet 2000 successfully.
+2019-11-29 11:14:04 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
+2019-11-29 11:14:20 [main] INFO  Search:97 - resultaddress is: 12512 Brighton Place Tustin, CA 92780
+2019-11-29 11:14:38 [main] INFO  SortResults_Page:496 - Original order is: [8 8 7 7 7 6 6 5 5 5]
+
+2019-11-29 11:14:38 [main] INFO  SortResults_Page:497 - Sorted descending order is: [8 8 7 7 7 6 6 5 5 5]
+
+2019-11-29 11:14:38 [main] INFO  SortResults_Page:501 - It has sorted in descending order.
+2019-11-29 11:14:47 [main] INFO  SortResults_Page:583 - Original order is: [1 1 2 2 2 2 2 2 2 2]
+
+2019-11-29 11:14:47 [main] INFO  SortResults_Page:584 - Sorted ascending order is: [1 1 2 2 2 2 2 2 2 2]
+
+2019-11-29 11:14:47 [main] INFO  SortResults_Page:588 - It has sorted in ascending order.
+2019-11-29 11:15:02 [main] INFO  SortResults_Page:323 - Original order is: [5 5 5 5 5 5 4 4 4 4]
+
+2019-11-29 11:15:02 [main] INFO  SortResults_Page:324 - Sorted descending order is: [5 5 5 5 5 5 4 4 4 4]
+
+2019-11-29 11:15:02 [main] INFO  SortResults_Page:328 - It has sorted in descending order.
+2019-11-29 11:15:10 [main] INFO  SortResults_Page:410 - Original order is: [1 1 1 1 1 2 2 2 2 2]
+
+2019-11-29 11:15:10 [main] INFO  SortResults_Page:411 - Sorted ascending order is: [1 1 1 1 1 2 2 2 2 2]
+
+2019-11-29 11:15:10 [main] INFO  SortResults_Page:415 - It has sorted in ascending order.
+2019-11-29 11:15:34 [main] INFO  SortResults_Page:72 - Newicon says: NEW
+
+2019-11-29 11:15:34 [main] INFO  SortResults_Page:76 - It has sorted by most recent order.
+2019-11-29 11:15:47 [main] INFO  SortResults_Page:154 - Original order is: [19800000 19000000 13995000 10750000 10495000]
+
+2019-11-29 11:15:47 [main] INFO  SortResults_Page:155 - Sorted descending order is: [19800000 19000000 13995000 10750000 10495000]
+
+2019-11-29 11:15:47 [main] INFO  SortResults_Page:159 - It has sorted in descending order.
+2019-11-29 11:15:56 [main] INFO  SortResults_Page:236 - Original order is: [1800 285000 305000 320000 325000]
+
+2019-11-29 11:15:56 [main] INFO  SortResults_Page:237 - Sorted ascending order is: [1800 285000 305000 320000 325000]
+
+2019-11-29 11:15:56 [main] INFO  SortResults_Page:241 - It has sorted in ascending order.
+2019-11-29 11:16:20 [main] INFO  FilterMoreResults_Page:877 - verify filter keyword - scroll property description text into view.
+2019-11-29 11:16:20 [main] INFO  FilterMoreResults_Page:883 - It filtered by keyword correctly
+2019-11-29 11:16:44 [main] INFO  FilterMoreResults_Page:1009 - It filtered by property type correctly
+2019-11-29 11:17:12 [main] INFO  FilterMoreResults_Page:541 - It filtered by square feet correctly
+2019-11-29 11:17:39 [main] INFO  FilterMoreResults_Page:214 - It filtered by pending status correctly.
+2019-11-29 11:18:03 [main] INFO  FilterMoreResults_Page:240 - It filtered by sold status correctly.
+2019-11-29 11:18:24 [main] INFO  FilterMoreResults_Page:268 - It filtered by for sale status correctly.
+2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:838 - min year: 2000
+2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:839 - max year 2017
+2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:840 - prop1_year is : 2014
+2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:845 - It filtered by year correctly
+2019-11-29 11:19:12 [main] INFO  FilterResults_Page:181 - It filtered by beds correctly.
+2019-11-29 11:19:31 [main] INFO  FilterResults_Page:90 - Filter results max price is $1299900
+
+2019-11-29 11:19:40 [main] INFO  FilterResults_Page:114 - Filter results min price is $800000
+
+2019-11-29 11:19:40 [main] INFO  FilterResults_Page:119 - Search for price between 800000 and 1300000
+
+2019-11-29 11:19:40 [main] INFO  FilterResults_Page:123 - It filtered by price correctly.
+2019-11-29 11:19:53 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.

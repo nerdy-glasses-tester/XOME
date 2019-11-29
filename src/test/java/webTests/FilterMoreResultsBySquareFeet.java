@@ -35,11 +35,13 @@ public class FilterMoreResultsBySquareFeet extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsBySqFeet (String searchkeyword, String minsqfeet, String maxsqfeet) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.filterBySqFeet(webdriver, minsqfeet, maxsqfeet);
-		FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterBySqFeet(webdriver, minsqfeet, maxsqfeet);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.filterBySqFeet(webdriver, minsqfeet, maxsqfeet);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterBySqFeet(webdriver, minsqfeet, maxsqfeet);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

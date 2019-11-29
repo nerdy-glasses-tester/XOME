@@ -34,8 +34,9 @@ public class MSignUp_NewUser extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mSignUpNewUser (String firstname, String lastname, String email, String password) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		String diditsignup = MLogin_Page.mobileSignUp(driver, firstname, lastname, email, password);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		String diditsignup = mloginpg.mobileSignUp(driver, firstname, lastname, email, password);
 
 		try{
 			Assert.assertEquals(diditsignup, "yes");

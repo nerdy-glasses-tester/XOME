@@ -35,8 +35,9 @@ public class Login_NegativeTests extends TestBase{
 	@Test(groups="P3", dataProvider = "getData")
 	public void loginBlankFields (String login, String password) throws IOException, InterruptedException
 	{
-	   Login_Page.clickSignIn(webdriver);
-	   String emailisrequired1 = Login_Page.signinBlankFields(webdriver);
+	   Login_Page loginpg = new Login_Page();
+	   loginpg.clickSignIn(webdriver);
+	   String emailisrequired1 = loginpg.signinBlankFields(webdriver);
 	   
 		try
 		{
@@ -59,8 +60,9 @@ public class Login_NegativeTests extends TestBase{
 	@Test(groups="regression", dataProvider = "getData")
 	public void loginWrongPwd (String login, String password) throws IOException, InterruptedException
 	{
-		Login_Page.clickSignIn(webdriver);
-	    String wrongpwdtextresults = Login_Page.signinWrongPwd(webdriver, login, password);
+		Login_Page loginpg = new Login_Page();
+		loginpg.clickSignIn(webdriver);
+	    String wrongpwdtextresults = loginpg.signinWrongPwd(webdriver, login, password);
 	    String wrongpwdtext = "Oops, the e-mail or password doesn't match.";
 	 
 		try

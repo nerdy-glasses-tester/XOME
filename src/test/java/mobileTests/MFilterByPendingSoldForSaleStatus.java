@@ -37,13 +37,16 @@ public class MFilterByPendingSoldForSaleStatus extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterPending (String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.uncheckAllStatus(driver);
-	    MFilterResults_Page.checkPendingStatus(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
-		String diditfilter = MFilterResults_Page.verifyPendingStatus(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.uncheckAllStatus(driver);
+	    mfilterresultspg.checkPendingStatus(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
+		String diditfilter = mfilterresultspg.verifyPendingStatus(driver);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -63,13 +66,16 @@ public class MFilterByPendingSoldForSaleStatus extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterSold (String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.uncheckAllStatus(driver);
-	    MFilterResults_Page.checkSoldStatus(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
-		String diditfilter = MFilterResults_Page.verifySoldStatus(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.uncheckAllStatus(driver);
+	    mfilterresultspg.checkSoldStatus(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
+		String diditfilter = mfilterresultspg.verifySoldStatus(driver);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -89,13 +95,16 @@ public class MFilterByPendingSoldForSaleStatus extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterForSale (String searchkeyword) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.uncheckAllStatus(driver);
-	    MFilterResults_Page.checkForSaleStatus(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
-		String diditfilter = MFilterResults_Page.verifyForSaleStatus(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.uncheckAllStatus(driver);
+	    mfilterresultspg.checkForSaleStatus(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
+		String diditfilter = mfilterresultspg.verifyForSaleStatus(driver);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");

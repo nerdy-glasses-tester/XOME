@@ -23,65 +23,65 @@ public class FilterMoreResults_Page {
 	//****************************************//
 	final static Logger log = LogManager.getLogger(FilterMoreResults_Page.class);
 
-	static By openmorefilters = By.cssSelector("button#criteria-toggle-filters>div.ddbtn-criteria-label.r-more-button>span.dd-info");
-	static By morefiltersscreen = By.id("dd-criteria-filters-menu"); //have to click on this filters screen before you can scroll down to reach other elements
-	static By savesearchbtn = By.cssSelector("div#criteria-filters-savesearch-bar>button");
-	static By applybtn = By.cssSelector("button#filters-submit>span#desktop-apply");
-	static By uncheckedforsale = By.cssSelector("label.checkbox.label-status-forsale>span.status-chkbox.filter-criteria-change");//don't include the next level input tag or else it fails, clickable at span level only
-	static By uncheckedpending = By.cssSelector("label.checkbox.label-status-pending>span.status-chkbox.filter-criteria-change");
-	static By uncheckedsold = By.cssSelector("label.checkbox.label-status-sold>span.status-chkbox.filter-criteria-change");
-	static By checkedforsale = By.cssSelector("label.checkbox.label-status-forsale>span.status-chkbox.filter-criteria-change.active");//don't include the next level input tag or else it fails, clickable at span level only
-	static By checkedpending = By.cssSelector("label.checkbox.label-status-pending>span.status-chkbox.active");
-	static By checkedsold = By.cssSelector("label.checkbox.label-status-sold>span.status-chkbox.filter-criteria-change.active");
-	static By minsquarefeet = By.cssSelector("button[data-id='filters-sqftmin']>span.filter-option.pull-left");
-	static By maxsquarefeet = By.cssSelector("button[data-id='filters-sqftmax']>span.filter-option.pull-left");
-	static By minsqftmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-sqft>div>div.filters-row>label:nth-child(1)>div>div>ul");
-	static By maxsqftmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-sqft>div>div.filters-row>label:nth-child(3)>div>div>ul");
-	static By minfilteryear = By.cssSelector("button[data-id='filters-minyearbuilt']>span.filter-option.pull-left");
-	static By maxfilteryear = By.cssSelector("button[data-id='filters-maxyearbuilt']>span.filter-option.pull-left");
-	static By minyrmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-year>div>div.filters-row>label:nth-child(1)>div>div>ul");
-	static By maxyrmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-year>div>div.filters-row>label:nth-child(3)>div>div>ul");
-	static By search_keyword = By.id("filters-keyword");
-	static By propertydescription = By.cssSelector("div.details-info.details-text-data");
-	static By propertytyperesidential = By.cssSelector("label.checkbox.label-proptype-residential>span.proptype-toggler.js-proptype-toggler");
-	static By propertytypecondo = By.cssSelector("label.checkbox.label-hometype-condo>span.hometype-toggler.js-hometype-toggler");
-	static By propertytypemultifamily = By.cssSelector("label.checkbox.label-proptype-multifamily>span.proptype-toggler.js-proptype-toggler");
-	static By propertytypeland = By.cssSelector("label.checkbox.label-proptype-land>span.proptype-toggler.js-proptype-toggler");
-	static By propertyfarm = By.cssSelector("label.checkbox.label-hometype-farm>span.hometype-toggler.js-hometype-toggler");
-	static By propertymobile = By.cssSelector("label.checkbox.label-hometype-mobilehome>span.hometype-toggler.js-hometype-toggler");
-	static By propertytypecommercial = By.cssSelector("label.checkbox.label-proptype-commercial>span.proptype-toggler.js-proptype-toggler");
-	static By propertyother = By.cssSelector("label.checkbox.label-hometype-other>span.hometype-toggler.js-hometype-toggler");
+	private By openmorefilters = By.cssSelector("button#criteria-toggle-filters>div.ddbtn-criteria-label.r-more-button>span.dd-info");
+	private By morefiltersscreen = By.id("dd-criteria-filters-menu"); //have to click on this filters screen before you can scroll down to reach other elements
+	private By savesearchbtn = By.cssSelector("div#criteria-filters-savesearch-bar>button");
+	private By applybtn = By.cssSelector("button#filters-submit>span#desktop-apply");
+	private By uncheckedforsale = By.cssSelector("label.checkbox.label-status-forsale>span.status-chkbox.filter-criteria-change");//don't include the next level input tag or else it fails, clickable at span level only
+	private By uncheckedpending = By.cssSelector("label.checkbox.label-status-pending>span.status-chkbox.filter-criteria-change");
+	private By uncheckedsold = By.cssSelector("label.checkbox.label-status-sold>span.status-chkbox.filter-criteria-change");
+	private By checkedforsale = By.cssSelector("label.checkbox.label-status-forsale>span.status-chkbox.filter-criteria-change.active");//don't include the next level input tag or else it fails, clickable at span level only
+	private By checkedpending = By.cssSelector("label.checkbox.label-status-pending>span.status-chkbox.active");
+	private By checkedsold = By.cssSelector("label.checkbox.label-status-sold>span.status-chkbox.filter-criteria-change.active");
+	private By minsquarefeet = By.cssSelector("button[data-id='filters-sqftmin']>span.filter-option.pull-left");
+	private By maxsquarefeet = By.cssSelector("button[data-id='filters-sqftmax']>span.filter-option.pull-left");
+	private By minsqftmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-sqft>div>div.filters-row>label:nth-child(1)>div>div>ul");
+	private By maxsqftmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-sqft>div>div.filters-row>label:nth-child(3)>div>div>ul");
+	private By minfilteryear = By.cssSelector("button[data-id='filters-minyearbuilt']>span.filter-option.pull-left");
+	private By maxfilteryear = By.cssSelector("button[data-id='filters-maxyearbuilt']>span.filter-option.pull-left");
+	private By minyrmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-year>div>div.filters-row>label:nth-child(1)>div>div>ul");
+	private By maxyrmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-year>div>div.filters-row>label:nth-child(3)>div>div>ul");
+	private By search_keyword = By.id("filters-keyword");
+	private By propertydescription = By.cssSelector("div.details-info.details-text-data");
+	private By propertytyperesidential = By.cssSelector("label.checkbox.label-proptype-residential>span.proptype-toggler.js-proptype-toggler");
+	private By propertytypecondo = By.cssSelector("label.checkbox.label-hometype-condo>span.hometype-toggler.js-hometype-toggler");
+	private By propertytypemultifamily = By.cssSelector("label.checkbox.label-proptype-multifamily>span.proptype-toggler.js-proptype-toggler");
+	private By propertytypeland = By.cssSelector("label.checkbox.label-proptype-land>span.proptype-toggler.js-proptype-toggler");
+	private By propertyfarm = By.cssSelector("label.checkbox.label-hometype-farm>span.hometype-toggler.js-hometype-toggler");
+	private By propertymobile = By.cssSelector("label.checkbox.label-hometype-mobilehome>span.hometype-toggler.js-hometype-toggler");
+	private By propertytypecommercial = By.cssSelector("label.checkbox.label-proptype-commercial>span.proptype-toggler.js-proptype-toggler");
+	private By propertyother = By.cssSelector("label.checkbox.label-hometype-other>span.hometype-toggler.js-hometype-toggler");
 	
-	static By propertytyperesidential_selected = By.cssSelector("label.checkbox.label-proptype-residential>span.proptype-toggler.js-proptype-toggler.active");
-	static By propertytypecondo_selected = By.cssSelector("label.checkbox.label-hometype-condo>span.hometype-toggler.js-hometype-toggler.active");
-	static By propertytypemultifamily_selected = By.cssSelector("label.checkbox.label-proptype-multifamily>span.proptype-toggler.js-proptype-toggler.active");
-	static By propertytypeland_selected = By.cssSelector("label.checkbox.label-proptype-land>span.proptype-toggler.js-proptype-toggler.active");
-	static By propertyfarm_selected = By.cssSelector("label.checkbox.label-hometype-farm>span.hometype-toggler.js-hometype-toggler.active");
-	static By propertymobile_selected = By.cssSelector("label.checkbox.label-hometype-mobilehome>span.hometype-toggler.js-hometype-toggler.active");
-	static By propertytypecommercial_selected = By.cssSelector("label.checkbox.label-proptype-commercial>span.proptype-toggler.js-proptype-toggler.active");
-	static By propertyother_selected = By.cssSelector("label.checkbox.label-hometype-other>span.hometype-toggler.js-hometype-toggler.active");
+	private By propertytyperesidential_selected = By.cssSelector("label.checkbox.label-proptype-residential>span.proptype-toggler.js-proptype-toggler.active");
+	private By propertytypecondo_selected = By.cssSelector("label.checkbox.label-hometype-condo>span.hometype-toggler.js-hometype-toggler.active");
+	private By propertytypemultifamily_selected = By.cssSelector("label.checkbox.label-proptype-multifamily>span.proptype-toggler.js-proptype-toggler.active");
+	private By propertytypeland_selected = By.cssSelector("label.checkbox.label-proptype-land>span.proptype-toggler.js-proptype-toggler.active");
+	private By propertyfarm_selected = By.cssSelector("label.checkbox.label-hometype-farm>span.hometype-toggler.js-hometype-toggler.active");
+	private By propertymobile_selected = By.cssSelector("label.checkbox.label-hometype-mobilehome>span.hometype-toggler.js-hometype-toggler.active");
+	private By propertytypecommercial_selected = By.cssSelector("label.checkbox.label-proptype-commercial>span.proptype-toggler.js-proptype-toggler.active");
+	private By propertyother_selected = By.cssSelector("label.checkbox.label-hometype-other>span.hometype-toggler.js-hometype-toggler.active");
 	
 	
-	static By filtertoprowbuttonarea = By.className("criteria-filters-button-row");
-	static By resultspagetoprowarea = By.className("criteria-basicsearch-row-2");
+	private By filtertoprowbuttonarea = By.className("criteria-filters-button-row");
+	private By resultspagetoprowarea = By.className("criteria-basicsearch-row-2");
 	
-	static By property1sqft = By.cssSelector("div.information-block.block-square-feet>div.first-field.bolded>span");
-	static By property1pending = By.cssSelector("span.status.status-for-sale.Pending>span");
-	static By property1sold = By.cssSelector("span.status.status-sold");
-	static By property1forsale = By.cssSelector("span.status.status-for-sale.Active>span");
+	private By property1sqft = By.cssSelector("div.information-block.block-square-feet>div.first-field.bolded>span");
+	private By property1pending = By.cssSelector("span.status.status-for-sale.Pending>span");
+	private By property1sold = By.cssSelector("span.status.status-sold");
+	private By property1forsale = By.cssSelector("span.status.status-for-sale.Active>span");
 	
-    static By searchresults = By.cssSelector("div.mapsearch-singleprop.mapsearch-map-singleprop.mapsearch-two-columns-view.included.slick-already-processed");
-	static By detailspage_propertytype = By.id("mls-propt2");
-	static By detailspage_yeartype = By.cssSelector("div#mls-yr2>span");
-	static By nextlistingbutton = By.id("navBar_view_next_listing");
+    private By searchresults = By.cssSelector("div.mapsearch-singleprop.mapsearch-map-singleprop.mapsearch-two-columns-view.included.slick-already-processed");
+	private By detailspage_propertytype = By.id("mls-propt2");
+	private By detailspage_yeartype = By.cssSelector("div#mls-yr2>span");
+	private By nextlistingbutton = By.id("navBar_view_next_listing");
 		
-	static String allunchecked = "";
-	static String diditfilter ="";
-	static int prop1_yr;
+	private String allunchecked = "";
+	private String diditfilter ="";
+	private int prop1_yr;
 
 
 	
-	public static void uncheckedAllStatus (WebDriver webdriver) 
+	public void uncheckedAllStatus (WebDriver webdriver) 
 	{
 
 		List<WebElement> is4salechecked = webdriver.findElements(checkedforsale);
@@ -151,7 +151,7 @@ public class FilterMoreResults_Page {
 		
 	}
 
-	public static void clickOpenMoreFilters (WebDriver webdriver) throws InterruptedException
+	public void clickOpenMoreFilters (WebDriver webdriver) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement morefiltersdrpdown = wait.until(ExpectedConditions.elementToBeClickable(openmorefilters));
@@ -160,7 +160,7 @@ public class FilterMoreResults_Page {
 		Thread.sleep(4000); //Must wait for this time to load
 	}
 	
-	public static void filterByPendingStatus (WebDriver webdriver) throws InterruptedException
+	public void filterByPendingStatus (WebDriver webdriver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement uncheckedpendingelement = wait.until(ExpectedConditions.presenceOfElementLocated(uncheckedpending));
@@ -169,7 +169,7 @@ public class FilterMoreResults_Page {
 		Thread.sleep(4000); //Must wait for this time to load
 	}
 	
-	public static void filterBySoldStatus (WebDriver webdriver) throws InterruptedException
+	public void filterBySoldStatus (WebDriver webdriver) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement uncheckedsoldelement = wait.until(ExpectedConditions.presenceOfElementLocated(uncheckedsold));
@@ -178,7 +178,7 @@ public class FilterMoreResults_Page {
 		Thread.sleep(4000); //Must wait for this time to load
 	}
 	
-	public static void filterByForSaleStatus (WebDriver webdriver) throws InterruptedException
+	public void filterByForSaleStatus (WebDriver webdriver) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement uncheckedforsaleelement = wait.until(ExpectedConditions.presenceOfElementLocated(uncheckedforsale));
@@ -187,7 +187,7 @@ public class FilterMoreResults_Page {
 		Thread.sleep(4000); //Must wait for this time to load
 	}
 	
-	public static void applyMoreFilters (WebDriver webdriver) throws InterruptedException 
+	public void applyMoreFilters (WebDriver webdriver) throws InterruptedException 
 	{
 		WebElement applybtnelement = webdriver.findElement(applybtn);
 		applybtnelement.click();
@@ -195,7 +195,7 @@ public class FilterMoreResults_Page {
 	   
 	}
 	
-	public static String verifyFilterByPendingStatus (WebDriver webdriver) throws InterruptedException
+	public String verifyFilterByPendingStatus (WebDriver webdriver) throws InterruptedException
 	{	
         WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		
@@ -222,7 +222,7 @@ public class FilterMoreResults_Page {
 		return diditfilter;
 	}
 	
-	public static String verifyFilterBySoldStatus (WebDriver webdriver) throws InterruptedException
+	public String verifyFilterBySoldStatus (WebDriver webdriver) throws InterruptedException
 	{	
 	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
 			
@@ -248,7 +248,7 @@ public class FilterMoreResults_Page {
 		return diditfilter;
 	}
 	
-	public static String verifyFilterByForSaleStatus (WebDriver webdriver) throws InterruptedException
+	public String verifyFilterByForSaleStatus (WebDriver webdriver) throws InterruptedException
 	{	
 		
 	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -276,7 +276,7 @@ public class FilterMoreResults_Page {
 		return diditfilter;
 	}
 	
-	public static void filterBySqFeet (WebDriver webdriver, String minsqfeet, String maxsqfeet) throws InterruptedException
+	public void filterBySqFeet (WebDriver webdriver, String minsqfeet, String maxsqfeet) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement minsquarefeetelement = wait.until(ExpectedConditions.elementToBeClickable(minsquarefeet));
@@ -516,7 +516,7 @@ public class FilterMoreResults_Page {
 
 	}
 	
-	public static String verifyFilterBySqFeet (WebDriver webdriver, String minsqfeet, String maxsqfeet) throws InterruptedException
+	public String verifyFilterBySqFeet (WebDriver webdriver, String minsqfeet, String maxsqfeet) throws InterruptedException
 	{  
 		int min_sqft = Integer.parseInt(minsqfeet);
 		int max_sqft = Integer.parseInt(maxsqfeet);
@@ -549,7 +549,7 @@ public class FilterMoreResults_Page {
 	}
 	
 	
-	public static void filterByYear (WebDriver webdriver, String minyear, String maxyear) throws InterruptedException
+	public void filterByYear (WebDriver webdriver, String minyear, String maxyear) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement minfilteryearelement = wait.until(ExpectedConditions.elementToBeClickable(minfilteryear));
@@ -818,7 +818,7 @@ public class FilterMoreResults_Page {
 	}
 
 	
-	public static String verifyFilterByYear (WebDriver webdriver, String minyear, String maxyear) throws InterruptedException
+	public String verifyFilterByYear (WebDriver webdriver, String minyear, String maxyear) throws InterruptedException
 	{
 		int min_yr = Integer.parseInt(minyear);
 		int max_yr = Integer.parseInt(maxyear);
@@ -853,7 +853,7 @@ public class FilterMoreResults_Page {
 	}
  
 	
-	public static void filterByKeyword (WebDriver webdriver, String keyword) throws InterruptedException
+	public void filterByKeyword (WebDriver webdriver, String keyword) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement search_keywordelement = wait.until(ExpectedConditions.elementToBeClickable(search_keyword));
@@ -862,7 +862,7 @@ public class FilterMoreResults_Page {
 		search_keywordelement.sendKeys(keyword);
 	}
 	
-	public static String verifyFilterByKeyword (WebDriver webdriver, String keyword) throws InterruptedException
+	public String verifyFilterByKeyword (WebDriver webdriver, String keyword) throws InterruptedException
 	{
 
 		List <WebElement> searchresultslist = webdriver.findElements(searchresults);
@@ -893,7 +893,7 @@ public class FilterMoreResults_Page {
 	}
 	
 		
-	public static void uncheckAllPropertyType (WebDriver webdriver) throws InterruptedException
+	public void uncheckAllPropertyType (WebDriver webdriver) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		
@@ -982,7 +982,7 @@ public class FilterMoreResults_Page {
 		allunchecked = "";  //need to reset this back to blank for next test to use this method
 	}
 	
-	public static void filterByPropertyTypeLand (WebDriver webdriver) throws InterruptedException
+	public void filterByPropertyTypeLand (WebDriver webdriver) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement property_land = wait.until(ExpectedConditions.elementToBeClickable(propertytypeland));
@@ -991,7 +991,7 @@ public class FilterMoreResults_Page {
 	}
 	
     
-	public static String verifyFilterByPropertyTypeLand (WebDriver webdriver) throws InterruptedException
+	public String verifyFilterByPropertyTypeLand (WebDriver webdriver) throws InterruptedException
 	{
 
 		List <WebElement> searchresultslist = webdriver.findElements(searchresults);
@@ -1019,7 +1019,7 @@ public class FilterMoreResults_Page {
 	
 	
 	
-    public static void scrollDownMoreFiltersPage (WebDriver webdriver)
+    public void scrollDownMoreFiltersPage (WebDriver webdriver)
     {
     		WebDriverWait wait = new WebDriverWait(webdriver, 60);
     	    WebElement morefiltersscreen_field = wait.until(ExpectedConditions.presenceOfElementLocated(morefiltersscreen));

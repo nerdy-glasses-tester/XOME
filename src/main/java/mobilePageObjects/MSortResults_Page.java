@@ -17,29 +17,29 @@ public class MSortResults_Page {
 	//****************************************//
 	final static Logger log = LogManager.getLogger(MSortResults_Page.class);
 
-	static By sortoption = By.id("com.xome.android:id/tvSortOption");
-	static By mostrecent = By.xpath(".//android.widget.CheckedTextView[@text='Most Recent']");
-	static By pricelowtohigh = By.xpath(".//android.widget.CheckedTextView[@text='Price, Low to High']");
-	static By pricehightolow = By.xpath(".//android.widget.CheckedTextView[@text='Price, High to Low']");
-	static By beds = By.xpath(".//android.widget.CheckedTextView[@text='Beds']");
-	static By baths = By.xpath(".//android.widget.CheckedTextView[@text='Baths']");
-	static By squarefeet = By.xpath(".//android.widget.CheckedTextView[@text='Square Feet']");
+	private By sortoption = By.id("com.xome.android:id/tvSortOption");
+	private By mostrecent = By.xpath(".//android.widget.CheckedTextView[@text='Most Recent']");
+	private By pricelowtohigh = By.xpath(".//android.widget.CheckedTextView[@text='Price, Low to High']");
+	private By pricehightolow = By.xpath(".//android.widget.CheckedTextView[@text='Price, High to Low']");
+	private By beds = By.xpath(".//android.widget.CheckedTextView[@text='Beds']");
+	private By baths = By.xpath(".//android.widget.CheckedTextView[@text='Baths']");
+	private By squarefeet = By.xpath(".//android.widget.CheckedTextView[@text='Square Feet']");
 	
-	static By propertyprice = By.id("com.xome.android:id/listing_summary_price_textView");
-	static By propertybed = By.id("com.xome.android:id/listing_summary_bedrooms_textView");
-	static By propertybath = By.id("com.xome.android:id/listing_summary_bathrooms_textView");
-	static By propertysquarefeet = By.id("com.xome.android:id/listing_summary_square_feet_textView");
-	static By property1newtag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='0']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='NEW']");
-	static By property2newtag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='1']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='NEW']");
-	static By property3newtag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='2']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='NEW']");
-	static By property1openhousetag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='0']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='OPEN HOUSE']");
-	static By property2openhousetag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='1']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='OPEN HOUSE']");
-	static By property3openhousetag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='2']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='OPEN HOUSE']");
+	private By propertyprice = By.id("com.xome.android:id/listing_summary_price_textView");
+	private By propertybed = By.id("com.xome.android:id/listing_summary_bedrooms_textView");
+	private By propertybath = By.id("com.xome.android:id/listing_summary_bathrooms_textView");
+	private By propertysquarefeet = By.id("com.xome.android:id/listing_summary_square_feet_textView");
+	private By property1newtag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='0']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='NEW']");
+	private By property2newtag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='1']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='NEW']");
+	private By property3newtag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='2']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='NEW']");
+	private By property1openhousetag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='0']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='OPEN HOUSE']");
+	private By property2openhousetag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='1']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='OPEN HOUSE']");
+	private By property3openhousetag = By.xpath(".//android.support.v7.widget.RecyclerView/android.widget.FrameLayout[@index='2']/android.widget.RelativeLayout/android.widget.RelativeLayout[@index='0']/android.widget.RelativeLayout[@index='0']/android.widget.TextView[@text='OPEN HOUSE']");
 		
 	
-	static String diditsort = "";
+	private String diditsort = "";
 
-	public static void clickSortOption (AppiumDriver<?> driver) throws InterruptedException
+	public void clickSortOption (AppiumDriver<?> driver) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait (driver, 60);
 		WebElement sortoptionelement = wait.until(ExpectedConditions.elementToBeClickable(sortoption));
@@ -48,20 +48,22 @@ public class MSortResults_Page {
 	}
 	
 	
-	public static void sortByBeds (AppiumDriver<?> driver) throws InterruptedException
+	public void sortByBeds (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
-		MSortResults_Page.clickSortOption(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.clickSortOption(driver);
 		
 		WebElement bedselement = wait.until(ExpectedConditions.elementToBeClickable(beds));
 		bedselement.click();
 		Thread.sleep(4000);
 	}
 	
-	public static void sortByBaths (AppiumDriver<?> driver) throws InterruptedException
+	public void sortByBaths (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
-		MSortResults_Page.clickSortOption(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.clickSortOption(driver);
 		
 		WebElement bathselement = wait.until(ExpectedConditions.elementToBeClickable(baths));
 		bathselement.click();
@@ -69,20 +71,22 @@ public class MSortResults_Page {
 	}
 	
 	
-	public static void sortByLowtoHighPrice (AppiumDriver<?> driver) throws InterruptedException
+	public void sortByLowtoHighPrice (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
-		MSortResults_Page.clickSortOption(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.clickSortOption(driver);
 		
 		WebElement pricelowtohighelement = wait.until(ExpectedConditions.elementToBeClickable(pricelowtohigh));
 		pricelowtohighelement.click();
 		Thread.sleep(4000);
 	}
 	
-	public static void sortByHightoLowPrice (AppiumDriver<?> driver) throws InterruptedException
+	public void sortByHightoLowPrice (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
-		MSortResults_Page.clickSortOption(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.clickSortOption(driver);
 		
 		WebElement pricehightolowelement = wait.until(ExpectedConditions.elementToBeClickable(pricehightolow));
 		pricehightolowelement.click();
@@ -90,10 +94,11 @@ public class MSortResults_Page {
 	}
 	
 	
-	public static void sortBySqFt (AppiumDriver<?> driver) throws InterruptedException
+	public void sortBySqFt (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
-		MSortResults_Page.clickSortOption(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.clickSortOption(driver);
 		
 		WebElement squarefeetelement = wait.until(ExpectedConditions.elementToBeClickable(squarefeet));
 		squarefeetelement.click();
@@ -101,10 +106,11 @@ public class MSortResults_Page {
 	}
 	
 	
-	public static void sortByMostRecent (AppiumDriver<?> driver) throws InterruptedException
+	public void sortByMostRecent (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
-		MSortResults_Page.clickSortOption(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.clickSortOption(driver);
 		
 		WebElement mostrecentelement = wait.until(ExpectedConditions.elementToBeClickable(mostrecent));
 		mostrecentelement.click();
@@ -112,7 +118,7 @@ public class MSortResults_Page {
 	}
 	
 	
-	public static String verifySortByLowtoHighPrice (AppiumDriver<?> driver) 
+	public String verifySortByLowtoHighPrice (AppiumDriver<?> driver) 
 	{	
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		WebElement sortoptionelement = wait.until(ExpectedConditions.elementToBeClickable(sortoption));
@@ -152,7 +158,7 @@ public class MSortResults_Page {
 	}
 	
 	
-	public static String verifySortByHightoLowPrice (AppiumDriver<?> driver)
+	public String verifySortByHightoLowPrice (AppiumDriver<?> driver)
 	{	
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		WebElement sortoptionelement = wait.until(ExpectedConditions.elementToBeClickable(sortoption));
@@ -192,7 +198,7 @@ public class MSortResults_Page {
 	}
 		
 	
-	public static String verifySortBySquareFeet (AppiumDriver<?> driver) 
+	public String verifySortBySquareFeet (AppiumDriver<?> driver) 
 	{	
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		WebElement sortoptionelement = wait.until(ExpectedConditions.elementToBeClickable(sortoption));
@@ -225,7 +231,7 @@ public class MSortResults_Page {
 		return diditsort;
 	}
 	
-	public static String verifySortByMostRecent (AppiumDriver<?> driver) throws InterruptedException 
+	public String verifySortByMostRecent (AppiumDriver<?> driver) throws InterruptedException 
 	{	
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		WebElement sortoptionelement = wait.until(ExpectedConditions.elementToBeClickable(sortoption));
@@ -331,11 +337,12 @@ public class MSortResults_Page {
 	}
 
 	
-	public static String sortAndVerifyByBeds (AppiumDriver<?> driver) throws InterruptedException
+	public String sortAndVerifyByBeds (AppiumDriver<?> driver) throws InterruptedException
 	{		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		//Have to sort by high price to get large bedrooms then sort by beds to compare with smaller number of bedrooms
-		MSortResults_Page.sortByHightoLowPrice(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.sortByHightoLowPrice(driver);
 		Thread.sleep(4000);
 				
 		List <WebElement> highpricepropertybedlist = (List<WebElement>) driver.findElements(propertybed);
@@ -384,11 +391,12 @@ public class MSortResults_Page {
 		return diditsort;
 	}
 	
-	public static String sortAndVerifyByBaths (AppiumDriver<?> driver) throws InterruptedException
+	public String sortAndVerifyByBaths (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		//Have to sort by high price to get large bathrooms then sort by baths to compare with smaller number of bathrooms
-		MSortResults_Page.sortByHightoLowPrice(driver);
+		MSortResults_Page msrp = new MSortResults_Page();
+		msrp.sortByHightoLowPrice(driver);
 		Thread.sleep(4000);
 				
 		List <WebElement> highpricepropertybathlist = (List<WebElement>) driver.findElements(propertybath);

@@ -36,7 +36,8 @@ public class SearchforSpecificProperty extends TestBase{
 	@Test(groups={"smoke", "regression"}, dataProvider = "getData")
 	public void searchSpecificProperty (String address) throws IOException, InterruptedException
 	{
-		String searchspecificaddress = Search.searchandVerifyAddressSearched(webdriver, address);
+		Search search = new Search();
+		String searchspecificaddress = search.searchandVerifyAddressSearched(webdriver, address);
 		
 		try{
 			Assert.assertEquals(searchspecificaddress, address);

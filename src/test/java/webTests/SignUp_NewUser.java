@@ -38,8 +38,10 @@ public class SignUp_NewUser extends TestBase{
 			public void signUp_NewUser (String firstname, String lastname, String email, String password, String gmailpwd, String gmailsearch) throws IOException, InterruptedException
 			{
 
-				SignUp_Page.clickSignUp(webdriver);
-				String [] signedupnewuser = SignUp_Page.testSignUpNewUser(webdriver, firstname, lastname, email, password);
+				SignUp_Page signuppg = new SignUp_Page();
+				signuppg.clickSignUp(webdriver);
+		  		Thread.sleep(5000);
+				String [] signedupnewuser = signuppg.testSignUpNewUser(webdriver, firstname, lastname, email, password);
 				String signedupemail = signedupnewuser[0];
 				
 				try{
@@ -54,7 +56,10 @@ public class SignUp_NewUser extends TestBase{
 					softAssert.fail();
 				}
 					
-				String [] registrationemail = Gmail.checkRegisterEmail(webdriver, email, gmailpwd, gmailsearch);
+				
+				/***
+				Gmail gmail = new Gmail();
+				String [] registrationemail = gmail.checkRegisterEmail(webdriver, email, gmailpwd, gmailsearch);
 				
 				
 				try{
@@ -95,7 +100,7 @@ public class SignUp_NewUser extends TestBase{
 					//Capture a picture of the email for backup, then delete the email to clean up for next test run.
 					picinfo="BackupCopyOfPassingRegistrationEmail";
 					ScreenshotURL.backupCopyScreenshot(webdriver, foldername, picinfo);
-					Gmail.deleteGmail(webdriver);
+					gmail.deleteGmail(webdriver);
 					
 				}				
 				catch(AssertionError e)
@@ -105,7 +110,7 @@ public class SignUp_NewUser extends TestBase{
 					ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 					softAssert.fail();
 				}
-				
+				***/
 
 				
 				softAssert.assertAll();

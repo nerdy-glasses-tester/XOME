@@ -37,9 +37,11 @@ public class SortResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByMostRecent (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
 	
-		String diditsortmostrecent = SortResults_Page.sortResultsByMostRecent(webdriver);
+		SortResults_Page sortresultspg = new SortResults_Page();
+		String diditsortmostrecent = sortresultspg.sortResultsByMostRecent(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortmostrecent, "yes");
@@ -59,9 +61,11 @@ public class SortResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByPrice (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
 	
-		String diditsortdesc = SortResults_Page.sortResultsByDescPrice(webdriver);
+		SortResults_Page sortresultspg = new SortResults_Page();
+		String diditsortdesc = sortresultspg.sortResultsByDescPrice(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortdesc, "yes");
@@ -75,7 +79,7 @@ public class SortResultsByPriceBedBath extends TestBase{
 		}
 		
 
-		String diditsortasc = SortResults_Page.sortResultsByAscPrice(webdriver);
+		String diditsortasc = sortresultspg.sortResultsByAscPrice(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortasc, "yes");
@@ -96,9 +100,11 @@ public class SortResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByBeds (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
 	
-		String diditsortdesc = SortResults_Page.sortResultsByDescBeds(webdriver);
+		SortResults_Page sortresultspg = new SortResults_Page();
+		String diditsortdesc = sortresultspg.sortResultsByDescBeds(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortdesc, "yes");
@@ -112,7 +118,7 @@ public class SortResultsByPriceBedBath extends TestBase{
 		}
 		
 
-		String diditsortasc = SortResults_Page.sortResultsByAscBeds(webdriver);
+		String diditsortasc = sortresultspg.sortResultsByAscBeds(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortasc, "yes");
@@ -136,9 +142,11 @@ public class SortResultsByPriceBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByBaths (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
 	
-		String diditsortdesc = SortResults_Page.sortResultsByDescBaths(webdriver);
+		SortResults_Page sortresultspg = new SortResults_Page();
+		String diditsortdesc = sortresultspg.sortResultsByDescBaths(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortdesc, "yes");
@@ -152,7 +160,7 @@ public class SortResultsByPriceBedBath extends TestBase{
 		}
 		
 
-		String diditsortasc = SortResults_Page.sortResultsByAscBaths(webdriver);
+		String diditsortasc = sortresultspg.sortResultsByAscBaths(webdriver);
 		
 		try{
 			Assert.assertEquals(diditsortasc, "yes");

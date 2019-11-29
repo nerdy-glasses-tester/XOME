@@ -36,12 +36,14 @@ public class FilterMoreResultsByStatus extends TestBase{
 	@Test( priority = 1, groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByPendingStatus (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.uncheckedAllStatus(webdriver);
-		FilterMoreResults_Page.filterByPendingStatus(webdriver);
-		FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterByPendingStatus(webdriver);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.uncheckedAllStatus(webdriver);
+		filtermoreresultspg.filterByPendingStatus(webdriver);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterByPendingStatus(webdriver);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -61,12 +63,14 @@ public class FilterMoreResultsByStatus extends TestBase{
 	@Test(priority = 2, groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsBySoldStatus (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.uncheckedAllStatus(webdriver);
-		FilterMoreResults_Page.filterBySoldStatus(webdriver);
-	    FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterBySoldStatus(webdriver);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.uncheckedAllStatus(webdriver);
+		filtermoreresultspg.filterBySoldStatus(webdriver);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterBySoldStatus(webdriver);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -87,12 +91,14 @@ public class FilterMoreResultsByStatus extends TestBase{
 	@Test(priority = 3, groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByForSaleStatus (String searchkeyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.uncheckedAllStatus(webdriver);
-		FilterMoreResults_Page.filterByForSaleStatus(webdriver);
-	    FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterByForSaleStatus(webdriver);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.uncheckedAllStatus(webdriver);
+		filtermoreresultspg.filterByForSaleStatus(webdriver);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterByForSaleStatus(webdriver);
 		
 		try{
 			Assert.assertEquals(diditfilter, "yes");

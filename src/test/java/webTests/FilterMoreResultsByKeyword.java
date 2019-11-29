@@ -34,11 +34,13 @@ public class FilterMoreResultsByKeyword extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByKeyword (String searchkeyword, String keyword) throws IOException, InterruptedException
 	{
-		Search.searchByCity(webdriver, searchkeyword);
-		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
-		FilterMoreResults_Page.filterByKeyword(webdriver, keyword);
-		FilterMoreResults_Page.applyMoreFilters(webdriver);
-		String diditfilter = FilterMoreResults_Page.verifyFilterByKeyword(webdriver,keyword);
+		Search search = new Search();
+		search.searchByCity(webdriver, searchkeyword);
+		FilterMoreResults_Page filtermoreresultspg = new FilterMoreResults_Page();
+		filtermoreresultspg.clickOpenMoreFilters(webdriver);
+		filtermoreresultspg.filterByKeyword(webdriver, keyword);
+		filtermoreresultspg.applyMoreFilters(webdriver);
+		String diditfilter = filtermoreresultspg.verifyFilterByKeyword(webdriver,keyword);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

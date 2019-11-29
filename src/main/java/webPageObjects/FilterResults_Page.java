@@ -21,27 +21,27 @@ public class FilterResults_Page {
 	//****************************************//
 	final static Logger log = LogManager.getLogger(FilterResults_Page.class);
 	
-	static By anypricedropdown = By.id("ddbtn-criteria-pricerange");
-	static By minpricefield = By.id("mapsearch-criteria-minprice");
-	static By maxpricefield = By.id("mapsearch-criteria-maxprice");
-	static By confirmpricedrpdown = By.cssSelector("div#ddbtn-label-pricerange>span.ddbtn-label-arrow.fa.fa-angle-down");
-	static By sortbyclicktoexpanddrpdown = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select>button.btn.dropdown-toggle.btn-default>span.filter-option.pull-left");
-	static By dropdownarea = By.cssSelector("div.btn-group.bootstrap-select.open>div.dropdown-menu.open");
-	static By sortbydropdownpricedesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='1']>a>span.text");
-	static By sortbydropdownpriceasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='2']>a>span.text");
-	static By searchresultsprice = By.cssSelector("div.price>span[itemprop='price']");
+	private By anypricedropdown = By.id("ddbtn-criteria-pricerange");
+	private By minpricefield = By.id("mapsearch-criteria-minprice");
+	private By maxpricefield = By.id("mapsearch-criteria-maxprice");
+	private By confirmpricedrpdown = By.cssSelector("div#ddbtn-label-pricerange>span.ddbtn-label-arrow.fa.fa-angle-down");
+	private By sortbyclicktoexpanddrpdown = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select>button.btn.dropdown-toggle.btn-default>span.filter-option.pull-left");
+	private By dropdownarea = By.cssSelector("div.btn-group.bootstrap-select.open>div.dropdown-menu.open");
+	private By sortbydropdownpricedesc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='1']>a>span.text");
+	private By sortbydropdownpriceasc = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li[data-original-index='2']>a>span.text");
+	private By searchresultsprice = By.cssSelector("div.price>span[itemprop='price']");
 	
-	static By anybedsdropdown = By.id("ddbtn-criteria-beds");
-    static By selectedbedsdrpdown = By.cssSelector("span.dd-info[data-suff='Beds']");
-	static By searchresultsbeds = By.xpath("//span[contains(text(), 'bd')]/preceding-sibling::span");
+	private By anybedsdropdown = By.id("ddbtn-criteria-beds");
+    private By selectedbedsdrpdown = By.cssSelector("span.dd-info[data-suff='Beds']");
+	private By searchresultsbeds = By.xpath("//span[contains(text(), 'bd')]/preceding-sibling::span");
     
-	static By anybathsdropdown = By.id("ddbtn-criteria-baths");
-    static By selectedbathsdrpdown = By.cssSelector("button#ddbtn-criteria-baths>div.ddbtn-criteria-label>span");
-    static By searchresultsbaths = By.xpath("//span[contains(text(), 'ba')]/preceding-sibling::span");
+	private By anybathsdropdown = By.id("ddbtn-criteria-baths");
+    private By selectedbathsdrpdown = By.cssSelector("button#ddbtn-criteria-baths>div.ddbtn-criteria-label>span");
+    private By searchresultsbaths = By.xpath("//span[contains(text(), 'ba')]/preceding-sibling::span");
 
-	static String diditfilter ="";
+	private String diditfilter ="";
 	
-	public static void filterByPrice (WebDriver webdriver, String price1, String price2) throws InterruptedException 
+	public void filterByPrice (WebDriver webdriver, String price1, String price2) throws InterruptedException 
 	{
 		
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -78,7 +78,7 @@ public class FilterResults_Page {
 		
 	}
 	
-    public static String verifyFilterByPrice (WebDriver webdriver, String price1, String price2) throws InterruptedException 
+    public String verifyFilterByPrice (WebDriver webdriver, String price1, String price2) throws InterruptedException 
 	{
     	WebDriverWait wait = new WebDriverWait (webdriver, 60);
     	List <WebElement> maxsearchresultspricelist = webdriver.findElements(searchresultsprice);
@@ -132,7 +132,7 @@ public class FilterResults_Page {
 	 
     }
 
-	public static void filterByBeds (WebDriver webdriver, String bed) throws InterruptedException 
+	public void filterByBeds (WebDriver webdriver, String bed) throws InterruptedException 
     {
 
 	    //Have to add 2 to count the bed header and the first bed selection of any
@@ -153,7 +153,7 @@ public class FilterResults_Page {
 		Thread.sleep(4000); //Must wait
     }
 	
-	public static String verifyFilterByBeds (WebDriver webdriver, String bed) throws InterruptedException 
+	public String verifyFilterByBeds (WebDriver webdriver, String bed) throws InterruptedException 
     {
 		WebDriverWait wait = new WebDriverWait(webdriver, 60);
 		List <WebElement> resultsbedslist = webdriver.findElements(searchresultsbeds);
@@ -193,7 +193,7 @@ public class FilterResults_Page {
     }
 	
 	
-	public static void filterByBaths (WebDriver webdriver, String bath) throws InterruptedException 
+	public void filterByBaths (WebDriver webdriver, String bath) throws InterruptedException 
     {
 	    //Have to add 2 to count the bath header and the first bath selection of any
 		String i = bath;
@@ -213,7 +213,7 @@ public class FilterResults_Page {
 		Thread.sleep(4000); //Must wait
     }
 	
-	public static String verifyFilterByBaths (WebDriver webdriver, String bath) throws InterruptedException 
+	public String verifyFilterByBaths (WebDriver webdriver, String bath) throws InterruptedException 
     {
 		WebDriverWait wait = new WebDriverWait(webdriver, 60);
 		List <WebElement> resultsbathslist = webdriver.findElements(searchresultsbaths);

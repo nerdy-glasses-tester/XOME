@@ -24,46 +24,46 @@ public class MFilterResults_Page {
 		//****************************************//
 		final static Logger log = LogManager.getLogger(MFilterResults_Page.class);
 
-		static By filterbtn = By.id("com.xome.android:id/filter_menu_item_btn");
-		static By activestatus = By.id("com.xome.android:id/active_status_tv");
-		static By pendingstatus = By.id("com.xome.android:id/pending_status_tv");
-		static By soldstatus = By.id("com.xome.android:id/sold_status_tv");
-		static By bedsdrpdown = By.id("com.xome.android:id/beds_spinner");
-		static By bedselection = By.id("android:id/text1");
-		static By bathsdrpdown = By.id("com.xome.android:id/bath_spinner");
-		static By bathselection = By.id("android:id/text1");
-		static By sqftmin = By.id("com.xome.android:id/filter_sqr_foot_min");
-		static By sqftmax = By.id("com.xome.android:id/filter_sqr_foot_max");
-		static By sqftselection = By.id("android:id/text1");
-		static By yrmin = By.id("com.xome.android:id/filter_year_built_min");
-		static By yrmax = By.id("com.xome.android:id/filter_year_built_max");
-		static By yrselection = By.id("android:id/text1");
-		static By propertysinglefamily = By.id("com.xome.android:id/single_family_type_tv");
-		static By propertytownhome = By.id("com.xome.android:id/townhome_type_tv");
-		static By propertycondo = By.id("com.xome.android:id/condo_type_tv");
-		static By keywordfield = By.id("com.xome.android:id/keyword_search_edit_text");
-		static By applybtn = By.id("com.xome.android:id/apply");
+		private By filterbtn = By.id("com.xome.android:id/filter_menu_item_btn");
+		private By activestatus = By.id("com.xome.android:id/active_status_tv");
+		private By pendingstatus = By.id("com.xome.android:id/pending_status_tv");
+		private By soldstatus = By.id("com.xome.android:id/sold_status_tv");
+		private By bedsdrpdown = By.id("com.xome.android:id/beds_spinner");
+		private By bedselection = By.id("android:id/text1");
+		private By bathsdrpdown = By.id("com.xome.android:id/bath_spinner");
+		private By bathselection = By.id("android:id/text1");
+		private By sqftmin = By.id("com.xome.android:id/filter_sqr_foot_min");
+		private By sqftmax = By.id("com.xome.android:id/filter_sqr_foot_max");
+		private By sqftselection = By.id("android:id/text1");
+		private By yrmin = By.id("com.xome.android:id/filter_year_built_min");
+		private By yrmax = By.id("com.xome.android:id/filter_year_built_max");
+		private By yrselection = By.id("android:id/text1");
+		private By propertysinglefamily = By.id("com.xome.android:id/single_family_type_tv");
+		private By propertytownhome = By.id("com.xome.android:id/townhome_type_tv");
+		private By propertycondo = By.id("com.xome.android:id/condo_type_tv");
+		private By keywordfield = By.id("com.xome.android:id/keyword_search_edit_text");
+		private By applybtn = By.id("com.xome.android:id/apply");
 		
-		static By pendingtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='PENDING']");
-		static By    soldtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='SOLD']");
-		static By forsaletag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='FOR SALE']");
-		static By propertybed = By.id("com.xome.android:id/listing_summary_bedrooms_textView");
-		static By propertybath = By.id("com.xome.android:id/listing_summary_bathrooms_textView");
-		static By propertysqft = By.id("com.xome.android:id/listing_summary_square_feet_textView");
-		static By propertypic = By.id("com.xome.android:id/listing_summary_imageViewPager");
-		static By propertydescription = By.id("com.xome.android:id/description");
-		//static By propertydetailsmorebutton = MobileBy.AccessibilityId("com.xome.android:id/ldTvMoreButton");
-		static By propertydetailsmorebutton = By.xpath("//android.widget.Button[@text='MORE' and @index='5']");
-		static By propertyyearheader8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='0' and @text='Year Built:']");
-		static By propertyyearheader7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='0' and @text='Year Built:']");
-		static By 	    propertyyear8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='1']");
-		static By 		propertyyear7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='1']");
-		static By 			   propertytype = By.xpath(".//android.widget.LinearLayout[@index='2']/android.widget.TextView[contains(@resource-id, 'row_value') and @index='1']");
-		static By scrollnextproperty = By.id("com.xome.android:id/menu_filter_tv");
+		private By pendingtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='PENDING']");
+		private By    soldtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='SOLD']");
+		private By forsaletag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='FOR SALE']");
+		private By propertybed = By.id("com.xome.android:id/listing_summary_bedrooms_textView");
+		private By propertybath = By.id("com.xome.android:id/listing_summary_bathrooms_textView");
+		private By propertysqft = By.id("com.xome.android:id/listing_summary_square_feet_textView");
+		private By propertypic = By.id("com.xome.android:id/listing_summary_imageViewPager");
+		private By propertydescription = By.id("com.xome.android:id/description");
+		//private By propertydetailsmorebutton = MobileBy.AccessibilityId("com.xome.android:id/ldTvMoreButton");
+		private By propertydetailsmorebutton = By.xpath("//android.widget.Button[@text='MORE' and @index='5']");
+		private By propertyyearheader8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='0' and @text='Year Built:']");
+		private By propertyyearheader7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='0' and @text='Year Built:']");
+		private By 	    propertyyear8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='1']");
+		private By 		propertyyear7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='1']");
+		private By 			   propertytype = By.xpath(".//android.widget.LinearLayout[@index='2']/android.widget.TextView[contains(@resource-id, 'row_value') and @index='1']");
+		private By scrollnextproperty = By.id("com.xome.android:id/menu_filter_tv");
 		
-		static String diditfilter = "";
+		private String diditfilter = "";
 		
-		public static void clickFilterOption (AppiumDriver<?> driver) throws InterruptedException 
+		public void clickFilterOption (AppiumDriver<?> driver) throws InterruptedException 
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement filterbtnelement = wait.until(ExpectedConditions.elementToBeClickable(filterbtn));
@@ -71,7 +71,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000); //Must wait for this time to load
 		}
 		
-		public static void uncheckAllStatus (AppiumDriver<?> driver) throws InterruptedException
+		public void uncheckAllStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement activestatuselement = wait.until(ExpectedConditions.elementToBeClickable(activestatus));
@@ -116,7 +116,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 		}
 		
-		public static void checkPendingStatus (AppiumDriver<?> driver) throws InterruptedException
+		public void checkPendingStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement pendingstatuselement = wait.until(ExpectedConditions.elementToBeClickable(pendingstatus));
@@ -125,7 +125,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 		}
 		
-		public static void checkSoldStatus (AppiumDriver<?> driver) throws InterruptedException
+		public void checkSoldStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement soldstatuselement = wait.until(ExpectedConditions.elementToBeClickable(soldstatus));
@@ -135,7 +135,7 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static void checkForSaleStatus (AppiumDriver<?> driver) throws InterruptedException
+		public void checkForSaleStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement activestatuselement = wait.until(ExpectedConditions.elementToBeClickable(activestatus));
@@ -144,7 +144,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 		}
 		
-		public static void clickFilterByBed (AppiumDriver<?> driver, String beds) throws InterruptedException
+		public void clickFilterByBed (AppiumDriver<?> driver, String beds) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement bedsdrpdownelement = wait.until(ExpectedConditions.elementToBeClickable(bedsdrpdown));
@@ -158,7 +158,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 		}
 		
-		public static void clickFilterByBath (AppiumDriver<?> driver, String baths) throws InterruptedException
+		public void clickFilterByBath (AppiumDriver<?> driver, String baths) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement bathsdrpdownelement = wait.until(ExpectedConditions.elementToBeClickable(bathsdrpdown));
@@ -172,7 +172,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);
 		}
 		
-		public static void clickFilterByMinSqFt (AppiumDriver<?> driver, String minsqft) throws InterruptedException
+		public void clickFilterByMinSqFt (AppiumDriver<?> driver, String minsqft) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement sqftminelement = wait.until(ExpectedConditions.elementToBeClickable(sqftmin));
@@ -239,7 +239,7 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static void clickFilterByMaxSqFt (AppiumDriver<?> driver, String maxsqft) throws InterruptedException
+		public void clickFilterByMaxSqFt (AppiumDriver<?> driver, String maxsqft) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement sqftmaxelement = wait.until(ExpectedConditions.elementToBeClickable(sqftmax));
@@ -305,7 +305,7 @@ public class MFilterResults_Page {
 
 		}
 		
-		public static void clickFilterByKeyword (AppiumDriver<?> driver, String keyword) throws InterruptedException
+		public void clickFilterByKeyword (AppiumDriver<?> driver, String keyword) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			MiscMethods.swipeDown(driver);
@@ -316,7 +316,7 @@ public class MFilterResults_Page {
 			Thread.sleep(4000);	
 		}	
 		
-		public static void clickFilterByMinYear (AppiumDriver<?> driver, String minyear) throws InterruptedException
+		public void clickFilterByMinYear (AppiumDriver<?> driver, String minyear) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement yrminelement = wait.until(ExpectedConditions.elementToBeClickable(yrmin));
@@ -394,7 +394,7 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static void clickFilterByMaxYear (AppiumDriver<?> driver, String maxyear) throws InterruptedException
+		public void clickFilterByMaxYear (AppiumDriver<?> driver, String maxyear) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement yrmaxelement = wait.until(ExpectedConditions.elementToBeClickable(yrmax));
@@ -471,7 +471,7 @@ public class MFilterResults_Page {
 			
 		}
 		
-		public static String verifyFilterByYear (AppiumDriver<?> driver, String minyear, String maxyear) throws InterruptedException
+		public String verifyFilterByYear (AppiumDriver<?> driver, String minyear, String maxyear) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			
@@ -575,7 +575,7 @@ public class MFilterResults_Page {
 			
 		}
 			
-		public static String verifyFilterByKeyword (AppiumDriver<?> driver, String keyword) throws InterruptedException
+		public String verifyFilterByKeyword (AppiumDriver<?> driver, String keyword) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			
@@ -638,7 +638,7 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifyFilterBySqFt (AppiumDriver<?> driver, String minsqft, String maxsqft) throws InterruptedException
+		public String verifyFilterBySqFt (AppiumDriver<?> driver, String minsqft, String maxsqft) throws InterruptedException
 		{
 		    List <MobileElement> sqftlist = (List<MobileElement>) driver.findElements(propertysqft);
 		    WebElement prop1sqftelement = sqftlist.get(0);
@@ -673,7 +673,7 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifyFilterByBeds (AppiumDriver<?> driver, String beds) throws InterruptedException
+		public String verifyFilterByBeds (AppiumDriver<?> driver, String beds) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			int numofbeds = Integer.parseInt(beds);
@@ -705,7 +705,7 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifyFilterByBaths (AppiumDriver<?> driver, String baths) throws InterruptedException
+		public String verifyFilterByBaths (AppiumDriver<?> driver, String baths) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			int numofbaths = Integer.parseInt(baths);
@@ -738,7 +738,7 @@ public class MFilterResults_Page {
 		}
 		
 
-		public static String verifyPendingStatus (AppiumDriver<?> driver) throws InterruptedException
+		public String verifyPendingStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			Thread.sleep(3000);
 			List <MobileElement> pendinglist = (List<MobileElement>) driver.findElements(pendingtag);
@@ -766,7 +766,7 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifySoldStatus (AppiumDriver<?> driver) throws InterruptedException
+		public String verifySoldStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			Thread.sleep(3000);
 			List <MobileElement> soldlist = (List<MobileElement>) driver.findElements(soldtag);
@@ -794,7 +794,7 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifyForSaleStatus (AppiumDriver<?> driver) throws InterruptedException
+		public String verifyForSaleStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
 			Thread.sleep(3000);
 			
@@ -823,7 +823,7 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static void clickSingleFamily (AppiumDriver<?> driver) throws InterruptedException
+		public void clickSingleFamily (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement propertysinglefamilyelement = wait.until(ExpectedConditions.elementToBeClickable(propertysinglefamily));
@@ -831,7 +831,7 @@ public class MFilterResults_Page {
 		    Thread.sleep(4000);
 		}
 		
-		public static void clickTownHome (AppiumDriver<?> driver) throws InterruptedException
+		public void clickTownHome (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement propertytownhomeelement = wait.until(ExpectedConditions.elementToBeClickable(propertytownhome));
@@ -839,7 +839,7 @@ public class MFilterResults_Page {
 		    Thread.sleep(4000);
 		}
 		
-		public static void clickCondo (AppiumDriver<?> driver) throws InterruptedException
+		public void clickCondo (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement propertycondoelement = wait.until(ExpectedConditions.elementToBeClickable(propertycondo));
@@ -847,7 +847,7 @@ public class MFilterResults_Page {
 		    Thread.sleep(4000);
 		}
 		
-		public static String verifyFilterBySingleFamily (AppiumDriver<?> driver) throws InterruptedException
+		public String verifyFilterBySingleFamily (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 
@@ -904,7 +904,7 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static String verifyFilterByTownHome (AppiumDriver<?> driver) throws InterruptedException
+		public String verifyFilterByTownHome (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 
@@ -962,7 +962,7 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static String verifyFilterByCondo (AppiumDriver<?> driver) throws InterruptedException
+		public String verifyFilterByCondo (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 
@@ -1019,7 +1019,7 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static void clickApplyFilter (AppiumDriver<?> driver) throws InterruptedException
+		public void clickApplyFilter (AppiumDriver<?> driver) throws InterruptedException
 		{
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement applybtnelement = wait.until(ExpectedConditions.elementToBeClickable(applybtn));
@@ -1029,13 +1029,14 @@ public class MFilterResults_Page {
 		}
 		
 		
-		public static void firstOpenAppFilterBySingleFamilyTownHomeCondo (AppiumDriver<?> driver) throws InterruptedException
+		public void firstOpenAppFilterBySingleFamilyTownHomeCondo (AppiumDriver<?> driver) throws InterruptedException
 		{	
-            MFilterResults_Page.clickFilterOption(driver);
-            MFilterResults_Page.clickSingleFamily(driver);
-            MFilterResults_Page.clickTownHome(driver);
-            MFilterResults_Page.clickCondo(driver);
-            MFilterResults_Page.clickApplyFilter(driver);
+            MFilterResults_Page mfrp = new MFilterResults_Page();
+            mfrp.clickFilterOption(driver);
+            mfrp.clickSingleFamily(driver);
+            mfrp.clickTownHome(driver);
+            mfrp.clickCondo(driver);
+            mfrp.clickApplyFilter(driver);
 
 		}
 }

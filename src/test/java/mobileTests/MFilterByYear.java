@@ -37,16 +37,19 @@ public class MFilterByYear extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterYear (String searchkeyword, String minyear, String maxyear) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickFilterByMinYear(driver, minyear);
-	    MFilterResults_Page.clickFilterByMaxYear(driver, maxyear);
-	    MFilterResults_Page.clickSingleFamily(driver);
-	    MFilterResults_Page.clickTownHome(driver);
-	    MFilterResults_Page.clickCondo(driver);
-	    MFilterResults_Page.clickApplyFilter(driver);
-		String diditfilter = MFilterResults_Page.verifyFilterByYear(driver, minyear, maxyear);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickFilterByMinYear(driver, minyear);
+	    mfilterresultspg.clickFilterByMaxYear(driver, maxyear);
+	    mfilterresultspg.clickSingleFamily(driver);
+	    mfilterresultspg.clickTownHome(driver);
+	    mfilterresultspg.clickCondo(driver);
+	    mfilterresultspg.clickApplyFilter(driver);
+		String diditfilter = mfilterresultspg.verifyFilterByYear(driver, minyear, maxyear);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

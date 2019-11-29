@@ -36,12 +36,15 @@ public class MFilterByBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterBed (String searchkeyword, String beds) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickFilterByBed(driver, beds);
-	    MFilterResults_Page.clickApplyFilter(driver);
-		String diditfilter = MFilterResults_Page.verifyFilterByBeds(driver, beds);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickFilterByBed(driver, beds);
+	    mfilterresultspg.clickApplyFilter(driver);
+		String diditfilter = mfilterresultspg.verifyFilterByBeds(driver, beds);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");
@@ -62,12 +65,15 @@ public class MFilterByBedBath extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterBath (String searchkeyword, String baths) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickFilterByBath(driver, baths);
-	    MFilterResults_Page.clickApplyFilter(driver);
-	    String diditfilter = MFilterResults_Page.verifyFilterByBaths(driver, baths);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickFilterByBath(driver, baths);
+	    mfilterresultspg.clickApplyFilter(driver);
+	    String diditfilter = mfilterresultspg.verifyFilterByBaths(driver, baths);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

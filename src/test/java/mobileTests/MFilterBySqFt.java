@@ -35,13 +35,16 @@ public class MFilterBySqFt extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterSqFt (String searchkeyword, String minsqft, String maxsqft) throws IOException, InterruptedException
 	{
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-	    MFilterResults_Page.clickFilterOption(driver);
-	    MFilterResults_Page.clickFilterByMinSqFt(driver, minsqft);
-	    MFilterResults_Page.clickFilterByMaxSqFt(driver, maxsqft);
-	    MFilterResults_Page.clickApplyFilter(driver);
-		String diditfilter = MFilterResults_Page.verifyFilterBySqFt(driver, minsqft, maxsqft);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+	    MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+	    mfilterresultspg.clickFilterOption(driver);
+	    mfilterresultspg.clickFilterByMinSqFt(driver, minsqft);
+	    mfilterresultspg.clickFilterByMaxSqFt(driver, maxsqft);
+	    mfilterresultspg.clickApplyFilter(driver);
+		String diditfilter = mfilterresultspg.verifyFilterBySqFt(driver, minsqft, maxsqft);
 
 		try{
 			Assert.assertEquals(diditfilter, "yes");

@@ -38,8 +38,9 @@ public class Login_and_Search extends TestBase{
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void loginSearch (String login, String password, String searchkeyword) throws IOException, InterruptedException
 	{
-		Login_Page.clickSignIn(webdriver);
-		String signedinusername = Login_Page.login(webdriver, login, password);
+		Login_Page loginpg = new Login_Page();
+		loginpg.clickSignIn(webdriver);
+		String signedinusername = loginpg.login(webdriver, login, password);
 		
 		try{
 			Assert.assertEquals(signedinusername, "AUTOMATION TESTER");
@@ -52,31 +53,17 @@ public class Login_and_Search extends TestBase{
 			softAssert.fail();
 		}
 		
-		String [] housearray = Search.loginsearchfor12thhouseinresults(webdriver, searchkeyword);
-		
-		String firsthouse = housearray[0];
-		String scrolledhouse = housearray[1];
+		Search search = new Search();
+		boolean match = search.loginsearchfor6thhouseinresults(webdriver, searchkeyword);
+	
 		
 		try{
-			Assert.assertNotEquals(firsthouse, scrolledhouse);
+			Assert.assertEquals(match,  true);
 		} 
 		catch(AssertionError e)
 		{ 
 			log.error("Didn't scroll down the list of search results.", e.getMessage());
 			errorname = "didntscrollsearchresults";
-			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
-			softAssert.fail();
-		}
-		
-		String houseaddress = housearray[2];
-		
-		try {
-			Assert.assertNotSame(houseaddress, scrolledhouse);
-		} 
-		catch(AssertionError e)
-		{ 
-			log.error("Didn't open the right house address.", e.getMessage());
-			errorname = "didntopentherighthouseaddress";
 			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 			softAssert.fail();
 		}

@@ -39,11 +39,15 @@ public class MSortResultsByBedBathPriceSqFtMostRecent extends TestBase{
 	public void mSortByBed (String searchkeyword) throws IOException, InterruptedException
 	{
 		Thread.sleep(4000);
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		MFilterResults_Page.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+		MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+		mfilterresultspg.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
 		Thread.sleep(4000);
-		String diditsort = MSortResults_Page.sortAndVerifyByBeds(driver);
+		MSortResults_Page msortresultspg = new MSortResults_Page();
+		String diditsort = msortresultspg.sortAndVerifyByBeds(driver);
 
 		try{
 			Assert.assertEquals(diditsort, "yes");
@@ -66,11 +70,15 @@ public class MSortResultsByBedBathPriceSqFtMostRecent extends TestBase{
 	public void mSortByBath (String searchkeyword) throws IOException, InterruptedException
 	{
 		Thread.sleep(4000);
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		MFilterResults_Page.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+		MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+		mfilterresultspg.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
 		Thread.sleep(4000);
-		String diditsort = MSortResults_Page.sortAndVerifyByBaths(driver);
+		MSortResults_Page msortresultspg = new MSortResults_Page();
+		String diditsort = msortresultspg.sortAndVerifyByBaths(driver);
 
 
 		try{
@@ -93,12 +101,16 @@ public class MSortResultsByBedBathPriceSqFtMostRecent extends TestBase{
 	public void mSortByLowtoHighPrice (String searchkeyword) throws IOException, InterruptedException
 	{
 		Thread.sleep(4000);
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		MFilterResults_Page.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+		MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+		mfilterresultspg.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
 		Thread.sleep(4000);
-		MSortResults_Page.sortByLowtoHighPrice(driver);
-		String diditsort = MSortResults_Page.verifySortByLowtoHighPrice(driver);
+		MSortResults_Page msortresultspg = new MSortResults_Page();
+		msortresultspg.sortByLowtoHighPrice(driver);
+		String diditsort = msortresultspg.verifySortByLowtoHighPrice(driver);
 
 		try{
 			Assert.assertEquals(diditsort, "yes");
@@ -121,12 +133,16 @@ public class MSortResultsByBedBathPriceSqFtMostRecent extends TestBase{
 	public void mSortByHightoLowPrice (String searchkeyword) throws IOException, InterruptedException
 	{
 		Thread.sleep(4000);
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		MFilterResults_Page.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+		MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+		mfilterresultspg.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
 		Thread.sleep(4000);
-		MSortResults_Page.sortByHightoLowPrice(driver);
-		String diditsort = MSortResults_Page.verifySortByHightoLowPrice(driver);
+		MSortResults_Page msortresultspg = new MSortResults_Page();
+		msortresultspg.sortByHightoLowPrice(driver);
+		String diditsort = msortresultspg.verifySortByHightoLowPrice(driver);
 
 		try{
 			Assert.assertEquals(diditsort, "yes");
@@ -148,12 +164,16 @@ public class MSortResultsByBedBathPriceSqFtMostRecent extends TestBase{
 	public void mSortBySqFt (String searchkeyword) throws IOException, InterruptedException
 	{
 		Thread.sleep(4000);
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		MFilterResults_Page.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+		MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+		mfilterresultspg.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
 		Thread.sleep(4000);
-		MSortResults_Page.sortBySqFt(driver);
-		String diditsort = MSortResults_Page.verifySortBySquareFeet(driver);
+		MSortResults_Page msortresultspg = new MSortResults_Page();
+		msortresultspg.sortBySqFt(driver);
+		String diditsort = msortresultspg.verifySortBySquareFeet(driver);
 
 		try{
 			Assert.assertEquals(diditsort, "yes");
@@ -176,14 +196,18 @@ public class MSortResultsByBedBathPriceSqFtMostRecent extends TestBase{
 	public void mSortByMostRecent (String searchkeyword) throws IOException, InterruptedException
 	{
 		Thread.sleep(4000);
-		MLogin_Page.allowDeviceLocationAccess(driver);
-		MSearch.searchhomes(driver, searchkeyword);
-		MFilterResults_Page.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
+		MLogin_Page mloginpg = new MLogin_Page();
+		mloginpg.allowDeviceLocationAccess(driver);
+		MSearch msearch = new MSearch();
+		msearch.searchhomes(driver, searchkeyword);
+		MFilterResults_Page mfilterresultspg = new MFilterResults_Page();
+		mfilterresultspg.firstOpenAppFilterBySingleFamilyTownHomeCondo(driver);
 		Thread.sleep(4000);
-		MSortResults_Page.sortByHightoLowPrice(driver);
+		MSortResults_Page msortresultspg = new MSortResults_Page();
+		msortresultspg.sortByHightoLowPrice(driver);
 		Thread.sleep(4000);
-		MSortResults_Page.sortByMostRecent(driver);
-		String diditsort = MSortResults_Page.verifySortByMostRecent(driver);
+		msortresultspg.sortByMostRecent(driver);
+		String diditsort = msortresultspg.verifySortByMostRecent(driver);
 
 		try{
 			Assert.assertEquals(diditsort, "yes");

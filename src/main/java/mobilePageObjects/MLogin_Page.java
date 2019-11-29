@@ -19,28 +19,28 @@ public class MLogin_Page {
 	//****************************************//
 	final static Logger log = LogManager.getLogger(MLogin_Page.class);
 
-	static By allowdeviceacess = By.id("com.android.packageinstaller:id/permission_allow_button");
-	static By hamburgericon = By.xpath(".//android.widget.ImageButton[@content-desc='Open navigation drawer']");
-	static By registerbtn = By.id("com.xome.android:id/button_login_register");
-	static By fname = By.id("com.xome.android:id/etFirstName");
-	static By lname = By.id("com.xome.android:id/etLastName");
-	static By e_mail = By.id("com.xome.android:id/etEmail");
-	static By pwd = By.id("com.xome.android:id/etPassword");
-	static By confirmpwd = By.id("com.xome.android:id/etConfirmPassword");
-	static By phonenumber = By.id("com.xome.android:id/etPhoneNumber");
-	static By finalregisterbtn = By.id("com.xome.android:id/btnRegister");
-	static By signinbtn = By.id("com.xome.android:id/nav_sign_in");
-	static By emaillogin = By.id("com.xome.android:id/edittext_login_email");
-	static By pwdlogin = By.id("com.xome.android:id/textview_login_password");
-	static By signinlogin = By.id("com.xome.android:id/button_login");
-	static By amyfowlerwelcometext = By.xpath(".//android.widget.TextView[@text = 'Welcome Amy']");
-	static By welcometext = By.xpath(".//android.widget.TextView[@text = 'Welcome Automation']");
-	static By myxomebutton = By.xpath(".//android.widget.TextView[@text = 'MY XOME']");
+	private By allowdeviceacess = By.id("com.android.packageinstaller:id/permission_allow_button");
+	private By hamburgericon = By.xpath(".//android.widget.ImageButton[@content-desc='Open navigation drawer']");
+	private By registerbtn = By.id("com.xome.android:id/button_login_register");
+	private By fname = By.id("com.xome.android:id/etFirstName");
+	private By lname = By.id("com.xome.android:id/etLastName");
+	private By e_mail = By.id("com.xome.android:id/etEmail");
+	private By pwd = By.id("com.xome.android:id/etPassword");
+	private By confirmpwd = By.id("com.xome.android:id/etConfirmPassword");
+	private By phonenumber = By.id("com.xome.android:id/etPhoneNumber");
+	private By finalregisterbtn = By.id("com.xome.android:id/btnRegister");
+	private By signinbtn = By.id("com.xome.android:id/nav_sign_in");
+	private By emaillogin = By.id("com.xome.android:id/edittext_login_email");
+	private By pwdlogin = By.id("com.xome.android:id/textview_login_password");
+	private By signinlogin = By.id("com.xome.android:id/button_login");
+	private By amyfowlerwelcometext = By.xpath(".//android.widget.TextView[@text = 'Welcome Amy']");
+	private By welcometext = By.xpath(".//android.widget.TextView[@text = 'Welcome Automation']");
+	private By myxomebutton = By.xpath(".//android.widget.TextView[@text = 'MY XOME']");
 	
-	static String diditlogin = "";
-	static String diditregister = "";
+	private String diditlogin = "";
+	private String diditregister = "";
 	
-	public static void allowDeviceLocationAccess (AppiumDriver<?> driver) throws InterruptedException
+	public void allowDeviceLocationAccess (AppiumDriver<?> driver) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
 		WebElement allowdeviceacesselement = wait.until(ExpectedConditions.elementToBeClickable(allowdeviceacess));
@@ -48,7 +48,7 @@ public class MLogin_Page {
 		Thread.sleep(4000); //Must wait for this time to load
 	}
 	
-	public static String mobileSignUp (AppiumDriver<?> driver, String firstname, String lastname, String email, String password) throws InterruptedException
+	public String mobileSignUp (AppiumDriver<?> driver, String firstname, String lastname, String email, String password) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
 		WebElement hamburgericonelement = wait.until(ExpectedConditions.elementToBeClickable(hamburgericon));
@@ -127,7 +127,7 @@ public class MLogin_Page {
 	
 	}
 	
-	public static String mobileLogin (AppiumDriver<?> driver, String login, String password, String searchkeyword) throws InterruptedException
+	public String mobileLogin (AppiumDriver<?> driver, String login, String password, String searchkeyword) throws InterruptedException
 	{	
 		WebDriverWait wait = new WebDriverWait (driver, 60);
 		WebElement hamburgericonelement = wait.until(ExpectedConditions.elementToBeClickable(hamburgericon));

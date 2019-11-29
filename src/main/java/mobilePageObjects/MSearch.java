@@ -26,23 +26,23 @@ public class MSearch {
 		//****************************************//
 		final static Logger log = LogManager.getLogger(MSearch.class);
 
-		static By searchfield = By.id("com.xome.android:id/search_bar");
-		static By searchfield2 = By.id("com.xome.android:id/suggest_search_bar");
-		static By searchfield2text = By.id("com.xome.android:id/etSuggest");
-		static By autosuggestion = By.xpath(".//android.widget.TextView[contains(@resource-id,'tvTitle') and @index='1']");
-		static By propertyaddress = By.id("com.xome.android:id/listing_summary_address_textView");
-		static By propertyimage = By.className("android.widget.ImageView");
+		private By searchfield = By.id("com.xome.android:id/search_bar");
+		private By searchfield2 = By.id("com.xome.android:id/suggest_search_bar");
+		private By searchfield2text = By.id("com.xome.android:id/etSuggest");
+		private By autosuggestion = By.xpath(".//android.widget.TextView[contains(@resource-id,'tvTitle') and @index='1']");
+		private By propertyaddress = By.id("com.xome.android:id/listing_summary_address_textView");
+		private By propertyimage = By.className("android.widget.ImageView");
 		
-		static String diditfilter = "";
+		private String diditfilter = "";
 		
-		public static void clickSearchtoDismissLeftMenu (AppiumDriver<?> driver) throws InterruptedException
+		public void clickSearchtoDismissLeftMenu (AppiumDriver<?> driver) throws InterruptedException
 		{	
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement searchfieldelement = wait.until(ExpectedConditions.elementToBeClickable(searchfield));
 			searchfieldelement.click();
 		}	
 		
-		public static void searchhomes (AppiumDriver<?> driver, String searchkeyword) throws InterruptedException
+		public void searchhomes (AppiumDriver<?> driver, String searchkeyword) throws InterruptedException
 		{	
 			WebDriverWait wait = new WebDriverWait (driver, 60);
 			WebElement searchfieldelement = wait.until(ExpectedConditions.elementToBeClickable(searchfield));
@@ -57,7 +57,7 @@ public class MSearch {
 			Thread.sleep(4000); //Must wait for this time to load
 		}
 		
-		public static String verifySearchResults(AppiumDriver<?> driver, String searchkeyword) throws InterruptedException
+		public String verifySearchResults(AppiumDriver<?> driver, String searchkeyword) throws InterruptedException
 		{	
 			
 			@SuppressWarnings("unchecked")

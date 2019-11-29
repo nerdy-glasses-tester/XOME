@@ -21,33 +21,33 @@ public class SignUp_Page {
 		//****************************************//
 		final static Logger log = LogManager.getLogger(SignUp_Page.class);
 		
-		static By createacct = By.cssSelector("a.LinkButton.btn.btn-primary");
-		static By fname = By.cssSelector("input#first-name[required='required']");
-		static By lname = By.cssSelector("input#last-name[required='required']");
-		static By electronicmail = By.cssSelector("input#email-address[required='required']");
-		static By pwd = By.cssSelector("input#password-field[required='required']");
-		static By submit = By.xpath(".//*[@id='submit-button' and @class='btn btn-primary']");	
-		static By invalidemailerrmsg = By.cssSelector("div.errorMessageBox>ul>li"); //Oops, looks like the e-mail you entered is invalid.
-		static By duplicateemailerrmsg = By.cssSelector("div.errorMessageBox.clearfix>ul>li");//Good news! We've already got you in our system! Please sign in using the link above.
-		static By pwdreqheader = By.cssSelector("div.password-requirements-dialog>h5"); //Password Requirements
-		static By eightcharsreq = By.cssSelector("div.password-requirements-dialog>div.requirement-item"); //at least 8 characters
-		static By verifysignedup = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
-		static By pwdregistrationhint = By.className("registration-password-hint");
+		private By createacct = By.cssSelector("a.LinkButton.btn.btn-primary");
+		private By fname = By.name("Person/FirstName");
+		private By lname = By.name("Person/LastName");
+		private By electronicmail = By.name("Person/EmailAddress");
+		private By pwd = By.name("security/password");
+		private By submit = By.id("submit-button");	
+		private By invalidemailerrmsg = By.cssSelector("div.errorMessageBox>ul>li"); //Oops, looks like the e-mail you entered is invalid.
+		private By duplicateemailerrmsg = By.cssSelector("div.errorMessageBox.clearfix>ul>li");//Good news! We've already got you in our system! Please sign in using the link above.
+		private By pwdreqheader = By.cssSelector("div.password-requirements-dialog>h5"); //Password Requirements
+		private By eightcharsreq = By.cssSelector("div.password-requirements-dialog>div.requirement-item"); //at least 8 characters
+		private By verifysignedup = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
+		private By pwdregistrationhint = By.className("registration-password-hint");
 				
-	    public static void clickSignUp (WebDriver webdriver)
+	    public void clickSignUp (WebDriver webdriver)
 	    {
-	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    		WebElement create_acct = wait.until(ExpectedConditions.elementToBeClickable(createacct));
+	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
+	    	WebElement create_acct = wait.until(ExpectedConditions.elementToBeClickable(createacct));
 	        create_acct.click(); 
 		    WebElement iframeSwitch = webdriver.findElement(By.id("register-iframe"));
 		    webdriver.switchTo().frame(iframeSwitch);
 	    }
 
 	   
-	    public static String testBlankFirstName(WebDriver webdriver)
+	    public String testBlankFirstName(WebDriver webdriver)
 	    {
-	    	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    	    WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
+	    	WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
 		    WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
 	        submitbtn.click();
 	    	    
@@ -64,11 +64,11 @@ public class SignUp_Page {
 	    }
 
 	    
-	    public static String testBlankLastName(WebDriver webdriver, String firstname)
+	    public String testBlankLastName(WebDriver webdriver, String firstname)
 	    {
-	    	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    	    WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
-	    	    WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
+	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
+	    	WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+	    	WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
 			WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
 		    first_name.click();
 		    first_name.clear();
@@ -87,12 +87,12 @@ public class SignUp_Page {
 	    }
 	  
 	    
-	    public static String testBlankEmail(WebDriver webdriver, String firstname, String lastname) 
+	    public String testBlankEmail(WebDriver webdriver, String firstname, String lastname) 
 	    {
-	    	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    	    WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
-	    	    WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
-	    	    WebElement e_mail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
+	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
+	    	WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+	    	WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
+	    	WebElement e_mail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
 			WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
 			
 		    first_name.click();
@@ -116,10 +116,10 @@ public class SignUp_Page {
 	    }
 	    
 	    
-	    public static String testBlankPassword(WebDriver webdriver, String firstname, String lastname, String email) 
+	    public String testBlankPassword(WebDriver webdriver, String firstname, String lastname, String email) 
 	    {
-	    	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    	    WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
+	    	WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
 			WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
 			WebElement el_mail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
 			WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
@@ -150,15 +150,15 @@ public class SignUp_Page {
 	    }
 	    
 	    
-	    public static String testInvalidEmail (WebDriver webdriver, String firstname, String lastname, String invalid, String password) 
+	    public String testInvalidEmail (WebDriver webdriver, String firstname, String lastname, String invalid, String password) 
 	    {
-	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
-	    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
-	    		WebElement invalidemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
-	    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
-	    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
-			
+    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
+    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
+    		WebElement invalidemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
+    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
+    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
+		
 		    first_name.click();
 		    first_name.clear();
 		    first_name.sendKeys(firstname);
@@ -187,15 +187,15 @@ public class SignUp_Page {
 	    }
 	    
 	    
-	    public static String testDuplicateEmail (WebDriver webdriver, String firstname, String lastname, String duplicate, String password)
+	    public String testDuplicateEmail (WebDriver webdriver, String firstname, String lastname, String duplicate, String password)
 	    {
-	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
-	    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
-	    		WebElement duplicateemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
-	    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
-	    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
-			
+    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
+    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
+    		WebElement duplicateemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
+    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
+    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
+		
 		    first_name.click();
 		    first_name.clear();
 		    first_name.sendKeys(firstname);
@@ -227,14 +227,14 @@ public class SignUp_Page {
 	    }
 	    
 	    
-	    public static String testInvalidPassword (WebDriver webdriver, String firstname, String lastname, String email, String not8characters) 
+	    public String testInvalidPassword (WebDriver webdriver, String firstname, String lastname, String email, String not8characters) 
 	    {
-	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
-	    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
-	    		WebElement validemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
-	    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
-	    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
+    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
+    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
+    		WebElement validemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
+    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
+    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
 			
 		    first_name.click();
 		    first_name.clear();
@@ -266,21 +266,19 @@ public class SignUp_Page {
 	    	
 	    }
 	    
-	    public static String [] testSignUpNewUser (WebDriver webdriver, String firstname, String lastname, String email, String password) 
+	    public String [] testSignUpNewUser (WebDriver webdriver, String firstname, String lastname, String email, String password) throws InterruptedException 
 	    {
-	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
-	    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
-	    		WebElement validemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
-	    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
-	    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
+			webdriver.switchTo().defaultContent();
+    		webdriver.switchTo().frame("register-iframe");
+    		
+    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
+    		WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
+    		WebElement last_name = wait.until(ExpectedConditions.elementToBeClickable(lname));
+    		WebElement validemail = wait.until(ExpectedConditions.elementToBeClickable(electronicmail));
+    		WebElement pass_word = wait.until(ExpectedConditions.elementToBeClickable(pwd));
+    		WebElement submitbtn = wait.until(ExpectedConditions.elementToBeClickable(submit));
 			
-		    first_name.click();
-		    first_name.clear();
 		    first_name.sendKeys(firstname);
-		    
-		    last_name.click();
-		    last_name.clear();
 		    last_name.sendKeys(lastname);
 		    
 		    String [] emailarray = email.split("@");
@@ -293,12 +291,7 @@ public class SignUp_Page {
 		    
 		    log.info(newemail);
 		    
-		    validemail.click();
-		    validemail.clear();
 		    validemail.sendKeys(newemail);
-		    
-		    pass_word.click();
-		    pass_word.clear();
 		    pass_word.sendKeys(password);
 		    
 	        submitbtn.click();	  

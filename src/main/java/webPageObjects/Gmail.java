@@ -24,47 +24,46 @@ public class Gmail {
 			//****************************************//
 			final static Logger log = LogManager.getLogger(Gmail.class);
 			
-			static By loginemail = By.cssSelector("div.Xb9hP>input.whsOnd.zHQkBf");
-			static By nextbtn = By.xpath(".//span[@class='RveJvd snByac' and contains(text(),'Next')]");
-			static By pwd = By.cssSelector("div#password>div.aCsJod.oJeWuf>div.aXBtI.Wic03c>div.Xb9hP>input.whsOnd.zHQkBf");
-			static By pwdnextbtn = By.xpath(".//span[@class='RveJvd snByac' and contains(text(), 'Next')]");
+			private By loginemail = By.cssSelector("div.Xb9hP>input.whsOnd.zHQkBf");
+			private By nextbtn = By.xpath(".//span[@class='RveJvd snByac' and contains(text(),'Next')]");
+			private By pwd = By.cssSelector("div#password>div.aCsJod.oJeWuf>div.aXBtI.Wic03c>div.Xb9hP>input.whsOnd.zHQkBf");
+			private By pwdnextbtn = By.xpath(".//span[@class='RveJvd snByac' and contains(text(), 'Next')]");
 			
-			static By searchemailfield = By.cssSelector("input.gb_Qe");
-			static By searchemailbutton = By.cssSelector("button.gb_0e.gb_1e>svg");
-			static By emailfrom = By.cssSelector("div.yW>span.bA4>span.zF");
-			static By emailtitle = By.cssSelector("div.y6>span.bog>span.bqe");
-			//static By thankyoutext1 = By.xpath(".//sup[1]/parent::td[1]");//Thank you for registering for
-			static By thankyoutext1 = By.cssSelector("td[class*='message_header2']"); //Thank you for registering for
-		    //static By emailtext = By.xpath(".//strong/parent::td"); //Your username is:
-			static By emailtext = By.cssSelector("td[class*='message_header3']"); //Your username is:
+			private By searchemailfield = By.cssSelector("input.gb_Qe");
+			private By searchemailbutton = By.cssSelector("button.gb_0e.gb_1e>svg");
+			private By emailfrom = By.cssSelector("div.yW>span.bA4>span.zF");
+			private By emailtitle = By.cssSelector("div.y6>span.bog>span.bqe");
+			//private By thankyoutext1 = By.xpath(".//sup[1]/parent::td[1]");//Thank you for registering for
+			private By thankyoutext1 = By.cssSelector("td[class*='message_header2']"); //Thank you for registering for
+		    //private By emailtext = By.xpath(".//strong/parent::td"); //Your username is:
+			private By emailtext = By.cssSelector("td[class*='message_header3']"); //Your username is:
 
 			/*** Doesn't work
-		    static By toptooltipbar = By.cssSelector("div[gh='tm']");
-		    static By deletetoptooltip= By.cssSelector("div.asa>div.ar9.T-I-J3.J-J5-Ji");
+		    private By toptooltipbar = By.cssSelector("div[gh='tm']");
+		    private By deletetoptooltip= By.cssSelector("div.asa>div.ar9.T-I-J3.J-J5-Ji");
 		    ***/
-			static By threedotsmenu = By.cssSelector("div.T-I.J-J5-Ji.T-I-Js-Gs.aap.T-I-awG.T-I-ax7.L3[aria-label='More']");
-			static By threedotsopenmenudrpdown = By.cssSelector("div.b7.J-M");
-			static By deletethismsglink = By.cssSelector("div.cj[act='11']>img.dS.J-N-JX");
+			private By threedotsmenu = By.cssSelector("div.T-I.J-J5-Ji.T-I-Js-Gs.aap.T-I-awG.T-I-ax7.L3[aria-label='More']");
+			private By threedotsopenmenudrpdown = By.cssSelector("div.b7.J-M");
+			private By deletethismsglink = By.cssSelector("div.cj[act='11']>img.dS.J-N-JX");
 			
-		    static By expandmorebtn = By.cssSelector("span.CJ");
-		    static By trashlink = By.cssSelector("a.J-Ke.n0[aria-label='Trash']");
+		    private By expandmorebtn = By.cssSelector("span.CJ");
+		    private By trashlink = By.cssSelector("a.J-Ke.n0[aria-label='Trash']");
 		 
-		    static By emptytrashnow = By.cssSelector("span.x2");
-		    static By emptytrashnowok = By.cssSelector("button.J-at1-auR.J-at1-atl");
+		    private By emptytrashnow = By.cssSelector("span.x2");
+		    private By emptytrashnowok = By.cssSelector("button.J-at1-auR.J-at1-atl");
 		    
 		    
-		    public static String [] checkRegisterEmail (WebDriver webdriver, String email, String gmailpwd, String gmailsearch) throws InterruptedException 
+		    public  String [] checkRegisterEmail (WebDriver webdriver, String email, String gmailpwd, String gmailsearch) throws InterruptedException 
 		    {
-		    		webdriver.get("https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
-		    		WebDriverWait wait = new WebDriverWait (webdriver, 90);
-		    		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginemail));
+		    	webdriver.get("https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+		    	WebDriverWait wait = new WebDriverWait (webdriver, 90);
+		    	WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginemail));
 		        login.clear();
 		        login.sendKeys(email);
-	    		    WebElement next1 = wait.until(ExpectedConditions.elementToBeClickable(nextbtn));
+	    		WebElement next1 = wait.until(ExpectedConditions.elementToBeClickable(nextbtn));
 			    next1.click();
 			    
 			    WebElement password = wait.until(ExpectedConditions.elementToBeClickable(pwd));
-			    password.click();
 			    password.clear();
 			    password.sendKeys(gmailpwd);
 			    WebElement next2 = wait.until(ExpectedConditions.elementToBeClickable(pwdnextbtn));
@@ -130,7 +129,7 @@ public class Gmail {
 		    }
 		    
 
-		    public static void deleteGmail (WebDriver webdriver) throws InterruptedException 
+		    public void deleteGmail (WebDriver webdriver) throws InterruptedException 
 		    {
 
 	    			//((JavascriptExecutor) webdriver).executeScript("window.scrollTo(document.body.scrollHeight, 0)");

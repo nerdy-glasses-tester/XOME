@@ -17,16 +17,16 @@ public class Login_Page {
 	//****************************************//
 	final static Logger log = LogManager.getLogger(Login_Page.class);
 	
-	static By signinlink = By.cssSelector("a.LinkButton.btn.btn-secondary");
-	static By emaillogin = By.id("security_loginname");
-	static By pwdlogin = By.id("security_password");
-	static By submitbtn = By.cssSelector("input.btn.btn-primary");
-	static By emailpwddoesntmatchtext = By.xpath(".//*[@id=\"customerLoginForm\"]/div[3]/ul/li[contains(text(), \"Oops, the e-mail or password doesn't match.\")]");  //Oops, the e-mail or password doesn't match.
-	static By onemoreloginchancetext = By.cssSelector("div.row-fluid.errorMessageBox.errorMessageBoxServerSide>ul>li"); //You have 1 more login attempt before your account is locked. Please enter your login credentials properly, reset your password by clicking the \"Forgot your password ? \" link or contact Customer Service at 1-844-400-9663 for assistance.
-	static By verifysignedin = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
+	private By signinlink = By.cssSelector("a.LinkButton.btn.btn-secondary");
+	private By emaillogin = By.id("security_loginname");
+	private By pwdlogin = By.id("security_password");
+	private By submitbtn = By.cssSelector("input.btn.btn-primary");
+	private By emailpwddoesntmatchtext = By.xpath(".//*[@id=\"customerLoginForm\"]/div[3]/ul/li[contains(text(), \"Oops, the e-mail or password doesn't match.\")]");  //Oops, the e-mail or password doesn't match.
+	private By onemoreloginchancetext = By.cssSelector("div.row-fluid.errorMessageBox.errorMessageBoxServerSide>ul>li"); //You have 1 more login attempt before your account is locked. Please enter your login credentials properly, reset your password by clicking the \"Forgot your password ? \" link or contact Customer Service at 1-844-400-9663 for assistance.
+	private By verifysignedin = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
 	
 	
-    public static void clickSignIn (WebDriver webdriver)
+    public void clickSignIn (WebDriver webdriver)
     {
     		WebDriverWait wait = new WebDriverWait (webdriver, 60);
     		WebElement signin = wait.until(ExpectedConditions.elementToBeClickable(signinlink));
@@ -36,7 +36,7 @@ public class Login_Page {
     }
 
     
-    public static String signinBlankFields (WebDriver webdriver)
+    public String signinBlankFields (WebDriver webdriver)
     {
     		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement submit = wait.until(ExpectedConditions.elementToBeClickable(submitbtn));
@@ -52,7 +52,7 @@ public class Login_Page {
     }
     
    
-    public static String signinWrongPwd (WebDriver webdriver, String login, String password) throws InterruptedException
+    public String signinWrongPwd (WebDriver webdriver, String login, String password) throws InterruptedException
     {
     		WebDriverWait wait = new WebDriverWait (webdriver, 60);
     		WebElement email = wait.until(ExpectedConditions.elementToBeClickable(emaillogin));
@@ -78,7 +78,7 @@ public class Login_Page {
 	    return wrongemailpwdtext;
     }
     
-    public static String login (WebDriver webdriver, String login, String password) throws InterruptedException
+    public String login (WebDriver webdriver, String login, String password) throws InterruptedException
     {
     	WebDriverWait wait = new WebDriverWait (webdriver, 60);
     	WebElement email = wait.until(ExpectedConditions.elementToBeClickable(emaillogin));
