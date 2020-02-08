@@ -147,14 +147,15 @@ public class Login_Page {
     		}
     	});
         
-
-    	while(!buyonmainpageelement.isDisplayed())
+    	
+    	if(!buyonmainpageelement.isDisplayed())
     	{
         	buyonmainpageelement = (WebElement) wait.until(new Function<WebDriver, WebElement>(){
         		public WebElement apply(WebDriver webdriver) {
         			return webdriver.findElement(buyonmainpage);
         		}
         	});
+
     	}
 
     	return signedinusername;

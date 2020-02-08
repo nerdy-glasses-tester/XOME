@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31914" started-at="2020-02-07T17:40:48 PST" finished-at="2020-02-07T17:41:20 PST">
+  <suite name="Default suite" duration-ms="15581" started-at="2020-02-07T22:41:59 PST" finished-at="2020-02-07T22:42:14 PST">
     <groups>
       <group name="regression">
         <method signature="Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="loginSearch" class="webTests.Login_and_Search"/>
@@ -11,13 +11,13 @@
         <method signature="Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="loginSearch" class="webTests.Login_and_Search"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="31914" started-at="2020-02-07T17:40:48 PST" finished-at="2020-02-07T17:41:20 PST">
+    <test name="Default test" duration-ms="15581" started-at="2020-02-07T22:41:59 PST" finished-at="2020-02-07T22:42:14 PST">
       <class name="webTests.Login_and_Search">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="Setup" is-config="true" duration-ms="4021" started-at="2020-02-07T17:40:49 PST" finished-at="2020-02-07T17:40:53 PST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="Setup" is-config="true" duration-ms="4090" started-at="2020-02-07T22:41:59 PST" finished-at="2020-02-07T22:42:03 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="loginSearch" duration-ms="27210" started-at="2020-02-07T17:40:53 PST" data-provider="getData" finished-at="2020-02-07T17:41:20 PST">
+        <test-method status="PASS" signature="loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="loginSearch" duration-ms="10781" started-at="2020-02-07T22:42:03 PST" data-provider="getData" finished-at="2020-02-07T22:42:14 PST">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSearch -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="OnFailure" is-config="true" duration-ms="1" started-at="2020-02-07T17:41:20 PST" finished-at="2020-02-07T17:41:20 PST">
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="OnFailure" is-config="true" duration-ms="1" started-at="2020-02-07T22:42:14 PST" finished-at="2020-02-07T22:42:14 PST">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="tearDown" is-config="true" duration-ms="264" started-at="2020-02-07T17:41:20 PST" finished-at="2020-02-07T17:41:20 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.Login_and_Search@7e9131d5]" name="tearDown" is-config="true" duration-ms="281" started-at="2020-02-07T22:42:14 PST" finished-at="2020-02-07T22:42:14 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

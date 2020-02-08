@@ -81,13 +81,15 @@ public class Search {
 	    		}
 	    	});
 
-	    	while(searchr.isEmpty())
+	
+	    	if(searchr.isEmpty())
 	    	{
 	    		searchr =  (List<WebElement>) wait.until(new Function<WebDriver, List<WebElement>>(){
 		    		public List<WebElement>apply(WebDriver webdriver) {
 		    			return webdriver.findElements(searchresults);
 		    		}
 		    	});
+	    		
 	    	}
 	        
 	    	searchr.get(5).click();
