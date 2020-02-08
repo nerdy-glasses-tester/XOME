@@ -2,14 +2,20 @@ package webPageObjects;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
+import java.util.function.Function;
 
 public class Search {
 
@@ -34,13 +40,27 @@ public class Search {
 		
 	    public void searchByCity (WebDriver webdriver, String searchkeyword)
 	    {
-	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    	WebElement searchbuy = wait.until(ExpectedConditions.elementToBeClickable(homepagesearchfield));
+	    	Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)   
+	    		    .withTimeout(Duration.ofSeconds(30))    
+	    		    .pollingEvery(Duration.ofSeconds(1))   
+	    		    .ignoring(NoSuchElementException.class);
+	    	
+	    	WebElement searchbuy = (WebElement) wait.until(new Function<WebDriver, WebElement>(){
+	    		public WebElement apply(WebDriver webdriver) {
+	    			return webdriver.findElement(homepagesearchfield);
+	    		}
+	    	});
+	    
 	        searchbuy.click(); 
             searchbuy.clear();
             searchbuy.sendKeys(searchkeyword);
             
-            WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchbutton));
+	    	WebElement searchbtn = (WebElement) wait.until(new Function<WebDriver, WebElement>(){
+	    		public WebElement apply(WebDriver webdriver) {
+	    			return webdriver.findElement(searchbutton);
+	    		}
+	    	});
+	    	
             searchbtn.click();
             
 	    }
@@ -50,10 +70,34 @@ public class Search {
 	    	Search search = new Search();
 	    	search.searchByCity(webdriver, searchkeyword); 
 	    		
-	    	WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    	List<WebElement> searchr = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy((By) searchresults));
-	        searchr.get(5).click();
-            WebElement addline2 = wait.until(ExpectedConditions.presenceOfElementLocated(addressline2));
+	    	Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)    
+	    		    .withTimeout(Duration.ofSeconds(30))    
+	    		    .pollingEvery(Duration.ofSeconds(1))   
+	    		    .ignoring(NoSuchElementException.class);
+	    	
+	    	List<WebElement> searchr =  (List<WebElement>) wait.until(new Function<WebDriver, List<WebElement>>(){
+	    		public List<WebElement>apply(WebDriver webdriver) {
+	    			return webdriver.findElements(searchresults);
+	    		}
+	    	});
+
+	    	while(searchr.isEmpty())
+	    	{
+	    		searchr =  (List<WebElement>) wait.until(new Function<WebDriver, List<WebElement>>(){
+		    		public List<WebElement>apply(WebDriver webdriver) {
+		    			return webdriver.findElements(searchresults);
+		    		}
+		    	});
+	    	}
+	        
+	    	searchr.get(5).click();
+	    	
+	        WebElement addline2 = (WebElement) wait.until(new Function<WebDriver, WebElement>(){
+	    		public WebElement apply(WebDriver webdriver) {
+	    			return webdriver.findElement(addressline2);
+	    		}
+	    	});
+	    	
             String addressline2text = addline2.getText();
             
             if(addressline2text.contains(searchkeyword))
@@ -64,7 +108,7 @@ public class Search {
             {
             	return false;
             }
-            
+	    	
 	    }
 	
 	    

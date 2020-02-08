@@ -178,7 +178,7 @@ public class TestBase {
 						
 						capabilities.setCapability("newCommandTimeout", 120); 
 						
-			            File appDir = new File(ReadProperties.globalProp.getProperty("apkfile")); //this ipa was done with automatic signing
+			            File appDir = new File(ReadProperties.globalProp.getProperty("apkfile")); 
 			            File app = new File(appDir, "base.apk");
 						capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 						capabilities.setCapability("appPackage", "com.xome.android");

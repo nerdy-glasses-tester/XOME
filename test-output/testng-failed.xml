@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [WEB TESTS]">
-  <listeners>
-    <listener class-name="common.TestListener"/>
-  </listeners>
-  <test thread-count="5" verbose="10" name="WEB-FILTERMORERESULTS-By-KEYWORD(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webTests.FilterMoreResultsByKeyword">
+      <class name="webTests.Login_and_Search">
         <methods>
-          <include name="filterResultsByKeyword" invocation-numbers="0"/>
           <include name="OnFailure"/>
           <include name="Setup"/>
           <include name="tearDown"/>
+          <include name="loginSearch" invocation-numbers="0"/>
         </methods>
-      </class> <!-- webTests.FilterMoreResultsByKeyword -->
+      </class> <!-- webTests.Login_and_Search -->
     </classes>
-  </test> <!-- WEB-FILTERMORERESULTS-By-KEYWORD(failed) -->
-</suite> <!-- Failed suite [WEB TESTS] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -67,6 +67,7 @@ public class Login_and_Search extends TestBase{
 			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 			softAssert.fail();
 		}
+
 		
 		   softAssert.assertAll();
 	}
