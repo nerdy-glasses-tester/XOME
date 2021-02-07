@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,22 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-WEB_TESTS">
-              <span class="suite-name border-passed">WEB TESTS</span>
+            <a href="#" panel-name="suite-XOME_Suite" class="navigator-link">
+              <span class="suite-name border-passed">XOME Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-WEB_TESTS">
-                    <span>TestNG3.xml</span>
+                  <a href="#" panel-name="test-xml-XOME_Suite" class="navigator-link ">
+                    <span>TestNG5.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-WEB_TESTS">
-                    <span class="test-stats">9 tests</span>
+                  <a href="#" panel-name="testlist-XOME_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-WEB_TESTS">
+                  <a href="#" panel-name="group-XOME_Suite" class="navigator-link ">
                     <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-WEB_TESTS">
+                  <a href="#" panel-name="times-XOME_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-WEB_TESTS">
+                  <a href="#" panel-name="reporter-XOME_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-WEB_TESTS">
+                  <a href="#" panel-name="ignored-methods-XOME_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-WEB_TESTS">
+                  <a href="#" panel-name="chronological-XOME_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,96 +93,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-WEB_TESTS" class="hide-methods passed suite-WEB_TESTS"> (hide)</a> <!-- hide-methods passed suite-WEB_TESTS -->
-                      <a href="#" panel-name="suite-WEB_TESTS" class="show-methods passed suite-WEB_TESTS"> (show)</a> <!-- show-methods passed suite-WEB_TESTS -->
+                      <a href="#" panel-name="suite-XOME_Suite" class="hide-methods passed suite-XOME_Suite"> (hide)</a> <!-- hide-methods passed suite-XOME_Suite -->
+                      <a href="#" panel-name="suite-XOME_Suite" class="show-methods passed suite-XOME_Suite"> (show)</a> <!-- show-methods passed suite-XOME_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-WEB_TESTS">
+                    <div class="method-list-content passed suite-XOME_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterResultsByPriceBedBath" hash-for-method="filterResultsByBeds(Irvine, CA, 3)">filterResultsByBeds(Irvine, CA, 3)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MFilterByPendingSoldForSaleStatus" class="method navigator-link" hash-for-method="mFilterForSale(Irvine, CA)">mFilterForSale(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsByStatus" hash-for-method="filterResultsByForSaleStatus(Irvine, CA)">filterResultsByForSaleStatus(Irvine, CA)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MFilterByPendingSoldForSaleStatus" class="method navigator-link" hash-for-method="mFilterPending(Irvine, CA)">mFilterPending(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsByKeyword" hash-for-method="filterResultsByKeyword(Irvine, CA, master bedroom)">filterResultsByKeyword(Irvine, CA, master bedroom)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MFilterByPendingSoldForSaleStatus" class="method navigator-link" hash-for-method="mFilterSold(Irvine, CA)">mFilterSold(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsByStatus" hash-for-method="filterResultsByPendingStatus(Irvine, CA)">filterResultsByPendingStatus(Irvine, CA)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" class="method navigator-link" hash-for-method="mSortByBath(Irvine, CA)">mSortByBath(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterResultsByPriceBedBath" hash-for-method="filterResultsByPrice(Irvine, CA, 800,000, 1,300,000)">filterResultsByPrice(Irvine, CA, 800,000, 1,300,000)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" class="method navigator-link" hash-for-method="mSortByBed(Irvine, CA)">mSortByBed(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsByPropertyType" hash-for-method="filterResultsByPropertyTypeLand(Malibu, CA)">filterResultsByPropertyTypeLand(Malibu, CA)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" class="method navigator-link" hash-for-method="mSortByHightoLowPrice(Irvine, CA)">mSortByHightoLowPrice(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsByStatus" hash-for-method="filterResultsBySoldStatus(Irvine, CA)">filterResultsBySoldStatus(Irvine, CA)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" class="method navigator-link" hash-for-method="mSortByLowtoHighPrice(Irvine, CA)">mSortByLowtoHighPrice(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsBySquareFeet" hash-for-method="filterResultsBySqFeet(Irvine, CA, 750, 1000)">filterResultsBySqFeet(Irvine, CA, 750, 1000)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" class="method navigator-link" hash-for-method="mSortByMostRecent(Irvine, CA)">mSortByMostRecent(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterMoreResultsByYear" hash-for-method="filterResultsByYear(Irvine, CA, 2000, 2017)">filterResultsByYear(Irvine, CA, 2000, 2017)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XOME_Suite" title="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" class="method navigator-link" hash-for-method="mSortBySqFt(Irvine, CA)">mSortBySqFt(Irvine, CA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.FilterResultsByPriceBedBath" hash-for-method="filterResultsBybaths(Irvine, CA, 3)">filterResultsBybaths(Irvine, CA, 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.Login_and_Search" hash-for-method="loginSearch(sqatester2018@gmail.com, Automation123#, Irvine, CA)">loginSearch(sqatester2018@gmail.com, Automation123#, Irvine, CA)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.SearchforSpecificProperty" hash-for-method="searchSpecificProperty(12512 Brighton Place Tustin, CA 92780)">searchSpecificProperty(12512 Brighton Place Tustin, CA 92780)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.SortResultsByPriceBedBath" hash-for-method="sortResultsByBaths(San Marino, CA)">sortResultsByBaths(San Marino, CA)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.SortResultsByPriceBedBath" hash-for-method="sortResultsByBeds(Milpitas, CA)">sortResultsByBeds(Milpitas, CA)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.SortResultsByPriceBedBath" hash-for-method="sortResultsByMostRecent(Irvine, CA)">sortResultsByMostRecent(Irvine, CA)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WEB_TESTS" title="webTests.SortResultsByPriceBedBath" hash-for-method="sortResultsByPrice(Irvine, CA)">sortResultsByPrice(Irvine, CA)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-WEB_TESTS -->
+                    </div> <!-- method-list-content passed suite-XOME_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -191,375 +158,186 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-WEB_TESTS" class="panel WEB_TESTS">
-          <div class="suite-WEB_TESTS-class-passed">
+        <div panel-name="suite-XOME_Suite" class="panel XOME_Suite">
+          <div class="suite-XOME_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">webTests.FilterMoreResultsByPropertyType</span>
+              <span class="class-name">mobileTests.MFilterByPendingSoldForSaleStatus</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="filterResultsByPropertyTypeLand(Malibu, CA)">
-                  </a> <!-- filterResultsByPropertyTypeLand(Malibu, CA) -->
-                  <span class="method-name">filterResultsByPropertyTypeLand</span>
-                  <span class="parameters">(Malibu, CA)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.FilterResultsByPriceBedBath</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterResultsByBeds(Irvine, CA, 3)">
-                  </a> <!-- filterResultsByBeds(Irvine, CA, 3) -->
-                  <span class="method-name">filterResultsByBeds</span>
-                  <span class="parameters">(Irvine, CA, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterResultsByPrice(Irvine, CA, 800,000, 1,300,000)">
-                  </a> <!-- filterResultsByPrice(Irvine, CA, 800,000, 1,300,000) -->
-                  <span class="method-name">filterResultsByPrice</span>
-                  <span class="parameters">(Irvine, CA, 800,000, 1,300,000)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterResultsBybaths(Irvine, CA, 3)">
-                  </a> <!-- filterResultsBybaths(Irvine, CA, 3) -->
-                  <span class="method-name">filterResultsBybaths</span>
-                  <span class="parameters">(Irvine, CA, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.SearchforSpecificProperty</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchSpecificProperty(12512 Brighton Place Tustin, CA 92780)">
-                  </a> <!-- searchSpecificProperty(12512 Brighton Place Tustin, CA 92780) -->
-                  <span class="method-name">searchSpecificProperty</span>
-                  <span class="parameters">(12512 Brighton Place Tustin, CA 92780)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.FilterMoreResultsByYear</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterResultsByYear(Irvine, CA, 2000, 2017)">
-                  </a> <!-- filterResultsByYear(Irvine, CA, 2000, 2017) -->
-                  <span class="method-name">filterResultsByYear</span>
-                  <span class="parameters">(Irvine, CA, 2000, 2017)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.Login_and_Search</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginSearch(sqatester2018@gmail.com, Automation123#, Irvine, CA)">
-                  </a> <!-- loginSearch(sqatester2018@gmail.com, Automation123#, Irvine, CA) -->
-                  <span class="method-name">loginSearch</span>
-                  <span class="parameters">(sqatester2018@gmail.com, Automation123#, Irvine, CA)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.SortResultsByPriceBedBath</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="sortResultsByBaths(San Marino, CA)">
-                  </a> <!-- sortResultsByBaths(San Marino, CA) -->
-                  <span class="method-name">sortResultsByBaths</span>
-                  <span class="parameters">(San Marino, CA)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sortResultsByBeds(Milpitas, CA)">
-                  </a> <!-- sortResultsByBeds(Milpitas, CA) -->
-                  <span class="method-name">sortResultsByBeds</span>
-                  <span class="parameters">(Milpitas, CA)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sortResultsByMostRecent(Irvine, CA)">
-                  </a> <!-- sortResultsByMostRecent(Irvine, CA) -->
-                  <span class="method-name">sortResultsByMostRecent</span>
+                  <a name="mFilterForSale(Irvine, CA)">
+                  </a> <!-- mFilterForSale(Irvine, CA) -->
+                  <span class="method-name">mFilterForSale</span>
                   <span class="parameters">(Irvine, CA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="sortResultsByPrice(Irvine, CA)">
-                  </a> <!-- sortResultsByPrice(Irvine, CA) -->
-                  <span class="method-name">sortResultsByPrice</span>
+                  <a name="mFilterPending(Irvine, CA)">
+                  </a> <!-- mFilterPending(Irvine, CA) -->
+                  <span class="method-name">mFilterPending</span>
+                  <span class="parameters">(Irvine, CA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mFilterSold(Irvine, CA)">
+                  </a> <!-- mFilterSold(Irvine, CA) -->
+                  <span class="method-name">mFilterSold</span>
                   <span class="parameters">(Irvine, CA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
+          </div> <!-- suite-XOME_Suite-class-passed -->
+          <div class="suite-XOME_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">webTests.FilterMoreResultsByStatus</span>
+              <span class="class-name">mobileTests.MSortResultsByBedBathPriceSqFtMostRecent</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="filterResultsByForSaleStatus(Irvine, CA)">
-                  </a> <!-- filterResultsByForSaleStatus(Irvine, CA) -->
-                  <span class="method-name">filterResultsByForSaleStatus</span>
+                  <a name="mSortByBath(Irvine, CA)">
+                  </a> <!-- mSortByBath(Irvine, CA) -->
+                  <span class="method-name">mSortByBath</span>
                   <span class="parameters">(Irvine, CA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="filterResultsByPendingStatus(Irvine, CA)">
-                  </a> <!-- filterResultsByPendingStatus(Irvine, CA) -->
-                  <span class="method-name">filterResultsByPendingStatus</span>
+                  <a name="mSortByBed(Irvine, CA)">
+                  </a> <!-- mSortByBed(Irvine, CA) -->
+                  <span class="method-name">mSortByBed</span>
                   <span class="parameters">(Irvine, CA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="filterResultsBySoldStatus(Irvine, CA)">
-                  </a> <!-- filterResultsBySoldStatus(Irvine, CA) -->
-                  <span class="method-name">filterResultsBySoldStatus</span>
+                  <a name="mSortByHightoLowPrice(Irvine, CA)">
+                  </a> <!-- mSortByHightoLowPrice(Irvine, CA) -->
+                  <span class="method-name">mSortByHightoLowPrice</span>
+                  <span class="parameters">(Irvine, CA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mSortByLowtoHighPrice(Irvine, CA)">
+                  </a> <!-- mSortByLowtoHighPrice(Irvine, CA) -->
+                  <span class="method-name">mSortByLowtoHighPrice</span>
+                  <span class="parameters">(Irvine, CA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mSortByMostRecent(Irvine, CA)">
+                  </a> <!-- mSortByMostRecent(Irvine, CA) -->
+                  <span class="method-name">mSortByMostRecent</span>
+                  <span class="parameters">(Irvine, CA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mSortBySqFt(Irvine, CA)">
+                  </a> <!-- mSortBySqFt(Irvine, CA) -->
+                  <span class="method-name">mSortBySqFt</span>
                   <span class="parameters">(Irvine, CA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.FilterMoreResultsByKeyword</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterResultsByKeyword(Irvine, CA, master bedroom)">
-                  </a> <!-- filterResultsByKeyword(Irvine, CA, master bedroom) -->
-                  <span class="method-name">filterResultsByKeyword</span>
-                  <span class="parameters">(Irvine, CA, master bedroom)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-          <div class="suite-WEB_TESTS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webTests.FilterMoreResultsBySquareFeet</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterResultsBySqFeet(Irvine, CA, 750, 1000)">
-                  </a> <!-- filterResultsBySqFeet(Irvine, CA, 750, 1000) -->
-                  <span class="method-name">filterResultsBySqFeet</span>
-                  <span class="parameters">(Irvine, CA, 750, 1000)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WEB_TESTS-class-passed -->
-        </div> <!-- panel WEB_TESTS -->
-        <div panel-name="test-xml-WEB_TESTS" class="panel">
+          </div> <!-- suite-XOME_Suite-class-passed -->
+        </div> <!-- panel XOME_Suite -->
+        <div panel-name="test-xml-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/macbookpro/eclipse-workspace/XOME/src/test/resources/TestNG3.xml</span>
+            <span class="header-content">/Users/geeky/OneDrive/eclipse-workspace/XOME/TestNG5.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;WEB TESTS&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;XOME Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+      &lt;exclude name=&quot;P3&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;common.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-LOGIN-AND-SEARCH&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;All Tests Run including Smoke and Regression&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+        &lt;exclude name=&quot;P3&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;webTests.Login_and_Search&quot;/&gt;
+      &lt;class name=&quot;mobileTests.MFilterByPendingSoldForSaleStatus&quot;/&gt;
+      &lt;class name=&quot;mobileTests.MSortResultsByBedBathPriceSqFtMostRecent&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-LOGIN-AND-SEARCH --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-SEARCH-SPECIFIC-PROPERTY&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.SearchforSpecificProperty&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-SEARCH-SPECIFIC-PROPERTY --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-SORTRESULTS-BY-PRICEBEDBATH&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.SortResultsByPriceBedBath&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-SORTRESULTS-BY-PRICEBEDBATH --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-FILTERMORERESULTS-By-KEYWORD&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.FilterMoreResultsByKeyword&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-FILTERMORERESULTS-By-KEYWORD --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-FILTERMORERESULTS-BY-PROPERTYTYPE&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.FilterMoreResultsByPropertyType&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-FILTERMORERESULTS-BY-PROPERTYTYPE --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-FILTERMORERESULTS-BY-SQUAREFEET&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.FilterMoreResultsBySquareFeet&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-FILTERMORERESULTS-BY-SQUAREFEET --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-FILTERMORERESULTS-BY-STATUS&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.FilterMoreResultsByStatus&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-FILTERMORERESULTS-BY-STATUS --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-FILTERMORRESULTS-BY-YEAR&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.FilterMoreResultsByYear&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-FILTERMORRESULTS-BY-YEAR --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;WEB-FILTERRESULTS-BY-PRICEBEDBATH&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;webTests.FilterResultsByPriceBedBath&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WEB-FILTERRESULTS-BY-PRICEBEDBATH --&gt;
-&lt;/suite&gt; &lt;!-- WEB TESTS --&gt;
+  &lt;/test&gt; &lt;!-- All Tests Run including Smoke and Regression --&gt;
+&lt;/suite&gt; &lt;!-- XOME Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-WEB_TESTS" class="panel">
+        <div panel-name="testlist-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for WEB TESTS</span>
+            <span class="header-content">Tests for XOME Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">WEB-LOGIN-AND-SEARCH (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-SEARCH-SPECIFIC-PROPERTY (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-SORTRESULTS-BY-PRICEBEDBATH (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-FILTERMORERESULTS-By-KEYWORD (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-FILTERMORERESULTS-BY-PROPERTYTYPE (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-FILTERMORERESULTS-BY-SQUAREFEET (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-FILTERMORERESULTS-BY-STATUS (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-FILTERMORRESULTS-BY-YEAR (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WEB-FILTERRESULTS-BY-PRICEBEDBATH (1 class)</span>
+                <span class="test-name">All Tests Run including Smoke and Regression (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-WEB_TESTS" class="panel">
+        <div panel-name="group-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for WEB TESTS</span>
+            <span class="header-content">Groups for XOME Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByBeds</span>
+                <span class="method-in-group-name">mFilterForSale</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByForSaleStatus</span>
+                <span class="method-in-group-name">mFilterPending</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByKeyword</span>
+                <span class="method-in-group-name">mFilterSold</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByPendingStatus</span>
+                <span class="method-in-group-name">mSortByBath</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByPrice</span>
+                <span class="method-in-group-name">mSortByBed</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByPropertyTypeLand</span>
+                <span class="method-in-group-name">mSortByHightoLowPrice</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsBySoldStatus</span>
+                <span class="method-in-group-name">mSortByLowtoHighPrice</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsBySqFeet</span>
+                <span class="method-in-group-name">mSortByMostRecent</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByYear</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsBybaths</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginSearch</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchSpecificProperty</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByBaths</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByBeds</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByMostRecent</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByPrice</span>
+                <span class="method-in-group-name">mSortBySqFt</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -567,465 +345,277 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByBeds</span>
+                <span class="method-in-group-name">mFilterForSale</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByForSaleStatus</span>
+                <span class="method-in-group-name">mFilterPending</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByKeyword</span>
+                <span class="method-in-group-name">mFilterSold</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByPendingStatus</span>
+                <span class="method-in-group-name">mSortByBath</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByPrice</span>
+                <span class="method-in-group-name">mSortByBed</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByPropertyTypeLand</span>
+                <span class="method-in-group-name">mSortByHightoLowPrice</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsBySoldStatus</span>
+                <span class="method-in-group-name">mSortByLowtoHighPrice</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsBySqFeet</span>
+                <span class="method-in-group-name">mSortByMostRecent</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsByYear</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">filterResultsBybaths</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginSearch</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchSpecificProperty</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByBaths</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByBeds</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByMostRecent</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">sortResultsByPrice</span>
+                <span class="method-in-group-name">mSortBySqFt</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-WEB_TESTS" class="panel">
+        <div panel-name="times-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for WEB TESTS</span>
+            <span class="header-content">Times for XOME Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_WEB_TESTS');
-function tableData_WEB_TESTS() {
+suiteTableInitFunctions.push('tableData_XOME_Suite');
+function tableData_XOME_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'filterResultsByPrice')
-data.setCell(0, 2, 'webTests.FilterResultsByPriceBedBath')
-data.setCell(0, 3, 24808);
+data.setCell(0, 1, 'mSortByMostRecent')
+data.setCell(0, 2, 'mobileTests.MSortResultsByBedBathPriceSqFtMostRecent')
+data.setCell(0, 3, 71989);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sortResultsByMostRecent')
-data.setCell(1, 2, 'webTests.SortResultsByPriceBedBath')
-data.setCell(1, 3, 20904);
+data.setCell(1, 1, 'mSortByBed')
+data.setCell(1, 2, 'mobileTests.MSortResultsByBedBathPriceSqFtMostRecent')
+data.setCell(1, 3, 70806);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'filterResultsByYear')
-data.setCell(2, 2, 'webTests.FilterMoreResultsByYear')
-data.setCell(2, 3, 20592);
+data.setCell(2, 1, 'mSortByBath')
+data.setCell(2, 2, 'mobileTests.MSortResultsByBedBathPriceSqFtMostRecent')
+data.setCell(2, 3, 70002);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'sortResultsByBeds')
-data.setCell(3, 2, 'webTests.SortResultsByPriceBedBath')
-data.setCell(3, 3, 20271);
+data.setCell(3, 1, 'mSortBySqFt')
+data.setCell(3, 2, 'mobileTests.MSortResultsByBedBathPriceSqFtMostRecent')
+data.setCell(3, 3, 57985);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'filterResultsBySqFeet')
-data.setCell(4, 2, 'webTests.FilterMoreResultsBySquareFeet')
-data.setCell(4, 3, 19974);
+data.setCell(4, 1, 'mSortByHightoLowPrice')
+data.setCell(4, 2, 'mobileTests.MSortResultsByBedBathPriceSqFtMostRecent')
+data.setCell(4, 3, 56619);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'filterResultsBySoldStatus')
-data.setCell(5, 2, 'webTests.FilterMoreResultsByStatus')
-data.setCell(5, 3, 19729);
+data.setCell(5, 1, 'mSortByLowtoHighPrice')
+data.setCell(5, 2, 'mobileTests.MSortResultsByBedBathPriceSqFtMostRecent')
+data.setCell(5, 3, 56441);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'sortResultsByBaths')
-data.setCell(6, 2, 'webTests.SortResultsByPriceBedBath')
-data.setCell(6, 3, 19479);
+data.setCell(6, 1, 'mFilterForSale')
+data.setCell(6, 2, 'mobileTests.MFilterByPendingSoldForSaleStatus')
+data.setCell(6, 3, 40581);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'sortResultsByPrice')
-data.setCell(7, 2, 'webTests.SortResultsByPriceBedBath')
-data.setCell(7, 3, 18918);
+data.setCell(7, 1, 'mFilterSold')
+data.setCell(7, 2, 'mobileTests.MFilterByPendingSoldForSaleStatus')
+data.setCell(7, 3, 40172);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'filterResultsByPendingStatus')
-data.setCell(8, 2, 'webTests.FilterMoreResultsByStatus')
-data.setCell(8, 3, 18312);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'filterResultsByForSaleStatus')
-data.setCell(9, 2, 'webTests.FilterMoreResultsByStatus')
-data.setCell(9, 3, 17983);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'filterResultsByKeyword')
-data.setCell(10, 2, 'webTests.FilterMoreResultsByKeyword')
-data.setCell(10, 3, 16286);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'filterResultsByPropertyTypeLand')
-data.setCell(11, 2, 'webTests.FilterMoreResultsByPropertyType')
-data.setCell(11, 3, 16151);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'filterResultsByBeds')
-data.setCell(12, 2, 'webTests.FilterResultsByPriceBedBath')
-data.setCell(12, 3, 11205);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'filterResultsBybaths')
-data.setCell(13, 2, 'webTests.FilterResultsByPriceBedBath')
-data.setCell(13, 3, 10585);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'loginSearch')
-data.setCell(14, 2, 'webTests.Login_and_Search')
-data.setCell(14, 3, 9165);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'searchSpecificProperty')
-data.setCell(15, 2, 'webTests.SearchforSpecificProperty')
-data.setCell(15, 3, 2887);
-window.suiteTableData['WEB_TESTS']= { tableData: data, tableDiv: 'times-div-WEB_TESTS'}
+data.setCell(8, 1, 'mFilterPending')
+data.setCell(8, 2, 'mobileTests.MFilterByPendingSoldForSaleStatus')
+data.setCell(8, 3, 39863);
+window.suiteTableData['XOME_Suite']= { tableData: data, tableDiv: 'times-div-XOME_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
-              <div id="times-div-WEB_TESTS">
-              </div> <!-- times-div-WEB_TESTS -->
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-XOME_Suite">
+              </div> <!-- times-div-XOME_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-WEB_TESTS" class="panel">
+        <div panel-name="reporter-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for WEB TESTS</span>
+            <span class="header-content">Reporter output for XOME Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-WEB_TESTS" class="panel">
+        <div panel-name="ignored-methods-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-WEB_TESTS" class="panel">
+        <div panel-name="chronological-XOME_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">webTests.Login_and_Search</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">mobileTests.MFilterByPendingSoldForSaleStatus</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginSearch(sqatester2018@gmail.com, Automation123#, Irvine, CA)</span>
-                <span class="method-start">3087 ms</span>
+                <span class="method-name">mFilterForSale(Irvine, CA)</span>
+                <span class="method-start">13378 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=loginSearch status=SUCCESS method=Login_and_Search.loginSearch(java.lang.String, ja...)</span>
-                <span class="method-start">12252 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mFilterForSale status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterForSa...)</span>
+                <span class="method-start">53960 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12253 ms</span>
+                <span class="method-start">53961 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">55039 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mFilterPending(Irvine, CA)</span>
+                <span class="method-start">63504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name=mFilterPending status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterPendi...)</span>
+                <span class="method-start">103367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">103368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">104186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mFilterSold(Irvine, CA)</span>
+                <span class="method-start">112809 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name=mFilterSold status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterSold(jav...)</span>
+                <span class="method-start">152982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">152982 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">webTests.SearchforSpecificProperty</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">mobileTests.MSortResultsByBedBathPriceSqFtMostRecent</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">17569 ms</span>
+                <span class="method-start">153970 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchSpecificProperty(12512 Brighton Place Tustin, CA 92780)</span>
-                <span class="method-start">20392 ms</span>
+                <span class="method-name">mSortByBed(Irvine, CA)</span>
+                <span class="method-start">162432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=searchSpecificProperty status=SUCCESS method=SearchforSpecificProperty.searchSpecif...)</span>
-                <span class="method-start">23279 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mSortByBed status=SUCCESS method=MSortResultsByBedBathPriceSqFtMostRecent.mSortByBe...)</span>
+                <span class="method-start">233239 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23279 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.SortResultsByPriceBedBath</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">28508 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">sortResultsByBaths(San Marino, CA)</span>
-                <span class="method-start">30979 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=sortResultsByBaths status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByBat...)</span>
-                <span class="method-start">50458 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">50458 ms</span>
+                <span class="method-start">233239 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">50719 ms</span>
+                <span class="method-start">234041 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sortResultsByBeds(Milpitas, CA)</span>
-                <span class="method-start">53312 ms</span>
+                <span class="method-name">mSortByBath(Irvine, CA)</span>
+                <span class="method-start">242738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=sortResultsByBeds status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByBeds...)</span>
-                <span class="method-start">73583 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mSortByBath status=SUCCESS method=MSortResultsByBedBathPriceSqFtMostRecent.mSortByB...)</span>
+                <span class="method-start">312741 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73584 ms</span>
+                <span class="method-start">312741 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">73833 ms</span>
+                <span class="method-start">313610 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sortResultsByMostRecent(Irvine, CA)</span>
-                <span class="method-start">76518 ms</span>
+                <span class="method-name">mSortByLowtoHighPrice(Irvine, CA)</span>
+                <span class="method-start">322306 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=sortResultsByMostRecent status=SUCCESS method=SortResultsByPriceBedBath.sortResults...)</span>
-                <span class="method-start">97423 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mSortByLowtoHighPrice status=SUCCESS method=MSortResultsByBedBathPriceSqFtMostRecen...)</span>
+                <span class="method-start">378747 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">97423 ms</span>
+                <span class="method-start">378747 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">97655 ms</span>
+                <span class="method-start">379456 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sortResultsByPrice(Irvine, CA)</span>
-                <span class="method-start">100501 ms</span>
+                <span class="method-name">mSortByHightoLowPrice(Irvine, CA)</span>
+                <span class="method-start">388024 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=sortResultsByPrice status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByPri...)</span>
-                <span class="method-start">119419 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mSortByHightoLowPrice status=SUCCESS method=MSortResultsByBedBathPriceSqFtMostRecen...)</span>
+                <span class="method-start">444643 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">119419 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.FilterMoreResultsByKeyword</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">124676 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsByKeyword(Irvine, CA, master bedroom)</span>
-                <span class="method-start">127545 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByKeyword status=SUCCESS method=FilterMoreResultsByKeyword.filterResul...)</span>
-                <span class="method-start">143831 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">143831 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.FilterMoreResultsByPropertyType</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">149123 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsByPropertyTypeLand(Malibu, CA)</span>
-                <span class="method-start">151708 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByPropertyTypeLand status=SUCCESS method=FilterMoreResultsByPropertyTy...)</span>
-                <span class="method-start">167859 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">167859 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.FilterMoreResultsBySquareFeet</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">173164 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsBySqFeet(Irvine, CA, 750, 1000)</span>
-                <span class="method-start">175630 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsBySqFeet status=SUCCESS method=FilterMoreResultsBySquareFeet.filterRes...)</span>
-                <span class="method-start">195605 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">195605 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.FilterMoreResultsByStatus</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">200918 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsByPendingStatus(Irvine, CA)</span>
-                <span class="method-start">203707 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByPendingStatus status=SUCCESS method=FilterMoreResultsByStatus.filter...)</span>
-                <span class="method-start">222019 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">222019 ms</span>
+                <span class="method-start">444643 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">222321 ms</span>
+                <span class="method-start">445430 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">filterResultsBySoldStatus(Irvine, CA)</span>
-                <span class="method-start">226773 ms</span>
+                <span class="method-name">mSortBySqFt(Irvine, CA)</span>
+                <span class="method-start">454074 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsBySoldStatus status=SUCCESS method=FilterMoreResultsByStatus.filterRes...)</span>
-                <span class="method-start">246502 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mSortBySqFt status=SUCCESS method=MSortResultsByBedBathPriceSqFtMostRecent.mSortByS...)</span>
+                <span class="method-start">512059 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">246502 ms</span>
+                <span class="method-start">512060 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">246767 ms</span>
+                <span class="method-start">512939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">filterResultsByForSaleStatus(Irvine, CA)</span>
-                <span class="method-start">249278 ms</span>
+                <span class="method-name">mSortByMostRecent(Irvine, CA)</span>
+                <span class="method-start">521454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByForSaleStatus status=SUCCESS method=FilterMoreResultsByStatus.filter...)</span>
-                <span class="method-start">267261 ms</span>
+                <span class="method-name">OnFailure([TestResult name=mSortByMostRecent status=SUCCESS method=MSortResultsByBedBathPriceSqFtMostRecent.mS...)</span>
+                <span class="method-start">593443 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">267261 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.FilterMoreResultsByYear</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">272535 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsByYear(Irvine, CA, 2000, 2017)</span>
-                <span class="method-start">275194 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByYear status=SUCCESS method=FilterMoreResultsByYear.filterResultsByYe...)</span>
-                <span class="method-start">295786 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">295786 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webTests.FilterResultsByPriceBedBath</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">301076 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsByBeds(Irvine, CA, 3)</span>
-                <span class="method-start">304471 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByBeds status=SUCCESS method=FilterResultsByPriceBedBath.filterResults...)</span>
-                <span class="method-start">315676 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">315676 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">315902 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsByPrice(Irvine, CA, 800,000, 1,300,000)</span>
-                <span class="method-start">318424 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsByPrice status=SUCCESS method=FilterResultsByPriceBedBath.filterResult...)</span>
-                <span class="method-start">343232 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">343233 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">343482 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterResultsBybaths(Irvine, CA, 3)</span>
-                <span class="method-start">346104 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">OnFailure([TestResult name=filterResultsBybaths status=SUCCESS method=FilterResultsByPriceBedBath.filterResult...)</span>
-                <span class="method-start">356689 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">356690 ms</span>
+                <span class="method-start">593444 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

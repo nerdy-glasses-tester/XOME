@@ -34,9 +34,9 @@ public class Search {
 		private By searchingmsg = By.cssSelector("div#mapsearch-searching-message[style='top: 163.984px']>div#display-message");
 		private By nomoresearchingmsg = By.id("div#mapsearch-searching-message[style='top: 163.984px; opacity: 0; display: none;']>div#display-message");	
 		private By searchresults = By.cssSelector("div.mapsearch-singleprop.mapsearch-map-singleprop.mapsearch-two-columns-view.included.slick-already-processed");
-		private By addressline2 = By.cssSelector("div.address-line-2.second-field");
-		private By searchbyaddressresult_address1= By.cssSelector("h1.address-line-1.first-field.bolded");
-		private By searchbyaddressresult_address2= By.cssSelector("div.address-line-2.second-field");
+
+		private By searchbyaddressresult_address1= By.className("address-line-1");
+		private By searchbyaddressresult_address2= By.className("address-line-2");
 		
 	    public void searchByCity (WebDriver webdriver, String searchkeyword)
 	    {
@@ -96,20 +96,22 @@ public class Search {
 	    	
 	        WebElement addline2 = (WebElement) wait.until(new Function<WebDriver, WebElement>(){
 	    		public WebElement apply(WebDriver webdriver) {
-	    			return webdriver.findElement(addressline2);
+	    			return webdriver.findElement(searchbyaddressresult_address2);
 	    		}
 	    	});
 	    	
             String addressline2text = addline2.getText();
+            String address2text = addressline2text.substring(0,10);
             
-            if(addressline2text.contains(searchkeyword))
-            {
-            	return true;
-            }
-            else
-            {
-            	return false;
-            }
+            System.out.print("address2text is "+address2text+" \n");
+            System.out.print("searchkeyword is "+searchkeyword+" \n");
+            
+            Boolean result = address2text.equalsIgnoreCase(searchkeyword);
+            
+            System.out.print("result is "+Boolean.toString(result));
+            
+            return result;
+         
 	    	
 	    }
 	
@@ -134,7 +136,7 @@ public class Search {
 	    {
 			Search search = new Search();
 			search.searchSpecificAddress(webdriver,address);
-			WebDriverWait wait = new WebDriverWait (webdriver, 60);
+			WebDriverWait wait = new WebDriverWait (webdriver, 120);
 			WebElement resultaddress1 = wait.until(ExpectedConditions.visibilityOfElementLocated(searchbyaddressresult_address1));
 			WebElement resultaddress2 = wait.until(ExpectedConditions.visibilityOfElementLocated(searchbyaddressresult_address2));
 			String address1=resultaddress1.getText();

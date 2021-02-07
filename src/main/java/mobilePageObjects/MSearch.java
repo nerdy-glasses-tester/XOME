@@ -5,18 +5,16 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.PerformsActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidTouchAction;
-import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
-import io.appium.java_client.touch.offset.PointOption;
 
 public class MSearch {
 	    //****************************************//
@@ -26,10 +24,11 @@ public class MSearch {
 		//****************************************//
 		final static Logger log = LogManager.getLogger(MSearch.class);
 
+		
 		private By searchfield = By.id("com.xome.android:id/search_bar");
 		private By searchfield2 = By.id("com.xome.android:id/suggest_search_bar");
 		private By searchfield2text = By.id("com.xome.android:id/etSuggest");
-		private By autosuggestion = By.xpath(".//android.widget.TextView[contains(@resource-id,'tvTitle') and @index='1']");
+		private By autosuggestion = By.id("com.xome.android:id/tvTitle");
 		private By propertyaddress = By.id("com.xome.android:id/listing_summary_address_textView");
 		private By propertyimage = By.className("android.widget.ImageView");
 		
@@ -44,7 +43,7 @@ public class MSearch {
 		
 		public void searchhomes (AppiumDriver<?> driver, String searchkeyword) throws InterruptedException
 		{	
-			WebDriverWait wait = new WebDriverWait (driver, 60);
+			WebDriverWait wait = new WebDriverWait (driver, 120);
 			WebElement searchfieldelement = wait.until(ExpectedConditions.elementToBeClickable(searchfield));
 			searchfieldelement.click();
 			WebElement searchfield2element = wait.until(ExpectedConditions.elementToBeClickable(searchfield2));
@@ -52,8 +51,22 @@ public class MSearch {
 			WebElement searchfield2textelement = wait.until(ExpectedConditions.presenceOfElementLocated(searchfield2text));
 			searchfield2textelement.clear();
 			searchfield2textelement.sendKeys(searchkeyword);
-			WebElement autosuggestionelement = wait.until(ExpectedConditions.elementToBeClickable(autosuggestion));
-			autosuggestionelement.click();	
+			Thread.sleep(3000); //Need a wait here for it to load or it creates flaky fails 
+			List <WebElement> autosuggestionelements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(autosuggestion));
+			int size = autosuggestionelements.size();
+			System.out.print("size of autosuggestions is "+ Integer.toString(size)+"\n");
+			
+			TouchAction action = new TouchAction(driver);
+			//if else sometimes the autosuggestion picks up 1 result only other times it picks up more autosuggestions
+			if (size==1)
+			{
+				WebElement autosuggest = wait.until(ExpectedConditions.elementToBeClickable(autosuggestion));
+				action.tap((TapOptions) (PerformsActions) new TapOptions().withElement(new ElementOption().withElement((WebElement) autosuggest))).perform();
+			}
+			else if (size > 1)
+			{
+			action.tap(new TapOptions().withElement(new ElementOption().withElement(autosuggestionelements.get(1)))).perform();
+			}
 			Thread.sleep(4000); //Must wait for this time to load
 		}
 		

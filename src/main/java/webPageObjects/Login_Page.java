@@ -28,17 +28,18 @@ public class Login_Page {
 	private By submitbtn = By.cssSelector("input.btn.btn-primary");
 	private By emailpwddoesntmatchtext = By.xpath(".//*[@id=\"customerLoginForm\"]/div[3]/ul/li[contains(text(), \"Oops, the e-mail or password doesn't match.\")]");  //Oops, the e-mail or password doesn't match.
 	private By onemoreloginchancetext = By.cssSelector("div.row-fluid.errorMessageBox.errorMessageBoxServerSide>ul>li"); //You have 1 more login attempt before your account is locked. Please enter your login credentials properly, reset your password by clicking the \"Forgot your password ? \" link or contact Customer Service at 1-844-400-9663 for assistance.
-	private By verifysignedin = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
+	private By verifysignedin = By.cssSelector("span.user-name");
 	private By xomelogo = By.className("SiteHeadLogo-image");
 	private By buyonmainpage = By.cssSelector("div.js-search-option.search-option.active");
 	
-    public void clickSignIn (WebDriver webdriver)
+    public void clickSignIn (WebDriver webdriver) throws InterruptedException
     {
     	WebDriverWait wait = new WebDriverWait (webdriver, 60);
     	WebElement signin = wait.until(ExpectedConditions.elementToBeClickable(signinlink));
         signin.click(); 
 	    WebElement iframeSwitch = webdriver.findElement(By.id("login-iframe"));
 	    webdriver.switchTo().frame(iframeSwitch);
+	    Thread.sleep(3000);
     }
 
     
@@ -87,7 +88,7 @@ public class Login_Page {
     public String login (WebDriver webdriver, String login, String password) throws InterruptedException
     {
     	Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)    
-    		    .withTimeout(Duration.ofSeconds(30))    
+    		    .withTimeout(Duration.ofSeconds(60))    
     		    .pollingEvery(Duration.ofSeconds(1))   
     		    .ignoring(NoSuchElementException.class);
     	
@@ -120,9 +121,10 @@ public class Login_Page {
         submit.click();
         
         //Wait a bit for it to signin
-        //Thread.sleep(30);
+        Thread.sleep(3000);
         //Have to switch to defaultContent or can't find future elements/objects
         webdriver.switchTo().defaultContent();
+        Thread.sleep(3000);
         
         WebElement signedinuser = (WebElement) wait.until(new Function<WebDriver, WebElement>(){
     		public WebElement apply(WebDriver webdriver) {

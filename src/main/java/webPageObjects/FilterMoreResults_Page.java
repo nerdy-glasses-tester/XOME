@@ -23,7 +23,8 @@ public class FilterMoreResults_Page {
 	//****************************************//
 	final static Logger log = LogManager.getLogger(FilterMoreResults_Page.class);
 
-	private By openmorefilters = By.cssSelector("button#criteria-toggle-filters>div.ddbtn-criteria-label.r-more-button>span.dd-info");
+	private By openmorefilters = By.cssSelector("div#dd-criteria-filters-dropdown>button#criteria-toggle-filters>div#ddbtn-label-filters>span.dd-info:nth-of-type(1)");
+	private By continuereading = By.cssSelector("a.show-more-listing-desc.view-toggler");
 	private By morefiltersscreen = By.id("dd-criteria-filters-menu"); //have to click on this filters screen before you can scroll down to reach other elements
 	private By savesearchbtn = By.cssSelector("div#criteria-filters-savesearch-bar>button");
 	private By applybtn = By.cssSelector("button#filters-submit>span#desktop-apply");
@@ -65,14 +66,14 @@ public class FilterMoreResults_Page {
 	private By filtertoprowbuttonarea = By.className("criteria-filters-button-row");
 	private By resultspagetoprowarea = By.className("criteria-basicsearch-row-2");
 	
-	private By property1sqft = By.cssSelector("div.information-block.block-square-feet>div.first-field.bolded>span");
+	private By property1sqft = By.cssSelector("span.attrib-number.attrib-number-area");
 	private By property1pending = By.cssSelector("span.status.status-for-sale.Pending>span");
 	private By property1sold = By.cssSelector("span.status.status-sold");
 	private By property1forsale = By.cssSelector("span.status.status-for-sale.Active>span");
 	
     private By searchresults = By.cssSelector("div.mapsearch-singleprop.mapsearch-map-singleprop.mapsearch-two-columns-view.included.slick-already-processed");
 	private By detailspage_propertytype = By.id("mls-propt2");
-	private By detailspage_yeartype = By.cssSelector("div#mls-yr2>span");
+	private By detailspage_yeartype = By.cssSelector("#mls-yr2");
 	private By nextlistingbutton = By.id("navBar_view_next_listing");
 		
 	private String allunchecked = "";
@@ -152,12 +153,12 @@ public class FilterMoreResults_Page {
 	}
 
 	public void clickOpenMoreFilters (WebDriver webdriver) throws InterruptedException
-	{
+	{	
 		WebDriverWait wait = new WebDriverWait (webdriver, 60);
 		WebElement morefiltersdrpdown = wait.until(ExpectedConditions.elementToBeClickable(openmorefilters));
 		morefiltersdrpdown.click();
 		
-		Thread.sleep(4000); //Must wait for this time to load
+		Thread.sleep(12000); //Must wait for this time to load
 	}
 	
 	public void filterByPendingStatus (WebDriver webdriver) throws InterruptedException
@@ -855,7 +856,7 @@ public class FilterMoreResults_Page {
 	
 	public void filterByKeyword (WebDriver webdriver, String keyword) throws InterruptedException
 	{
-		WebDriverWait wait = new WebDriverWait (webdriver, 60);
+		WebDriverWait wait = new WebDriverWait (webdriver, 8000);
 		WebElement search_keywordelement = wait.until(ExpectedConditions.elementToBeClickable(search_keyword));
 		search_keywordelement.click();
 		search_keywordelement.clear();
@@ -870,9 +871,14 @@ public class FilterMoreResults_Page {
 		searchresultslist.get(0).click();
 		Thread.sleep(4000); //Wait for details page to load
 		
-
-	    WebElement propertydescriptionelement = webdriver.findElement(propertydescription);
+        WebDriverWait wait = new WebDriverWait(webdriver, 60);
+	    WebElement propertydescriptionelement = wait.until(ExpectedConditions.elementToBeClickable(propertydescription));
 	    ((JavascriptExecutor) webdriver).executeScript("arguments[0].scrollIntoView();", propertydescriptionelement);
+	    
+	    WebElement opencontinuereading = wait.until(ExpectedConditions.elementToBeClickable(continuereading));
+	    JavascriptExecutor executor = (JavascriptExecutor)webdriver;
+	    executor.executeScript("arguments[0].click();", opencontinuereading);
+	    Thread.sleep(3000);
 	    String propdescription = propertydescriptionelement.getText();
 	    log.info("verify filter keyword - scroll property description text into view.");
 		    

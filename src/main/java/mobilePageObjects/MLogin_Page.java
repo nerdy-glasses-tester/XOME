@@ -20,6 +20,7 @@ public class MLogin_Page {
 	final static Logger log = LogManager.getLogger(MLogin_Page.class);
 
 	private By allowdeviceacess = By.id("com.android.packageinstaller:id/permission_allow_button");
+	private By noGooglelocation = By.id("android:id/button2");
 	private By hamburgericon = By.xpath(".//android.widget.ImageButton[@content-desc='Open navigation drawer']");
 	private By registerbtn = By.id("com.xome.android:id/button_login_register");
 	private By fname = By.id("com.xome.android:id/etFirstName");
@@ -46,6 +47,11 @@ public class MLogin_Page {
 		WebElement allowdeviceacesselement = wait.until(ExpectedConditions.elementToBeClickable(allowdeviceacess));
 		allowdeviceacesselement.click();
 		Thread.sleep(4000); //Must wait for this time to load
+		
+		WebElement nothanksGoogleLocationelement = wait.until(ExpectedConditions.elementToBeClickable(noGooglelocation));
+		nothanksGoogleLocationelement.click();
+		Thread.sleep(4000);
+		
 	}
 	
 	public String mobileSignUp (AppiumDriver<?> driver, String firstname, String lastname, String email, String password) throws InterruptedException

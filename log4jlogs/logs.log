@@ -1,185 +1,256 @@
-2019-11-21 10:51:00 [main] ERROR MFilterResults_Page:625 - It filter by keyword hardwood floor unsuccessfully.
-2019-11-21 10:51:00 [main] ERROR MFilterByKeyword:51 - Didn't filter by keyword correctly.
-2019-11-21 10:51:59 [main] ERROR MFilterResults_Page:660 - It filter by min square feet 1500 and max square feet 2000 unsuccessfully.
-2019-11-21 10:51:59 [main] ERROR MFilterBySqFt:51 - Didn't filter by square feet correctly.
-2019-11-21 11:01:46 [main] INFO  MFilterResults_Page:655 - It filter by min square feet  1500 and max square feet 2000 successfully.
-2019-11-21 12:28:59 [main] INFO  MFilterResults_Page:629 - It filter by keyword hardwood floor successfully.
-2019-11-21 12:41:54 [main] INFO  MFilterResults_Page:728 - It filtered by 3 baths successfully.
-2019-11-21 12:42:38 [main] INFO  MFilterResults_Page:696 - It filtered by 3 beds successfully.
-2019-11-21 12:47:27 [main] INFO  MFilterResults_Page:87 - Active status is unchecked.
-2019-11-21 12:47:27 [main] INFO  MFilterResults_Page:98 - Pending status is unchecked.
-2019-11-21 12:47:28 [main] INFO  MFilterResults_Page:108 - Sold status is unchecked.
-2019-11-21 12:47:32 [main] INFO  MFilterResults_Page:142 - Active status is checked.
-2019-11-21 12:47:44 [main] INFO  MFilterResults_Page:814 - It filtered by for sale active status successfully.
-2019-11-21 12:48:15 [main] INFO  MFilterResults_Page:87 - Active status is unchecked.
-2019-11-21 12:48:15 [main] INFO  MFilterResults_Page:98 - Pending status is unchecked.
-2019-11-21 12:48:16 [main] INFO  MFilterResults_Page:108 - Sold status is unchecked.
-2019-11-21 12:48:20 [main] INFO  MFilterResults_Page:123 - Pending status is checked.
-2019-11-21 12:48:32 [main] INFO  MFilterResults_Page:757 - It filtered by pending status successfully.
-2019-11-21 12:49:03 [main] INFO  MFilterResults_Page:87 - Active status is unchecked.
-2019-11-21 12:49:03 [main] INFO  MFilterResults_Page:98 - Pending status is unchecked.
-2019-11-21 12:49:04 [main] INFO  MFilterResults_Page:108 - Sold status is unchecked.
-2019-11-21 12:49:08 [main] INFO  MFilterResults_Page:132 - Sold status is checked.
-2019-11-21 12:49:20 [main] INFO  MFilterResults_Page:785 - It filtered by sold status successfully.
-2019-11-21 12:50:56 [main] INFO  MFilterResults_Page:975 - OC19269433
-2019-11-21 12:51:04 [main] INFO  MFilterResults_Page:989 - OC19264932
-2019-11-21 12:51:12 [main] INFO  MFilterResults_Page:989 - OC19269213
-2019-11-21 12:51:12 [main] ERROR MFilterResults_Page:1013 - It filter by condo unsuccessfully.
-2019-11-21 12:51:12 [main] ERROR MFilterByPropertyType:107 - Didn't filter by condo correctly.
-2019-11-21 12:52:06 [main] INFO  MFilterResults_Page:860 - OC19269363
-2019-11-21 12:52:14 [main] INFO  MFilterResults_Page:874 - OC19266854
-2019-11-21 12:52:21 [main] INFO  MFilterResults_Page:874 - CV19268775
-2019-11-21 12:52:21 [main] ERROR MFilterResults_Page:898 - It filter by Single Family unsuccessfully.
-2019-11-21 12:52:21 [main] ERROR MFilterByPropertyType:52 - Didn't filter by single family correctly.
-2019-11-21 12:53:16 [main] INFO  MFilterResults_Page:917 - OC19266474
-2019-11-21 12:53:24 [main] INFO  MFilterResults_Page:932 - OC19260048
-2019-11-21 12:53:31 [main] INFO  MFilterResults_Page:932 - 19529834
-2019-11-21 12:53:31 [main] ERROR MFilterResults_Page:956 - It filter by Townhouse unsuccessfully.
-2019-11-21 12:53:31 [main] ERROR MFilterByPropertyType:79 - Didn't filter by townhome correctly.
-2019-11-21 13:33:58 [main] INFO  MFilterResults_Page:975 - Condo, Contemporary, 1 Story
-2019-11-21 13:34:06 [main] INFO  MFilterResults_Page:989 - Condo, Traditional, 2 Story
-2019-11-21 13:34:14 [main] INFO  MFilterResults_Page:989 - Condo, 2 Story
-2019-11-21 13:34:14 [main] INFO  MFilterResults_Page:1008 - It filter by condo successfully.
-2019-11-21 13:35:04 [main] INFO  MFilterResults_Page:860 - Single Family, 2 Story
-2019-11-21 13:35:11 [main] INFO  MFilterResults_Page:874 - Single Family, Cape Cod, 1 Story
-2019-11-21 13:35:19 [main] INFO  MFilterResults_Page:874 - Single Family, 1 Story
-2019-11-21 13:35:19 [main] INFO  MFilterResults_Page:893 - It filter by Single Family successfully.
-2019-11-21 13:36:10 [main] INFO  MFilterResults_Page:917 - Townhouse, 3+ Story
-2019-11-21 13:36:18 [main] INFO  MFilterResults_Page:932 - Townhouse, 3+ Story
-2019-11-21 13:36:25 [main] INFO  MFilterResults_Page:932 - Townhouse, Other
-2019-11-21 13:36:25 [main] INFO  MFilterResults_Page:951 - It filter by Townhouse successfully.
-2019-11-21 13:39:51 [main] INFO  MFilterResults_Page:664 - It filter by min square feet  1500 and max square feet 2000 successfully.
-2019-11-21 14:03:51 [main] INFO  MFilterResults_Page:518 - yearmatch1 is true
-2019-11-21 14:04:02 [main] INFO  MFilterResults_Page:552 - yearmatch2 is true
-2019-11-21 14:04:14 [main] INFO  MFilterResults_Page:557 - yearmatch3 is true
-2019-11-21 14:04:14 [main] INFO  MFilterResults_Page:565 - It filter by min year 1995 and max year 2015 successfully.
-2019-11-21 14:18:04 [main] INFO  MFilterResults_Page:519 - yearmatch1 is true
-2019-11-21 14:18:16 [main] INFO  MFilterResults_Page:553 - yearmatch2 is true
-2019-11-21 14:18:28 [main] INFO  MFilterResults_Page:558 - yearmatch3 is true
-2019-11-21 14:18:28 [main] INFO  MFilterResults_Page:566 - It filter by min year 1995 and max year 2015 successfully.
-2019-11-21 14:24:16 [main] INFO  MLogin_Page:167 - Logged in successfully.
-2019-11-21 14:24:31 [main] INFO  MSearch:95 - It filtered out the addresses correctly.
-2019-11-21 14:26:16 [main] INFO  MLogin_Page:82 - sqatester2018+11212019142616@gmail.com
-2019-11-21 14:26:33 [main] INFO  MLogin_Page:109 - Welcome Amy
-2019-11-21 14:26:34 [main] INFO  MLogin_Page:118 - Signed up successfully.
-2019-11-21 14:29:02 [main] INFO  MSortResults_Page:361 - prop1bed: 1
-2019-11-21 14:29:02 [main] INFO  MSortResults_Page:366 - prop2bed: 1
-2019-11-21 14:29:02 [main] INFO  MSortResults_Page:371 - prop3bed: 1
-2019-11-21 14:29:02 [main] INFO  MSortResults_Page:376 - It sorted by bed successfully.
-2019-11-21 14:30:19 [main] INFO  MSortResults_Page:414 - prop1bath: 1
-2019-11-21 14:30:19 [main] INFO  MSortResults_Page:419 - prop2bath: 1
-2019-11-21 14:30:19 [main] INFO  MSortResults_Page:424 - prop3bath: 1
-2019-11-21 14:30:19 [main] INFO  MSortResults_Page:429 - It sorted by bath successfully.
-2019-11-21 14:31:24 [main] INFO  MSortResults_Page:143 - It sorted by low to high price successfully.
-2019-11-21 14:32:29 [main] INFO  MSortResults_Page:183 - It sorted by high to low price successfully.
-2019-11-21 14:33:34 [main] INFO  MSortResults_Page:217 - It sorted by square feet successfully.
-2019-11-21 14:34:57 [main] INFO  MSortResults_Page:322 - It sorted by most recent successfully.
-2019-11-21 14:38:43 [main] INFO  MFilterResults_Page:729 - It filtered by 3 baths successfully.
-2019-11-21 14:39:28 [main] INFO  MFilterResults_Page:697 - It filtered by 3 beds successfully.
-2019-11-21 14:40:33 [main] INFO  MFilterResults_Page:630 - It filter by keyword hardwood floor successfully.
-2019-11-21 14:41:03 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
-2019-11-21 14:41:04 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
-2019-11-21 14:41:04 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
-2019-11-21 14:41:08 [main] INFO  MFilterResults_Page:143 - Active status is checked.
-2019-11-21 14:41:20 [main] INFO  MFilterResults_Page:815 - It filtered by for sale active status successfully.
-2019-11-21 14:41:50 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
-2019-11-21 14:41:50 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
-2019-11-21 14:41:51 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
-2019-11-21 14:41:55 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
-2019-11-21 14:42:07 [main] INFO  MFilterResults_Page:758 - It filtered by pending status successfully.
-2019-11-21 14:42:39 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
-2019-11-21 14:42:39 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
-2019-11-21 14:42:40 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
-2019-11-21 14:42:44 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
-2019-11-21 14:42:56 [main] INFO  MFilterResults_Page:786 - It filtered by sold status successfully.
-2019-11-21 14:43:48 [main] INFO  MFilterResults_Page:976 - Condo, Contemporary, 1 Story
-2019-11-21 14:43:56 [main] INFO  MFilterResults_Page:990 - Condo, Traditional, 2 Story
-2019-11-21 14:44:03 [main] INFO  MFilterResults_Page:990 - Condo, 2 Story
-2019-11-21 14:44:03 [main] INFO  MFilterResults_Page:1009 - It filter by condo successfully.
-2019-11-21 14:44:54 [main] INFO  MFilterResults_Page:861 - Single Family, 2 Story
-2019-11-21 14:45:01 [main] INFO  MFilterResults_Page:875 - Single Family, Cape Cod, 1 Story
-2019-11-21 14:45:09 [main] INFO  MFilterResults_Page:875 - Single Family, 1 Story
-2019-11-21 14:45:09 [main] INFO  MFilterResults_Page:894 - It filter by Single Family successfully.
-2019-11-21 14:45:59 [main] INFO  MFilterResults_Page:918 - Townhouse, 3+ Story
-2019-11-21 14:46:06 [main] INFO  MFilterResults_Page:933 - Townhouse, 3+ Story
-2019-11-21 14:46:14 [main] INFO  MFilterResults_Page:933 - Townhouse, Other
-2019-11-21 14:46:14 [main] INFO  MFilterResults_Page:952 - It filter by Townhouse successfully.
-2019-11-21 14:47:07 [main] INFO  MFilterResults_Page:665 - It filter by min square feet  1500 and max square feet 2000 successfully.
-2019-11-29 11:14:04 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
-2019-11-29 11:14:20 [main] INFO  Search:97 - resultaddress is: 12512 Brighton Place Tustin, CA 92780
-2019-11-29 11:14:38 [main] INFO  SortResults_Page:496 - Original order is: [8 8 7 7 7 6 6 5 5 5]
-
-2019-11-29 11:14:38 [main] INFO  SortResults_Page:497 - Sorted descending order is: [8 8 7 7 7 6 6 5 5 5]
-
-2019-11-29 11:14:38 [main] INFO  SortResults_Page:501 - It has sorted in descending order.
-2019-11-29 11:14:47 [main] INFO  SortResults_Page:583 - Original order is: [1 1 2 2 2 2 2 2 2 2]
-
-2019-11-29 11:14:47 [main] INFO  SortResults_Page:584 - Sorted ascending order is: [1 1 2 2 2 2 2 2 2 2]
-
-2019-11-29 11:14:47 [main] INFO  SortResults_Page:588 - It has sorted in ascending order.
-2019-11-29 11:15:02 [main] INFO  SortResults_Page:323 - Original order is: [5 5 5 5 5 5 4 4 4 4]
-
-2019-11-29 11:15:02 [main] INFO  SortResults_Page:324 - Sorted descending order is: [5 5 5 5 5 5 4 4 4 4]
-
-2019-11-29 11:15:02 [main] INFO  SortResults_Page:328 - It has sorted in descending order.
-2019-11-29 11:15:10 [main] INFO  SortResults_Page:410 - Original order is: [1 1 1 1 1 2 2 2 2 2]
-
-2019-11-29 11:15:10 [main] INFO  SortResults_Page:411 - Sorted ascending order is: [1 1 1 1 1 2 2 2 2 2]
-
-2019-11-29 11:15:10 [main] INFO  SortResults_Page:415 - It has sorted in ascending order.
-2019-11-29 11:15:34 [main] INFO  SortResults_Page:72 - Newicon says: NEW
-
-2019-11-29 11:15:34 [main] INFO  SortResults_Page:76 - It has sorted by most recent order.
-2019-11-29 11:15:47 [main] INFO  SortResults_Page:154 - Original order is: [19800000 19000000 13995000 10750000 10495000]
-
-2019-11-29 11:15:47 [main] INFO  SortResults_Page:155 - Sorted descending order is: [19800000 19000000 13995000 10750000 10495000]
-
-2019-11-29 11:15:47 [main] INFO  SortResults_Page:159 - It has sorted in descending order.
-2019-11-29 11:15:56 [main] INFO  SortResults_Page:236 - Original order is: [1800 285000 305000 320000 325000]
-
-2019-11-29 11:15:56 [main] INFO  SortResults_Page:237 - Sorted ascending order is: [1800 285000 305000 320000 325000]
-
-2019-11-29 11:15:56 [main] INFO  SortResults_Page:241 - It has sorted in ascending order.
-2019-11-29 11:16:20 [main] INFO  FilterMoreResults_Page:877 - verify filter keyword - scroll property description text into view.
-2019-11-29 11:16:20 [main] INFO  FilterMoreResults_Page:883 - It filtered by keyword correctly
-2019-11-29 11:16:44 [main] INFO  FilterMoreResults_Page:1009 - It filtered by property type correctly
-2019-11-29 11:17:12 [main] INFO  FilterMoreResults_Page:541 - It filtered by square feet correctly
-2019-11-29 11:17:39 [main] INFO  FilterMoreResults_Page:214 - It filtered by pending status correctly.
-2019-11-29 11:18:03 [main] INFO  FilterMoreResults_Page:240 - It filtered by sold status correctly.
-2019-11-29 11:18:24 [main] INFO  FilterMoreResults_Page:268 - It filtered by for sale status correctly.
-2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:838 - min year: 2000
-2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:839 - max year 2017
-2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:840 - prop1_year is : 2014
-2019-11-29 11:18:52 [main] INFO  FilterMoreResults_Page:845 - It filtered by year correctly
-2019-11-29 11:19:12 [main] INFO  FilterResults_Page:181 - It filtered by beds correctly.
-2019-11-29 11:19:31 [main] INFO  FilterResults_Page:90 - Filter results max price is $1299900
-
-2019-11-29 11:19:40 [main] INFO  FilterResults_Page:114 - Filter results min price is $800000
-
-2019-11-29 11:19:40 [main] INFO  FilterResults_Page:119 - Search for price between 800000 and 1300000
-
-2019-11-29 11:19:40 [main] INFO  FilterResults_Page:123 - It filtered by price correctly.
-2019-11-29 11:19:53 [main] INFO  FilterResults_Page:241 - It filtered by baths correctly.
-2019-11-29 12:39:39 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
-2019-11-29 13:22:03 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
-2019-11-29 13:23:40 [main] INFO  FilterMoreResults_Page:877 - verify filter keyword - scroll property description text into view.
-2019-11-29 13:23:40 [main] ERROR FilterMoreResults_Page:888 - It filtered by keyword incorrectly
-2019-11-29 13:23:40 [main] ERROR FilterMoreResultsByKeyword:50 - Didn't filter by keyword.
-2020-02-07 16:22:06 [main] INFO  Login_Page:132 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 16:23:31 [main] INFO  Login_Page:132 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 16:29:01 [main] INFO  Login_Page:132 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 16:35:10 [main] INFO  Login_Page:133 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 16:40:21 [main] INFO  Login_Page:133 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 17:06:37 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 17:16:17 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 17:20:36 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 17:21:56 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 17:29:07 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 17:40:58 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:31:32 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:32:35 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:33:52 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:34:50 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:37:21 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:39:17 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
-2020-02-07 22:42:08 [main] INFO  Login_Page:134 - Signed in user name is: AUTOMATION TESTER
+2021-02-06 17:19:59 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 17:20:09 [main] INFO  MFilterResults_Page:555 - yearmatch2 is true
+2021-02-06 17:20:20 [main] INFO  MFilterResults_Page:560 - yearmatch3 is false
+2021-02-06 17:20:20 [main] ERROR MFilterResults_Page:573 - It filter by min year 1995 and max year 2015 unsuccessfully.
+2021-02-06 17:20:20 [main] ERROR MFilterByYear:59 - Didn't filter by year correctly.
+2021-02-06 17:28:08 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 17:28:19 [main] INFO  MFilterResults_Page:557 - yearmatch2 is true
+2021-02-06 17:28:29 [main] INFO  MFilterResults_Page:562 - yearmatch3 is false
+2021-02-06 17:28:29 [main] INFO  MFilterResults_Page:570 - It filter by min year 1995 and max year 2015 successfully.
+2021-02-06 17:31:06 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 17:31:17 [main] INFO  MFilterResults_Page:557 - yearmatch2 is true
+2021-02-06 17:31:27 [main] INFO  MFilterResults_Page:562 - yearmatch3 is false
+2021-02-06 17:31:27 [main] INFO  MFilterResults_Page:570 - It filter by min year 1995 and max year 2015 successfully.
+2021-02-06 17:44:52 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 17:45:03 [main] INFO  MFilterResults_Page:557 - yearmatch2 is true
+2021-02-06 17:45:13 [main] INFO  MFilterResults_Page:562 - yearmatch3 is false
+2021-02-06 17:45:13 [main] INFO  MFilterResults_Page:570 - It filter by min year 1995 and max year 2015 successfully.
+2021-02-06 17:48:11 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 17:48:21 [main] INFO  MFilterResults_Page:557 - yearmatch2 is true
+2021-02-06 17:48:32 [main] INFO  MFilterResults_Page:562 - yearmatch3 is false
+2021-02-06 17:48:32 [main] INFO  MFilterResults_Page:570 - It filter by min year 1995 and max year 2015 successfully.
+2021-02-06 17:54:03 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 17:54:13 [main] INFO  MFilterResults_Page:557 - yearmatch2 is true
+2021-02-06 17:54:24 [main] INFO  MFilterResults_Page:562 - yearmatch3 is true
+2021-02-06 17:54:24 [main] INFO  MFilterResults_Page:570 - It filter by min year 1995 and max year 2015 successfully.
+2021-02-06 17:56:42 [main] INFO  MFilterResults_Page:980 - Condo , Contemporary, 1 Story
+2021-02-06 17:56:48 [main] INFO  MFilterResults_Page:994 - Condo , 2 Story
+2021-02-06 17:56:55 [main] INFO  MFilterResults_Page:994 - Condo , Contemporary, Patio Home, High-Rise, 1 Story
+2021-02-06 17:56:55 [main] INFO  MFilterResults_Page:1013 - It filter by condo successfully.
+2021-02-06 17:57:45 [main] INFO  MFilterResults_Page:865 - Single Family , 2 Story
+2021-02-06 17:57:51 [main] INFO  MFilterResults_Page:879 - Single Family , Contemporary, 2 Story
+2021-02-06 17:57:58 [main] INFO  MFilterResults_Page:879 - Single Family , 1 Story
+2021-02-06 17:57:58 [main] INFO  MFilterResults_Page:898 - It filter by Single Family successfully.
+2021-02-06 18:04:07 [main] INFO  MFilterResults_Page:865 - Single Family , 2 Story
+2021-02-06 18:04:14 [main] INFO  MFilterResults_Page:879 - Single Family , Contemporary, 2 Story
+2021-02-06 18:04:21 [main] INFO  MFilterResults_Page:879 - Single Family , 1 Story
+2021-02-06 18:04:21 [main] INFO  MFilterResults_Page:898 - It filter by Single Family successfully.
+2021-02-06 18:13:44 [main] INFO  MFilterResults_Page:922 - Townhouse , Cape Cod, 2 Story
+2021-02-06 18:13:51 [main] INFO  MFilterResults_Page:937 - Townhouse , 2 Story
+2021-02-06 18:13:58 [main] INFO  MFilterResults_Page:937 - Townhouse , Traditional, 2 Story
+2021-02-06 18:13:58 [main] INFO  MFilterResults_Page:956 - It filter by Townhouse successfully.
+2021-02-06 18:20:02 [main] INFO  MFilterResults_Page:980 - Condo , Contemporary, 1 Story
+2021-02-06 18:20:09 [main] INFO  MFilterResults_Page:994 - Condo , 2 Story
+2021-02-06 18:20:15 [main] INFO  MFilterResults_Page:994 - Condo , Contemporary, Patio Home, High-Rise, 1 Story
+2021-02-06 18:20:15 [main] INFO  MFilterResults_Page:1013 - It filter by condo successfully.
+2021-02-06 18:21:05 [main] INFO  MFilterResults_Page:865 - Single Family , 2 Story
+2021-02-06 18:21:12 [main] INFO  MFilterResults_Page:879 - Single Family , Contemporary, 2 Story
+2021-02-06 18:21:19 [main] INFO  MFilterResults_Page:879 - Single Family , 1 Story
+2021-02-06 18:21:19 [main] INFO  MFilterResults_Page:898 - It filter by Single Family successfully.
+2021-02-06 18:24:26 [main] INFO  MFilterResults_Page:980 - Condo , Contemporary, 1 Story
+2021-02-06 18:24:32 [main] INFO  MFilterResults_Page:994 - Condo , 2 Story
+2021-02-06 18:24:39 [main] INFO  MFilterResults_Page:994 - Condo , Contemporary, Patio Home, High-Rise, 1 Story
+2021-02-06 18:24:39 [main] INFO  MFilterResults_Page:1013 - It filter by condo successfully.
+2021-02-06 18:25:31 [main] INFO  MFilterResults_Page:865 - Single Family , 2 Story
+2021-02-06 18:25:37 [main] INFO  MFilterResults_Page:879 - Single Family , Contemporary, 2 Story
+2021-02-06 18:25:44 [main] INFO  MFilterResults_Page:879 - Single Family , 1 Story
+2021-02-06 18:25:44 [main] INFO  MFilterResults_Page:898 - It filter by Single Family successfully.
+2021-02-06 18:46:10 [main] INFO  MFilterResults_Page:980 - Condo , Contemporary, 1 Story
+2021-02-06 18:46:17 [main] INFO  MFilterResults_Page:994 - Condo , 2 Story
+2021-02-06 18:46:24 [main] INFO  MFilterResults_Page:994 - Condo , Contemporary, Patio Home, High-Rise, 1 Story
+2021-02-06 18:46:24 [main] INFO  MFilterResults_Page:1013 - It filter by condo successfully.
+2021-02-06 18:47:17 [main] INFO  MFilterResults_Page:865 - Single Family , 2 Story
+2021-02-06 18:47:24 [main] INFO  MFilterResults_Page:879 - Single Family , Contemporary, 2 Story
+2021-02-06 18:47:30 [main] INFO  MFilterResults_Page:879 - Single Family , 1 Story
+2021-02-06 18:47:30 [main] INFO  MFilterResults_Page:898 - It filter by Single Family successfully.
+2021-02-06 18:48:20 [main] INFO  MFilterResults_Page:922 - Townhouse , Cape Cod, 2 Story
+2021-02-06 18:48:27 [main] INFO  MFilterResults_Page:937 - Townhouse , 2 Story
+2021-02-06 18:48:34 [main] INFO  MFilterResults_Page:937 - Townhouse , Traditional, 2 Story
+2021-02-06 18:48:34 [main] INFO  MFilterResults_Page:956 - It filter by Townhouse successfully.
+2021-02-06 18:50:23 [main] INFO  MFilterResults_Page:733 - It filtered by 3 baths successfully.
+2021-02-06 18:51:08 [main] INFO  MFilterResults_Page:701 - It filtered by 3 beds successfully.
+2021-02-06 18:52:13 [main] INFO  MFilterResults_Page:634 - It filter by keyword hardwood floor successfully.
+2021-02-06 18:52:45 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-06 18:52:45 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-06 18:52:46 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-06 18:52:50 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-06 18:53:02 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-06 18:53:33 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-06 18:53:33 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-06 18:53:34 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-06 18:53:38 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2021-02-06 18:53:50 [main] INFO  MFilterResults_Page:762 - It filtered by pending status successfully.
+2021-02-06 18:55:03 [main] INFO  MFilterResults_Page:980 - Condo , Contemporary, 1 Story
+2021-02-06 18:55:10 [main] INFO  MFilterResults_Page:994 - Condo , 2 Story
+2021-02-06 18:55:16 [main] INFO  MFilterResults_Page:994 - Condo , Contemporary, Patio Home, High-Rise, 1 Story
+2021-02-06 18:55:16 [main] INFO  MFilterResults_Page:1013 - It filter by condo successfully.
+2021-02-06 18:56:07 [main] INFO  MFilterResults_Page:865 - Single Family , 2 Story
+2021-02-06 18:56:14 [main] INFO  MFilterResults_Page:879 - Single Family , Contemporary, 2 Story
+2021-02-06 18:56:21 [main] INFO  MFilterResults_Page:879 - Single Family , 1 Story
+2021-02-06 18:56:21 [main] INFO  MFilterResults_Page:898 - It filter by Single Family successfully.
+2021-02-06 18:57:11 [main] INFO  MFilterResults_Page:922 - Townhouse , Cape Cod, 2 Story
+2021-02-06 18:57:17 [main] INFO  MFilterResults_Page:937 - Townhouse , 2 Story
+2021-02-06 18:57:24 [main] INFO  MFilterResults_Page:937 - Townhouse , Traditional, 2 Story
+2021-02-06 18:57:24 [main] INFO  MFilterResults_Page:956 - It filter by Townhouse successfully.
+2021-02-06 18:58:17 [main] INFO  MFilterResults_Page:669 - It filter by min square feet  1500 and max square feet 2000 successfully.
+2021-02-06 18:59:35 [main] INFO  MFilterResults_Page:521 - yearmatch1 is true
+2021-02-06 18:59:46 [main] INFO  MFilterResults_Page:557 - yearmatch2 is true
+2021-02-06 18:59:56 [main] INFO  MFilterResults_Page:562 - yearmatch3 is true
+2021-02-06 18:59:56 [main] INFO  MFilterResults_Page:570 - It filter by min year 1995 and max year 2015 successfully.
+2021-02-06 19:00:35 [main] INFO  MLogin_Page:173 - Logged in successfully.
+2021-02-06 19:01:12 [main] INFO  MLogin_Page:88 - sqatester2018+02062021190112@gmail.com
+2021-02-06 19:01:29 [main] INFO  MLogin_Page:115 - Welcome Amy
+2021-02-06 19:01:29 [main] INFO  MLogin_Page:124 - Signed up successfully.
+2021-02-06 19:03:26 [main] INFO  MSortResults_Page:149 - It sorted by low to high price successfully.
+2021-02-06 19:04:31 [main] INFO  MSortResults_Page:189 - It sorted by high to low price successfully.
+2021-02-07 14:01:15 [main] INFO  MLogin_Page:173 - Logged in successfully.
+2021-02-07 14:01:31 [main] INFO  MSearch:107 - It filtered out the addresses correctly.
+2021-02-07 14:02:03 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:02:03 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:02:04 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:02:08 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 14:02:20 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 14:02:53 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:02:53 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:02:54 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:02:58 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2021-02-07 14:03:10 [main] INFO  MFilterResults_Page:762 - It filtered by pending status successfully.
+2021-02-07 14:04:50 [main] INFO  MSortResults_Page:368 - prop1bed: 6
+2021-02-07 14:04:50 [main] INFO  MSortResults_Page:373 - prop2bed: 5
+2021-02-07 14:04:50 [main] INFO  MSortResults_Page:378 - prop3bed: 6
+2021-02-07 14:04:50 [main] INFO  MSortResults_Page:383 - It sorted by bed successfully.
+2021-02-07 14:06:22 [main] INFO  MSortResults_Page:149 - It sorted by low to high price successfully.
+2021-02-07 14:07:25 [main] INFO  MSortResults_Page:189 - It sorted by high to low price successfully.
+2021-02-07 14:12:01 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:12:02 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:12:02 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:12:06 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 14:12:18 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 14:13:12 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:13:12 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:13:13 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:13:17 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
+2021-02-07 14:13:28 [main] INFO  MFilterResults_Page:790 - It filtered by sold status successfully.
+2021-02-07 14:14:46 [main] INFO  MSortResults_Page:368 - prop1bed: 1
+2021-02-07 14:14:46 [main] INFO  MSortResults_Page:373 - prop2bed: 1
+2021-02-07 14:14:46 [main] INFO  MSortResults_Page:378 - prop3bed: 1
+2021-02-07 14:14:46 [main] INFO  MSortResults_Page:383 - It sorted by bed successfully.
+2021-02-07 14:16:02 [main] INFO  MSortResults_Page:422 - prop1bath: 7
+2021-02-07 14:16:02 [main] INFO  MSortResults_Page:427 - prop2bath: 7
+2021-02-07 14:16:02 [main] INFO  MSortResults_Page:432 - prop3bath: 7
+2021-02-07 14:16:02 [main] INFO  MSortResults_Page:437 - It sorted by bath successfully.
+2021-02-07 14:17:33 [main] INFO  MSortResults_Page:189 - It sorted by high to low price successfully.
+2021-02-07 14:18:36 [main] INFO  MSortResults_Page:223 - It sorted by square feet successfully.
+2021-02-07 14:19:54 [main] INFO  MSortResults_Page:328 - It sorted by most recent successfully.
+2021-02-07 14:32:07 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:32:07 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:32:08 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:32:12 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 14:32:23 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 14:32:57 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:32:58 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:32:58 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:33:02 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2021-02-07 14:33:14 [main] INFO  MFilterResults_Page:762 - It filtered by pending status successfully.
+2021-02-07 14:33:46 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:33:47 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:33:47 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:33:52 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
+2021-02-07 14:34:03 [main] INFO  MFilterResults_Page:790 - It filtered by sold status successfully.
+2021-02-07 14:36:38 [main] INFO  MSortResults_Page:368 - prop1bed: 6
+2021-02-07 14:36:38 [main] INFO  MSortResults_Page:373 - prop2bed: 5
+2021-02-07 14:36:38 [main] INFO  MSortResults_Page:378 - prop3bed: 6
+2021-02-07 14:36:38 [main] INFO  MSortResults_Page:383 - It sorted by bed successfully.
+2021-02-07 14:37:58 [main] INFO  MSortResults_Page:422 - prop1bath: 1
+2021-02-07 14:37:59 [main] INFO  MSortResults_Page:427 - prop2bath: 1
+2021-02-07 14:37:59 [main] INFO  MSortResults_Page:432 - prop3bath: 1
+2021-02-07 14:37:59 [main] INFO  MSortResults_Page:437 - It sorted by bath successfully.
+2021-02-07 14:39:05 [main] INFO  MSortResults_Page:149 - It sorted by low to high price successfully.
+2021-02-07 14:40:12 [main] INFO  MSortResults_Page:189 - It sorted by high to low price successfully.
+2021-02-07 14:41:18 [main] INFO  MSortResults_Page:223 - It sorted by square feet successfully.
+2021-02-07 14:42:39 [main] INFO  MSortResults_Page:328 - It sorted by most recent successfully.
+2021-02-07 14:44:10 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:44:11 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:44:11 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:44:15 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 14:44:27 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 14:45:00 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:45:01 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:45:01 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:45:06 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2021-02-07 14:45:17 [main] INFO  MFilterResults_Page:762 - It filtered by pending status successfully.
+2021-02-07 14:45:50 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:45:50 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:45:51 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:45:55 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
+2021-02-07 14:46:06 [main] INFO  MFilterResults_Page:790 - It filtered by sold status successfully.
+2021-02-07 14:47:26 [main] INFO  MSortResults_Page:368 - prop1bed: 1
+2021-02-07 14:47:26 [main] INFO  MSortResults_Page:373 - prop2bed: 1
+2021-02-07 14:47:26 [main] INFO  MSortResults_Page:378 - prop3bed: 1
+2021-02-07 14:47:26 [main] INFO  MSortResults_Page:383 - It sorted by bed successfully.
+2021-02-07 14:48:44 [main] INFO  MSortResults_Page:422 - prop1bath: 1
+2021-02-07 14:48:44 [main] INFO  MSortResults_Page:427 - prop2bath: 1
+2021-02-07 14:48:44 [main] INFO  MSortResults_Page:432 - prop3bath: 1
+2021-02-07 14:48:44 [main] INFO  MSortResults_Page:437 - It sorted by bath successfully.
+2021-02-07 14:49:51 [main] INFO  MSortResults_Page:149 - It sorted by low to high price successfully.
+2021-02-07 14:50:57 [main] INFO  MSortResults_Page:189 - It sorted by high to low price successfully.
+2021-02-07 14:52:04 [main] INFO  MSortResults_Page:223 - It sorted by square feet successfully.
+2021-02-07 14:53:24 [main] INFO  MSortResults_Page:328 - It sorted by most recent successfully.
+2021-02-07 14:55:19 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:55:20 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:55:20 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:55:24 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 14:55:36 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 14:56:09 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:56:10 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:56:10 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:56:15 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2021-02-07 14:56:26 [main] INFO  MFilterResults_Page:762 - It filtered by pending status successfully.
+2021-02-07 14:56:59 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 14:57:00 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 14:57:01 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 14:57:05 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
+2021-02-07 14:57:16 [main] INFO  MFilterResults_Page:790 - It filtered by sold status successfully.
+2021-02-07 14:58:36 [main] INFO  MSortResults_Page:368 - prop1bed: 1
+2021-02-07 14:58:36 [main] INFO  MSortResults_Page:373 - prop2bed: 1
+2021-02-07 14:58:36 [main] INFO  MSortResults_Page:378 - prop3bed: 1
+2021-02-07 14:58:36 [main] INFO  MSortResults_Page:383 - It sorted by bed successfully.
+2021-02-07 14:59:55 [main] INFO  MSortResults_Page:422 - prop1bath: 1
+2021-02-07 14:59:55 [main] INFO  MSortResults_Page:427 - prop2bath: 1
+2021-02-07 14:59:55 [main] INFO  MSortResults_Page:432 - prop3bath: 1
+2021-02-07 14:59:55 [main] INFO  MSortResults_Page:437 - It sorted by bath successfully.
+2021-02-07 15:01:02 [main] INFO  MSortResults_Page:149 - It sorted by low to high price successfully.
+2021-02-07 15:02:08 [main] ERROR MSortResults_Page:194 - It sorted by high to low price unsuccessfully.
+2021-02-07 15:02:08 [main] ERROR MSortResultsByBedBathPriceSqFtMostRecent:152 - Didn't sort by high to low price correctly.
+2021-02-07 15:04:42 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 15:04:43 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 15:04:43 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 15:04:47 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 15:04:59 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 15:06:44 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 15:06:45 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 15:06:45 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 15:06:50 [main] INFO  MFilterResults_Page:143 - Active status is checked.
+2021-02-07 15:07:01 [main] INFO  MFilterResults_Page:819 - It filtered by for sale active status successfully.
+2021-02-07 15:07:34 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 15:07:34 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 15:07:35 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 15:07:39 [main] INFO  MFilterResults_Page:124 - Pending status is checked.
+2021-02-07 15:07:51 [main] INFO  MFilterResults_Page:762 - It filtered by pending status successfully.
+2021-02-07 15:08:23 [main] INFO  MFilterResults_Page:88 - Active status is unchecked.
+2021-02-07 15:08:24 [main] INFO  MFilterResults_Page:99 - Pending status is unchecked.
+2021-02-07 15:08:24 [main] INFO  MFilterResults_Page:109 - Sold status is unchecked.
+2021-02-07 15:08:29 [main] INFO  MFilterResults_Page:133 - Sold status is checked.
+2021-02-07 15:08:40 [main] INFO  MFilterResults_Page:790 - It filtered by sold status successfully.
+2021-02-07 15:10:00 [main] INFO  MSortResults_Page:368 - prop1bed: 1
+2021-02-07 15:10:00 [main] INFO  MSortResults_Page:373 - prop2bed: 1
+2021-02-07 15:10:00 [main] INFO  MSortResults_Page:378 - prop3bed: 1
+2021-02-07 15:10:00 [main] INFO  MSortResults_Page:383 - It sorted by bed successfully.
+2021-02-07 15:11:20 [main] INFO  MSortResults_Page:422 - prop1bath: 1
+2021-02-07 15:11:20 [main] INFO  MSortResults_Page:427 - prop2bath: 1
+2021-02-07 15:11:20 [main] INFO  MSortResults_Page:432 - prop3bath: 1
+2021-02-07 15:11:20 [main] INFO  MSortResults_Page:437 - It sorted by bath successfully.
+2021-02-07 15:12:26 [main] INFO  MSortResults_Page:149 - It sorted by low to high price successfully.
+2021-02-07 15:13:32 [main] INFO  MSortResults_Page:189 - It sorted by high to low price successfully.
+2021-02-07 15:14:39 [main] INFO  MSortResults_Page:223 - It sorted by square feet successfully.
+2021-02-07 15:16:01 [main] INFO  MSortResults_Page:328 - It sorted by most recent successfully.

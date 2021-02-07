@@ -41,6 +41,7 @@ public class Login_and_Search extends TestBase{
 		Login_Page loginpg = new Login_Page();
 		loginpg.clickSignIn(webdriver);
 		String signedinusername = loginpg.login(webdriver, login, password);
+		Thread.sleep(5000);
 		
 		try{
 			Assert.assertEquals(signedinusername, "AUTOMATION TESTER");
@@ -55,7 +56,6 @@ public class Login_and_Search extends TestBase{
 		
 		Search search = new Search();
 		boolean match = search.loginsearchfor6thhouseinresults(webdriver, searchkeyword);
-	
 		
 		try{
 			Assert.assertEquals(match,  true);

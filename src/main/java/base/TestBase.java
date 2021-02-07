@@ -4,17 +4,23 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,6 +31,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 
 
@@ -44,7 +51,7 @@ public class TestBase {
 	    protected WebDriver webdriver;
 	    
 	    //For Mac -comment out if using for windows
-	    public static String folderpath = "/Users/macbookpro/eclipse-workspace/XOME/screencaptures";
+	    public static String folderpath = "/Users/geeky/OneDrive/eclipse-workspace/XOME/screencaptures";
 		//For Windows -comment out if using for mac
 	    //public static String folderpath = "C:\\EclipseProjects\\XOME\\screencaptures";
 	    
@@ -52,7 +59,7 @@ public class TestBase {
 		public String methodname = "";
 
 
-        @SuppressWarnings({ "rawtypes"})
+        @SuppressWarnings({ "rawtypes", "deprecation"})
 		@BeforeMethod (alwaysRun=true)
 		//Use before method instead of before class or before test so each method/test will open in new browser; 
 		//This was tested and found before method was the only one that works.
@@ -68,24 +75,38 @@ public class TestBase {
 			{
 				if(ReadProperties.globalProp.getProperty("webbrowser").contains("firefox"))
 				{
+					//ProfilesIni profile = new ProfilesIni();
+					//FirefoxProfile myprofile = profile.getProfile("2ypnpwex.Selenium Firefox Profile");
+					//Users/geeky/Library/ApplicationSupport/Firefox/Profiles/2ypnpwex.Selenium Firefox Profile
+					
+					String downloadFilepath="//Users//geeky//Library//ApplicationSupport//Firefox//Profiles//2ypnpwex.Selenium Firefox Profile";
+					FirefoxProfile myprofile = new FirefoxProfile();
+					myprofile.setPreference("browser.download.dir", downloadFilepath);
+					
 					//capabilities.setCapability(CapabilityType.ELEMENT_SCROLL_BEHAVIOR, 1);
 					if(os.contains("MAC") || os.contains("mac") || os.contains("Mac"))
 					{
 						System.setProperty("webdriver.gecko.driver", ReadProperties.globalProp.getProperty("macgeckodriver"));
-						FirefoxOptions firefoxOptions = new FirefoxOptions();
-						firefoxOptions.setCapability("platform", "MAC");
-						firefoxOptions.setCapability("browser", "firefox");
-						firefoxOptions.setCapability("newCommandTimeout", 5000);
+						FirefoxOptions options = new FirefoxOptions();
+						options.setCapability("platform", "MAC");
+						options.setCapability("browser", "firefox");
+						options.setCapability("newCommandTimeout", 5000);
+						options.setProfile(myprofile);
+						options.setLogLevel(FirefoxDriverLogLevel.TRACE);
 					}
 					else
 					{
 						System.setProperty("webdriver.gecko.driver", ReadProperties.globalProp.getProperty("pcgeckodriver"));
-						FirefoxOptions firefoxOptions = new FirefoxOptions();
-						firefoxOptions.setCapability("platform", "WINDOWS");
-						firefoxOptions.setCapability("browser", "firefox");
-						firefoxOptions.setCapability("newCommandTimeout", 5000);
+						FirefoxOptions options = new FirefoxOptions();
+						options.setCapability("platform", "WINDOWS");
+						options.setCapability("browser", "firefox");
+						options.setCapability("newCommandTimeout", 5000);
+						options.setProfile(myprofile);
+						options.setLogLevel(FirefoxDriverLogLevel.TRACE);
 					}
 					webdriver = new FirefoxDriver();
+					webdriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+					
 				}
 				else if (ReadProperties.globalProp.getProperty("webbrowser").contains("chrome"))
 				{

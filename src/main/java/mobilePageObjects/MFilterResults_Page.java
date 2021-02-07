@@ -54,10 +54,10 @@ public class MFilterResults_Page {
 		private By propertydescription = By.id("com.xome.android:id/description");
 		//private By propertydetailsmorebutton = MobileBy.AccessibilityId("com.xome.android:id/ldTvMoreButton");
 		private By propertydetailsmorebutton = By.xpath("//android.widget.Button[@text='MORE' and @index='5']");
-		private By propertyyearheader8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='0' and @text='Year Built:']");
+		private By propertyyearheader8thslot = By.xpath(".//android.widget.LinearLayout[@index='9']/android.widget.TextView[@index='0' and @text='Year Built:']");
 		private By propertyyearheader7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='0' and @text='Year Built:']");
-		private By 	    propertyyear8thslot = By.xpath(".//android.widget.LinearLayout[@index='8']/android.widget.TextView[@index='1']");
-		private By 		propertyyear7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='1']");
+		private By 	    propertyyear8thslot = By.xpath(".//android.widget.LinearLayout[@index='9']/android.widget.TextView[@index='1' and @resource-id='com.xome.android:id/row_value']");
+		private By 		propertyyear7thslot = By.xpath(".//android.widget.LinearLayout[@index='7']/android.widget.TextView[@index='1' and @resource-id='com.xome.android:id/row_value']");
 		private By 			   propertytype = By.xpath(".//android.widget.LinearLayout[@index='2']/android.widget.TextView[contains(@resource-id, 'row_value') and @index='1']");
 		private By scrollnextproperty = By.id("com.xome.android:id/menu_filter_tv");
 		
@@ -499,14 +499,16 @@ public class MFilterResults_Page {
 			if (property1yearheader8thslotsize > 0)
 			{
 				WebElement property1year8thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear8thslot));
-				String year8text1 = property1year8thslotelement.getText();
-				year1 = Integer.parseInt(year8text1);
+				String year8text = property1year8thslotelement.getAttribute("text");
+				System.out.print("\n year8text is "+year8text+"\n");
+				year1 = Integer.parseInt(year8text);
 			}
 			else
 			{
 				WebElement property1year7thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear7thslot));
-				String year7text1 = property1year7thslotelement.getText();
-				year1 = Integer.parseInt(year7text1);
+				String year7text = property1year7thslotelement.getAttribute("text");
+				System.out.print("\n year7text is "+year7text+"\n");
+				year1 = Integer.parseInt(year7text);
 			}
 		
 			int yreighth;
@@ -533,14 +535,16 @@ public class MFilterResults_Page {
 				if (propertyyearheader8thslotsize > 0)
 				{
 					WebElement propertyyear8thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear8thslot));
-					String year8text = propertyyear8thslotelement.getText();
+					String year8text = propertyyear8thslotelement.getAttribute("text");
+					System.out.print("\n year8text is "+year8text+"\n");
 					yreighth = Integer.parseInt(year8text);
 					year = (yreighth >= min_year) && (yreighth <= max_year);
 				}
 				else
 				{
 					WebElement propertyyear7thslotelement = wait.until(ExpectedConditions.presenceOfElementLocated(propertyyear7thslot));
-					String year7text = propertyyear7thslotelement.getText();
+					String year7text = propertyyear7thslotelement.getAttribute("text");
+					System.out.print("\n year7text is "+year7text+"\n");
 					yrseventh = Integer.parseInt(year7text);
 					year = (yrseventh >= min_year) && (yrseventh <= max_year);
 				}
@@ -560,7 +564,7 @@ public class MFilterResults_Page {
 			}
 			
 			
-			if (yearmatch1.equals(true) && yearmatch2.equals(true) && yearmatch3.equals(true))
+			if ((yearmatch1.equals(true) && yearmatch2.equals(true)) ||(yearmatch1.equals(true) && yearmatch3.equals(true)))
 			{
 				diditfilter="yes";
 				log.info("It filter by min year "+minyear+" and max year "+maxyear+" successfully.");

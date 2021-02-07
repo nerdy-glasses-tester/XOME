@@ -33,7 +33,9 @@ public class MFilterByBedBath extends TestBase{
 	static String foldername = className+timestamp;
 	static String errorname = "";
 
+	
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
+
 	public void mFilterBed (String searchkeyword, String beds) throws IOException, InterruptedException
 	{
 		MLogin_Page mloginpg = new MLogin_Page();
@@ -60,7 +62,7 @@ public class MFilterByBedBath extends TestBase{
 
 		   softAssert.assertAll();
 	}
-
+    
 	
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getMobileData") 
 	public void mFilterBath (String searchkeyword, String baths) throws IOException, InterruptedException
