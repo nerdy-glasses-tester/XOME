@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="XOME Suite" parallel="false">
+
+
+<listeners>
+    <listener class-name="common.TestListener" />
+</listeners>  
+    
+
+<test name = "All Tests Run including Smoke and Regression" preserve-order="true">
+	<groups>
+		<run>
+			<include name="smoke" />
+			<include name="regression"/>
+	        <exclude name="P3"/>
+		</run>
+	</groups>
+
+	  <classes>
+
+
+     	    <class name="mobileTests.MFilterByYear" />    	
+			<class name="mobileTests.MLoginandSearch" />
+        	<class name="mobileTests.MSignUp_NewUser" />
+        	<class name="mobileTests.MFilterByKeyword" />
+        	<class name="mobileTests.MFilterByBedBath" />
+        	<class name="mobileTests.MFilterBySqFt" />
+        	<class name="mobileTests.MFilterByPendingStatus" />
+        	<class name="mobileTests.MFilterBySoldStatus" />
+        	<class name="mobileTests.MFilterByForSaleStatus" />
+        	<class name="mobileTests.MFilterByPropertyType" />	
+	  	    <class name="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" />  
+   	 
+
+     </classes>
+
+</test>
+</suite>

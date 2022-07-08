@@ -1,0 +1,114 @@
+2022-07-08 16:13:12.208 DEBUG [main] [io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76)] - Using Log4J2 as the default logging framework
+2022-07-08 16:13:12.219 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129)] - -Dio.netty.leakDetection.level: simple
+2022-07-08 16:13:12.220 DEBUG [main] [io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130)] - -Dio.netty.leakDetection.targetRecords: 4
+2022-07-08 16:13:12.228 DEBUG [main] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@72e34f77
+2022-07-08 16:13:12.248 DEBUG [main] [io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:495)] - -Dio.netty.noUnsafe: false
+2022-07-08 16:13:12.249 DEBUG [main] [io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:998)] - Java version: 8
+2022-07-08 16:13:12.250 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:136)] - sun.misc.Unsafe.theUnsafe: available
+2022-07-08 16:13:12.251 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:160)] - sun.misc.Unsafe.copyMemory: available
+2022-07-08 16:13:12.251 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:192)] - sun.misc.Unsafe.storeFence: available
+2022-07-08 16:13:12.252 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:235)] - java.nio.Buffer.address: available
+2022-07-08 16:13:12.253 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:306)] - direct buffer constructor: available
+2022-07-08 16:13:12.254 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:384)] - java.nio.Bits.unaligned: available, true
+2022-07-08 16:13:12.254 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:458)] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-07-08 16:13:12.254 DEBUG [main] [io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:481)] - java.nio.DirectByteBuffer.<init>(long, int): available
+2022-07-08 16:13:12.255 DEBUG [main] [io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1120)] - sun.misc.Unsafe: available
+2022-07-08 16:13:12.255 DEBUG [main] [io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1250)] - -Dio.netty.tmpdir: /var/folders/37/bl_47p0d3b932pvrfmhhjkhh0000gn/T (java.io.tmpdir)
+2022-07-08 16:13:12.256 DEBUG [main] [io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1329)] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-07-08 16:13:12.256 DEBUG [main] [io.netty.util.internal.PlatformDependent.isOsx0(PlatformDependent.java:1088)] - Platform: MacOS
+2022-07-08 16:13:12.257 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178)] - -Dio.netty.maxDirectMemory: 7635730432 bytes
+2022-07-08 16:13:12.257 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185)] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-07-08 16:13:12.258 DEBUG [main] [io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92)] - java.nio.ByteBuffer.cleaner(): available
+2022-07-08 16:13:12.258 DEBUG [main] [io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205)] - -Dio.netty.noPreferDirect: false
+2022-07-08 16:13:12.267 DEBUG [main] [io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:971)] - org.jctools-core.MpscChunkedArrayQueue: available
+2022-07-08 16:13:12.287 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:86)] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-07-08 16:13:12.288 DEBUG [main] [io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:89)] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-07-08 16:13:12.618 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83)] - Default protocols (JDK): [TLSv1.2] 
+2022-07-08 16:13:12.618 DEBUG [main] [io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84)] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-07-08 16:13:12.643 DEBUG [main] [io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)] - -Dio.netty.eventLoopThreads: 32
+2022-07-08 16:13:12.653 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:109)] - -Dio.netty.noKeySetOptimization: false
+2022-07-08 16:13:12.653 DEBUG [main] [io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110)] - -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-07-08 16:13:12.681 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157)] - -Dio.netty.allocator.numHeapArenas: 32
+2022-07-08 16:13:12.681 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158)] - -Dio.netty.allocator.numDirectArenas: 32
+2022-07-08 16:13:12.681 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160)] - -Dio.netty.allocator.pageSize: 8192
+2022-07-08 16:13:12.682 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165)] - -Dio.netty.allocator.maxOrder: 9
+2022-07-08 16:13:12.682 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169)] - -Dio.netty.allocator.chunkSize: 4194304
+2022-07-08 16:13:12.682 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170)] - -Dio.netty.allocator.smallCacheSize: 256
+2022-07-08 16:13:12.682 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171)] - -Dio.netty.allocator.normalCacheSize: 64
+2022-07-08 16:13:12.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172)] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-07-08 16:13:12.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173)] - -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-07-08 16:13:12.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174)] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-07-08 16:13:12.683 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175)] - -Dio.netty.allocator.useCacheForAllThreads: false
+2022-07-08 16:13:12.684 DEBUG [main] [io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176)] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-07-08 16:13:12.696 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:87)] - -Dio.netty.allocator.type: pooled
+2022-07-08 16:13:12.697 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:96)] - -Dio.netty.threadLocalDirectBufferSize: 0
+2022-07-08 16:13:12.697 DEBUG [main] [io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:99)] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-07-08 16:13:13.135 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79)] - -Dio.netty.processId: 17770 (auto-detected)
+2022-07-08 16:13:13.138 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:136)] - -Djava.net.preferIPv4Stack: false
+2022-07-08 16:13:13.138 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil.<clinit>(NetUtil.java:137)] - -Djava.net.preferIPv6Addresses: false
+2022-07-08 16:13:13.141 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:129)] - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2022-07-08 16:13:13.142 DEBUG [Forwarding newSession on session null to remote] [io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:191)] - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2022-07-08 16:13:13.144 DEBUG [Forwarding newSession on session null to remote] [io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101)] - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2022-07-08 16:13:13.199 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63)] - -Dio.netty.buffer.checkAccessible: true
+2022-07-08 16:13:13.200 DEBUG [AsyncHttpClient-1-2] [io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64)] - -Dio.netty.buffer.checkBounds: true
+2022-07-08 16:13:13.200 DEBUG [AsyncHttpClient-1-2] [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196)] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3025119
+2022-07-08 16:13:13.227 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:85)] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-07-08 16:13:13.228 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:86)] - -Dio.netty.recycler.ratio: 8
+2022-07-08 16:13:13.228 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:87)] - -Dio.netty.recycler.chunkSize: 32
+2022-07-08 16:13:13.228 DEBUG [AsyncHttpClient-1-2] [io.netty.util.Recycler.<clinit>(Recycler.java:88)] - -Dio.netty.recycler.blocking: false
+2022-07-08 16:13:15.036 DEBUG [AsyncHttpClient-1-2] [io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38)] - brotli4j not in the classpath; Brotli support will be unavailable.
+2022-07-08 16:13:15.130 DEBUG [main] [io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214)] - -Dio.netty.initialSeedUniquifier: 0x6ed5fc275748c96f
+2022-07-08 16:13:31.238 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByBeds(FilterResults_Page.java:182)] - It filtered by beds correctly.
+2022-07-08 16:13:51.508 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:91)] - Filter results max price is $1300000
+
+2022-07-08 16:13:59.919 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:115)] - Filter results min price is $810000
+
+2022-07-08 16:13:59.919 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:120)] - Search for price between 800000 and 1300000
+
+2022-07-08 16:13:59.919 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:124)] - It filtered by price correctly.
+2022-07-08 16:14:15.870 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByBaths(FilterResults_Page.java:242)] - It filtered by baths correctly.
+2022-07-08 16:14:49.717 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByYear(FilterMoreResults_Page.java:854)] - min year: 2018
+2022-07-08 16:14:49.717 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByYear(FilterMoreResults_Page.java:855)] - max year 2022
+2022-07-08 16:14:49.718 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByYear(FilterMoreResults_Page.java:856)] - prop1_year is : 2021
+2022-07-08 16:14:49.718 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByYear(FilterMoreResults_Page.java:861)] - It filtered by year correctly
+2022-07-08 16:15:22.929 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterBySqFeet(FilterMoreResults_Page.java:543)] - It filtered by square feet correctly
+2022-07-08 16:15:51.597 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByPropertyTypeLand(FilterMoreResults_Page.java:1030)] - It filtered by property type correctly
+2022-07-08 16:16:22.466 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByKeyword(FilterMoreResults_Page.java:898)] - verify filter keyword - scroll property description text into view.
+2022-07-08 16:16:22.467 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByKeyword(FilterMoreResults_Page.java:904)] - It filtered by keyword correctly
+2022-07-08 16:16:30.031 INFO [main] [webPageObjects.Search.searchandVerifyAddressSearched(Search.java:161)] - resultaddress is: 12512 Brighton Pl Tustin, CA 92780
+2022-07-08 16:16:46.262 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBaths(SortResults_Page.java:497)] - Original order is: [12 12 11 11 8 7 7 7 7 7]
+
+2022-07-08 16:16:46.262 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBaths(SortResults_Page.java:498)] - Sorted descending order is: [12 12 11 11 8 7 7 7 7 7]
+
+2022-07-08 16:16:46.262 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBaths(SortResults_Page.java:502)] - It has sorted in descending order.
+2022-07-08 16:16:54.761 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBaths(SortResults_Page.java:584)] - Original order is: [2 2 2 2 2 2 2 3 3 3]
+
+2022-07-08 16:16:54.761 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBaths(SortResults_Page.java:585)] - Sorted ascending order is: [2 2 2 2 2 2 2 3 3 3]
+
+2022-07-08 16:16:54.761 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBaths(SortResults_Page.java:589)] - It has sorted in ascending order.
+2022-07-08 16:18:25.614 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBeds(SortResults_Page.java:324)] - Original order is: [8 6 6 6 6 6 6 5 5 5]
+
+2022-07-08 16:18:25.614 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBeds(SortResults_Page.java:325)] - Sorted descending order is: [8 6 6 6 6 6 6 5 5 5]
+
+2022-07-08 16:18:25.614 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBeds(SortResults_Page.java:329)] - It has sorted in descending order.
+2022-07-08 16:18:34.096 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBeds(SortResults_Page.java:411)] - Original order is: [1 1 1 2 2 2 2 2 2 2]
+
+2022-07-08 16:18:34.096 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBeds(SortResults_Page.java:412)] - Sorted ascending order is: [1 1 1 2 2 2 2 2 2 2]
+
+2022-07-08 16:18:34.096 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBeds(SortResults_Page.java:416)] - It has sorted in ascending order.
+2022-07-08 16:18:57.986 INFO [main] [webPageObjects.SortResults_Page.sortResultsByMostRecent(SortResults_Page.java:73)] - Newicon says: NEW
+
+2022-07-08 16:18:57.986 INFO [main] [webPageObjects.SortResults_Page.sortResultsByMostRecent(SortResults_Page.java:77)] - It has sorted by most recent order.
+2022-07-08 16:19:13.479 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescPrice(SortResults_Page.java:155)] - Original order is: [49950000 21995000 15495000 9000000 8998000]
+
+2022-07-08 16:19:13.479 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescPrice(SortResults_Page.java:156)] - Sorted descending order is: [49950000 21995000 15495000 9000000 8998000]
+
+2022-07-08 16:19:13.479 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescPrice(SortResults_Page.java:160)] - It has sorted in descending order.
+2022-07-08 16:19:21.912 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscPrice(SortResults_Page.java:237)] - Original order is: [265000 425000 450000 455000 495000]
+
+2022-07-08 16:19:21.912 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscPrice(SortResults_Page.java:238)] - Sorted ascending order is: [265000 425000 450000 455000 495000]
+
+2022-07-08 16:19:21.912 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscPrice(SortResults_Page.java:242)] - It has sorted in ascending order.
+2022-07-08 16:19:35.709 INFO [main] [webPageObjects.Login_Page.login(Login_Page.java:147)] - Signed in user name is: Automation Tester
+2022-07-08 16:19:41.248 INFO [main] [webTests.Login_and_Search.loginSearch(Login_and_Search.java:49)] - Verified sign in user.
+2022-07-08 16:19:49.300 INFO [main] [webTests.Login_and_Search.loginSearch(Login_and_Search.java:66)] - Verified search results.
