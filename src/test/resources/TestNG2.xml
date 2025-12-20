@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="XOME Suite" parallel="false">
+
+
+<listeners>
+    <listener class-name="common.TestListener" />
+</listeners>  
+    
+
+<test name = "All Tests Run including Smoke and Regression" preserve-order="true">
+	<groups>
+		<run>
+			<include name="smoke" />
+			<include name="regression"/>
+	        <exclude name="P3"/>
+		</run>
+	</groups>
+	
+	  <classes>
+
+			<class name="webTests.Login_and_Search" />
+			<class name="webTests.SearchforSpecificProperty" /> 		
+			<class name="webTests.SortResultsByPriceBedBath" />
+			<class name="webTests.FilterResultsByPriceBedBath" /> 
+        	<class name="webTests.FilterMoreResultsBySquareFeet" /> 
+        	<class name="webTests.FilterMoreResultsByPropertyType" />
+         	<class name="webTests.FilterMoreResultsByKeyword" />  
+	            
+     </classes>
+     
+
+
+</test>
+</suite>
+

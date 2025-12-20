@@ -1,0 +1,499 @@
+2025-12-19 17:32:11.143 DEBUG [main] [org.testng.log4testng.Logger.debug(Logger.java:82)] - suiteXmlPath: "/Users/geeky/eclipse-workspace/XOME/src/test/resources/TestNG2.xml"
+2025-12-19 17:32:11.155 WARN [main] [org.testng.log4testng.Logger.warn(Logger.java:133)] - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [/Users/geeky/eclipse-workspace/XOME/src/test/resources/TestNG2.xml] otherwise TestNG may fail or not work as expected.
+2025-12-19 17:32:11.161 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2025-12-19 17:32:11.285 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:32:11.287 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:32:11.288 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:32:11.288 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:32:11.289 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:32:11.290 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:32:11.290 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:32:11.296 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:32:11.449 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:32:11.449 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [loginSearch]
+2025-12-19 17:32:11.449 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:32:11.450 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:32:11.451 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:32:13.749 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:32:28.941 INFO [main] [webPageObjects.Login_Page.login(Login_Page.java:180)] - Signed in user name is: Automation Tester
+2025-12-19 17:32:34.822 INFO [main] [webTests.Login_and_Search.loginSearch(Login_and_Search.java:36)] - Verified signed in user: Automation Tester
+2025-12-19 17:32:37.996 INFO [main] [webTests.Login_and_Search.loginSearch(Login_and_Search.java:48)] - Verified search results contain the expected house.
+2025-12-19 17:32:38.126 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:32:38.127 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:32:38.127 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:32:38.127 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:32:38.127 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:32:38.128 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:32:38.128 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:32:38.128 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [searchSpecificProperty]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:32:38.148 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:32:38.149 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:32:40.090 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:32:42.788 INFO [main] [webPageObjects.Search.searchandVerifyAddressSearched(Search.java:195)] - resultaddress is: 12512 Brighton Pl Tustin, CA 92780
+2025-12-19 17:32:42.788 INFO [main] [webTests.SearchforSpecificProperty.searchSpecificProperty(SearchforSpecificProperty.java:41)] - Verified details page shows the searched address: 12512 Brighton Pl Tustin, CA 92780
+2025-12-19 17:32:42.894 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:32:42.895 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:32:42.895 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:32:42.895 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:32:42.895 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:32:42.895 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:32:42.896 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:32:42.896 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [sortResultsByBaths]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:32:42.914 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:32:42.915 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:32:45.137 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:32:56.013 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBaths(SortResults_Page.java:497)] - Original order is: [7 7 7 7 6 6 5 5 5 5]
+
+2025-12-19 17:32:56.013 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBaths(SortResults_Page.java:498)] - Sorted descending order is: [7 7 7 7 6 6 5 5 5 5]
+
+2025-12-19 17:32:56.013 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBaths(SortResults_Page.java:502)] - It has sorted in descending order.
+2025-12-19 17:32:56.013 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByBaths(SortResultsByPriceBedBath.java:79)] - Verified sorting baths descending.
+2025-12-19 17:33:04.468 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBaths(SortResults_Page.java:584)] - Original order is: [2 2 3 3 3 3 3 3 3 4]
+
+2025-12-19 17:33:04.468 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBaths(SortResults_Page.java:585)] - Sorted ascending order is: [2 2 3 3 3 3 3 3 3 4]
+
+2025-12-19 17:33:04.469 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBaths(SortResults_Page.java:589)] - It has sorted in ascending order.
+2025-12-19 17:33:04.469 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByBaths(SortResultsByPriceBedBath.java:83)] - Verified sorting baths ascending.
+2025-12-19 17:33:04.583 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:33:04.584 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:33:04.584 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:33:04.584 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:33:04.585 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:33:04.585 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:33:04.585 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:33:04.585 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [sortResultsByBeds]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:33:04.599 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:33:04.600 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:33:06.508 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:33:17.913 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBeds(SortResults_Page.java:324)] - Original order is: [5 5 5 4 4 4 4 4 4 3]
+
+2025-12-19 17:33:17.913 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBeds(SortResults_Page.java:325)] - Sorted descending order is: [5 5 5 4 4 4 4 4 4 3]
+
+2025-12-19 17:33:17.913 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescBeds(SortResults_Page.java:329)] - It has sorted in descending order.
+2025-12-19 17:33:17.913 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByBeds(SortResultsByPriceBedBath.java:63)] - Verified sorting beds descending.
+2025-12-19 17:33:26.372 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBeds(SortResults_Page.java:411)] - Original order is: [1 1 1 2 2 2 2 2 2 2]
+
+2025-12-19 17:33:26.372 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBeds(SortResults_Page.java:412)] - Sorted ascending order is: [1 1 1 2 2 2 2 2 2 2]
+
+2025-12-19 17:33:26.372 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscBeds(SortResults_Page.java:416)] - It has sorted in ascending order.
+2025-12-19 17:33:26.372 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByBeds(SortResultsByPriceBedBath.java:67)] - Verified sorting beds ascending.
+2025-12-19 17:33:26.489 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:33:26.489 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:33:26.489 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:33:26.489 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:33:26.489 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:33:26.490 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:33:26.490 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:33:26.490 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:33:26.503 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:33:26.503 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [sortResultsByMostRecent]
+2025-12-19 17:33:26.503 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:33:26.504 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:33:28.333 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:33:47.545 INFO [main] [webPageObjects.SortResults_Page.sortResultsByMostRecent(SortResults_Page.java:73)] - Newicon says: NEW
+
+2025-12-19 17:33:47.545 INFO [main] [webPageObjects.SortResults_Page.sortResultsByMostRecent(SortResults_Page.java:77)] - It has sorted by most recent order.
+2025-12-19 17:33:47.545 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByMostRecent(SortResultsByPriceBedBath.java:35)] - Verified sorting by Most Recent.
+2025-12-19 17:33:47.664 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:33:47.664 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:33:47.665 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:33:47.665 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:33:47.665 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:33:47.665 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:33:47.665 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:33:47.666 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [sortResultsByPrice]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:33:47.676 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:33:47.677 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:33:49.793 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:34:00.842 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescPrice(SortResults_Page.java:155)] - Original order is: [10495000 10333301 9998800 9500000 7499000]
+
+2025-12-19 17:34:00.842 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescPrice(SortResults_Page.java:156)] - Sorted descending order is: [10495000 10333301 9998800 9500000 7499000]
+
+2025-12-19 17:34:00.842 INFO [main] [webPageObjects.SortResults_Page.sortResultsByDescPrice(SortResults_Page.java:160)] - It has sorted in descending order.
+2025-12-19 17:34:00.842 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByPrice(SortResultsByPriceBedBath.java:47)] - Verified sorting price descending.
+2025-12-19 17:34:09.271 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscPrice(SortResults_Page.java:237)] - Original order is: [1330 449000 465000 495000 575000]
+
+2025-12-19 17:34:09.272 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscPrice(SortResults_Page.java:238)] - Sorted ascending order is: [1330 449000 465000 495000 575000]
+
+2025-12-19 17:34:09.272 INFO [main] [webPageObjects.SortResults_Page.sortResultsByAscPrice(SortResults_Page.java:242)] - It has sorted in ascending order.
+2025-12-19 17:34:09.272 INFO [main] [webTests.SortResultsByPriceBedBath.sortResultsByPrice(SortResultsByPriceBedBath.java:51)] - Verified sorting price ascending.
+2025-12-19 17:34:09.384 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:34:09.384 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:34:09.384 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:34:09.384 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:34:09.385 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:34:09.385 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:34:09.385 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:34:09.385 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [filterResultsByBaths]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:34:09.397 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:34:09.398 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:34:11.272 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:34:22.015 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByBaths(FilterResults_Page.java:242)] - It filtered by baths correctly.
+2025-12-19 17:34:22.015 INFO [main] [webTests.FilterResultsByPriceBedBath.filterResultsByBaths(FilterResultsByPriceBedBath.java:91)] - Successfully filtered results by baths: 3
+2025-12-19 17:34:22.123 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:34:22.124 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:34:22.124 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:34:22.124 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:34:22.124 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:34:22.124 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:34:22.124 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:34:22.125 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [filterResultsByBeds]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:34:22.136 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:34:22.137 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:34:22.137 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:34:22.137 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:34:22.137 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:34:22.137 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:34:22.137 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:34:24.084 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:34:34.869 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByBeds(FilterResults_Page.java:182)] - It filtered by beds correctly.
+2025-12-19 17:34:34.869 INFO [main] [webTests.FilterResultsByPriceBedBath.filterResultsByBeds(FilterResultsByPriceBedBath.java:69)] - Successfully filtered results by beds: 3
+2025-12-19 17:34:34.979 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:34:34.979 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:34:34.979 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:34:34.979 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:34:34.980 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:34:34.980 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:34:34.980 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:34:34.980 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:34:34.988 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:34:34.988 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [filterResultsByPrice]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:34:34.989 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:34:34.990 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:34:34.990 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:34:34.990 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:34:34.990 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:34:34.990 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:34:34.990 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:34:37.241 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:34:52.919 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:91)] - Filter results max price is $1300000
+
+2025-12-19 17:35:01.339 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:115)] - Filter results min price is $818000
+
+2025-12-19 17:35:01.340 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:120)] - Search for price between 800000 and 1300000
+
+2025-12-19 17:35:01.340 INFO [main] [webPageObjects.FilterResults_Page.verifyFilterByPrice(FilterResults_Page.java:124)] - It filtered by price correctly.
+2025-12-19 17:35:01.341 INFO [main] [webTests.FilterResultsByPriceBedBath.filterResultsByPrice(FilterResultsByPriceBedBath.java:47)] - Successfully filtered results by price: 800,000 - 1,300,000
+2025-12-19 17:35:01.466 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:35:01.466 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:35:01.467 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:35:01.467 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:35:01.467 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:35:01.467 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:35:01.468 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:35:01.468 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:35:01.475 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [filterResultsBySqFeet]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:35:01.476 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:35:03.495 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:35:32.580 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterBySqFeet(FilterMoreResults_Page.java:543)] - It filtered by square feet correctly
+2025-12-19 17:35:32.581 INFO [main] [webTests.FilterMoreResultsBySquareFeet.filterResultsBySqFeet(FilterMoreResultsBySquareFeet.java:53)] - Successfully filtered results by square feet: 750 - 1000
+2025-12-19 17:35:32.706 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:35:32.706 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:35:32.706 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:35:32.706 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:35:32.706 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:35:32.706 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:35:32.707 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:35:32.707 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:35:32.715 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [filterResultsByPropertyTypeLand]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:35:32.716 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:35:35.165 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:35:59.053 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByPropertyTypeLand(FilterMoreResults_Page.java:1030)] - It filtered by property type correctly
+2025-12-19 17:35:59.053 INFO [main] [webTests.FilterMoreResultsByPropertyType.filterResultsByPropertyTypeLand(FilterMoreResultsByPropertyType.java:54)] - Successfully filtered results by property type 'Land'
+2025-12-19 17:35:59.174 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-19 17:35:59.174 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-12-19 17:35:59.175 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-12-19 17:35:59.175 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-12-19 17:35:59.175 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-12-19 17:35:59.175 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-12-19 17:35:59.175 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-12-19 17:35:59.175 DEBUG [main] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)] - Parsing relationship: /_rels/.rels
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:48)] - Excel path used: /Users/geeky/eclipse-workspace/XOME/testdata/TestData.xlsx
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:49)] - Requested sheet name: [filterResultsByKeyword]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:52)] - Sheets found in Excel (24):
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithBlankFields]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidEmail]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUpWithInvalidPassword]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [signUp_NewUser]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginBlankFields]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginWrongPwd]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [loginSearch]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [searchSpecificProperty]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByMostRecent]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByPrice]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBeds]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [sortResultsByBaths]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPrice]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBeds]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByBaths]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPendingStatus]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySoldStatus]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByForSaleStatus]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsBySqFeet]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByYear]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByKeyword]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterResultsByPropertyTypeLand]
+2025-12-19 17:35:59.183 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterBySingleFamily]
+2025-12-19 17:35:59.184 INFO [main] [common.ExcelMethods.readExcelData(ExcelMethods.java:54)] -  - [filterByCondo]
+2025-12-19 17:36:01.103 INFO [main] [webPageObjects.Login_Page.acceptcookies(Login_Page.java:44)] - Clicked cookie button without iframe.
+2025-12-19 17:36:27.161 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByKeyword(FilterMoreResults_Page.java:898)] - verify filter keyword - scroll property description text into view.
+2025-12-19 17:36:27.161 INFO [main] [webPageObjects.FilterMoreResults_Page.verifyFilterByKeyword(FilterMoreResults_Page.java:904)] - It filtered by keyword correctly
+2025-12-19 17:36:27.161 INFO [main] [webTests.FilterMoreResultsByKeyword.filterResultsByKeyword(FilterMoreResultsByKeyword.java:51)] - Successfully filtered results by keyword: pool

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="XOME Suite" parallel="false">
+
+
+<listeners>
+    <listener class-name="common.TestListener" />
+</listeners>  
+    
+
+<test name = "All Tests Run including Smoke and Regression" preserve-order="true">
+	<groups>
+		<run>
+			<include name="smoke" />
+			<include name="regression"/>
+	        <exclude name="P3"/>
+		</run>
+	</groups>
+
+	  <classes>
+	  
+			<class name="mobileTests.MLoginandSearch" />
+
+     </classes>
+
+</test>
+</suite>
